@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "pepes",
+  "info": {
+    "singularName": "pepe",
+    "pluralName": "pepes",
+    "displayName": "pepe"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pepe": {
+      "type": "string"
+    }
+  }
+}
