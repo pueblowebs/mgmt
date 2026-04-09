@@ -65,7 +65,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Video Testimonials Reels - Compact Row */}
-        <div className="flex justify-center gap-4 md:gap-8 mb-24 overflow-x-auto pb-8 scrollbar-hide">
+        <div className="flex lg:justify-center gap-6 md:gap-8 mb-24 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide px-4">
           {videoTestimonials.map((v, i) => (
             <div 
               key={i} 
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
                 const video = e.currentTarget.querySelector('video')
                 if (video) handleVideoClick(i, video)
               }}
-              className="group relative w-[140px] md:w-[200px] aspect-9/16 rounded-xl overflow-hidden bg-secondary/10 shrink-0 border border-foreground/5 hover:border-accent/40 transition-all shadow-lg cursor-pointer"
+              className="group relative w-[260px] md:w-[220px] lg:w-[200px] aspect-9/16 rounded-xl overflow-hidden bg-secondary/10 shrink-0 border border-foreground/5 hover:border-accent/40 transition-all shadow-lg cursor-pointer snap-center"
             >
                <video 
                  src={v.src} 
