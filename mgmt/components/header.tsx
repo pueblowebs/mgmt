@@ -18,6 +18,7 @@ export function Header() {
     { label: "Academia", href: "/academia" },
     { label: "Club de Empresarios", href: "/clubdeempresarios" },
     { label: "PRO", href: "/pro" },
+    { label: "Blog", href: "/blog" },
     { label: "Contacto", href: "/contacto" },
   ]
 
