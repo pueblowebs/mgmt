@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative w-full overflow-y-auto bg-background transition-colors duration-300 max-h-svh flex flex-col">
+    <section className="relative w-full bg-background transition-colors duration-300 flex flex-col">
       <div className="container mx-auto px-4 pt-12 md:pt-16 lg:pt-20 pb-12 overflow-visible">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
           <div className="z-10 max-w-2xl">
@@ -15,9 +15,9 @@ export function HeroSection() {
               </span>
               Impulsando Líderes Conscientes
             </div>
-            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl leading-none tracking-tighter text-foreground mb-6">
+            <h1 className="font-serif text-2xl md:text-4xl lg:text-5xl leading-[0.95] tracking-tighter text-foreground mb-6">
               Tu Pyme no necesita <br />
-              <span className="italic block mt-2">parecer una corporación.</span>
+              <span className="font-bold block mt-2">parecer una corporación.</span>
               <span className="block mt-2">Necesita funcionar mejor.</span>
             </h1>
             <p className="text-base md:text-lg text-foreground/70 max-w-lg mb-4 leading-relaxed">
@@ -53,7 +53,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 border-t border-foreground/10 pt-16">
           <div>
             <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-6">Propuesta de valor</h3>
-            <p className="text-2xl md:text-3xl font-serif text-foreground leading-snug mb-6">
+            <p className="text-xl md:text-2xl font-serif text-foreground leading-[1.1] mb-6">
               Trabajamos con empresas reales, con recursos reales y problemas reales.
             </p>
             <div className="space-y-4 text-foreground/60">

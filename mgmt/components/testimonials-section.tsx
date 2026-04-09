@@ -21,8 +21,8 @@ export function TestimonialsSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">A quienes acompañamos</h3>
-          <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground tracking-tighter">
-            Ayer y <span className="italic">Hoy.</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-foreground tracking-tighter leading-[0.95]">
+            Ayer y <span className="font-bold">Hoy.</span>
           </h2>
         </div>
 
@@ -46,7 +46,7 @@ export function TestimonialsSection() {
            <div className="lg:col-span-1 aspect-square relative overflow-hidden rounded-2xl bg-secondary/10 flex items-center justify-center p-12">
               <div className="text-center">
                 <div className="text-accent text-5xl mb-4 font-serif">"</div>
-                <p className="text-lg text-foreground/80 italic leading-relaxed mb-6">
+                <p className="text-lg text-foreground/80 font-bold leading-relaxed mb-6">
                   "Management Pyme nace de la práctica, no de la teoría. Por eso los resultados son reales."
                 </p>
                 <div className="text-xs font-bold uppercase tracking-widest text-accent">Testimonio Video</div>
@@ -69,7 +69,7 @@ export function TestimonialsSection() {
         </div>
 
         <div className="mt-20 text-center">
-           <p className="text-foreground/40 text-sm max-w-2xl mx-auto italic">
+           <p className="text-foreground/40 text-sm max-w-2xl mx-auto font-bold text-center">
              Cientos de dueños y líderes ya transformaron su capacidad de gestión con nuestro método.
            </p>
         </div>

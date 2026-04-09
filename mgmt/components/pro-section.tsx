@@ -6,11 +6,11 @@ export function ProSection() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mb-24">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Pro</h3>
-          <h2 className="font-serif text-4xl md:text-6xl mb-8 leading-tight tracking-tighter">
+          <h2 className="font-serif text-3xl md:text-5xl mb-8 leading-[1.0] tracking-tighter">
             Acompañamiento estratégico para <br />
-            <span className="italic opacity-50">Pymes en crecimiento.</span>
+            <span className="font-bold opacity-50">Pymes en crecimiento.</span>
           </h2>
-          <p className="text-xl text-background/60 leading-relaxed italic border-l-2 border-accent pl-8">
+          <p className="text-xl text-background/60 leading-relaxed font-bold border-l-2 border-accent pl-8">
             "Cuando la empresa crece, el modelo inicial deja de alcanzar. Para transformar el sistema de una empresa, primero deben transformarse quienes toman las decisiones."
           </p>
         </div>

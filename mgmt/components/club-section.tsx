@@ -40,9 +40,9 @@ export function ClubSection() {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl mb-16">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">El Club</h3>
-          <h2 className="font-serif text-4xl md:text-6xl text-foreground leading-tight tracking-tighter mb-8">
+          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[1.0] tracking-tighter mb-8">
             Pensar la Pyme acompañado cambia la <br />
-            <span className="italic">calidad de tus decisiones.</span>
+            <span className="font-bold">calidad de tus decisiones.</span>
           </h2>
           <p className="text-xl text-foreground/60 leading-relaxed">
             Una comunidad de dueños y líderes que comparten experiencias reales, desafíos concretos y análisis estratégico. No es networking superficial; es intercambio genuino.

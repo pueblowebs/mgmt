@@ -8,8 +8,8 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Hablemos</h3>
-            <h2 className="font-serif text-4xl md:text-6xl text-background leading-tight tracking-tighter mb-12">
-              Si tu empresa necesita orden, foco o una <span className="italic opacity-50">mirada estratégica</span> externa, conversemos.
+            <h2 className="font-serif text-3xl md:text-5xl text-background leading-[1.0] tracking-tighter mb-12">
+              Si tu empresa necesita orden, foco o una <span className="font-bold opacity-50">mirada estratégica</span> externa, conversemos.
             </h2>
             
             <div className="space-y-12 mb-16">
@@ -42,7 +42,7 @@ export function ContactSection() {
             <div className="p-12 border border-background/10 bg-background/5 rounded-2xl relative overflow-hidden">
                <div className="absolute top-0 right-0 w-32 h-32 bg-accent opacity-10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                <h4 className="text-2xl font-serif mb-8 text-accent">Management Pyme</h4>
-               <p className="text-xl text-background/60 leading-relaxed italic mb-8">
+               <p className="text-xl text-background/60 leading-relaxed font-bold mb-8">
                  "Pensamiento, orden y gestión para empresas más allá de la gestión tradicional."
                </p>
                <p className="text-lg text-background font-light leading-relaxed">

@@ -8,9 +8,9 @@ export function AcademiaSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <div>
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Academy</h3>
-            <h2 className="font-serif text-4xl md:text-6xl text-foreground leading-tight tracking-tighter mb-8">
+            <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[1.0] tracking-tighter mb-8">
               Formación que <br />
-              <span className="italic">transforma la gestión.</span>
+              <span className="font-bold">transforma la gestión.</span>
             </h2>
             <p className="text-xl text-foreground/60 leading-relaxed mb-12">
               Pensada para dueños y líderes que quieren mejorar su capacidad de decisión y ordenar su empresa desde adentro.
@@ -59,7 +59,7 @@ export function AcademiaSection() {
             </div>
 
             <div className="pt-8 border-t border-foreground/10">
-              <p className="text-foreground/80 italic leading-relaxed mb-8">
+              <p className="text-foreground/80 font-bold leading-relaxed mb-8">
                 "Academy no forma solo directivos más eficientes; forma líderes capaces de generar impacto, evolucionar sistemas y construir empresas más conscientes."
               </p>
               <Button size="lg" className="w-full rounded-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold h-14">
@@ -78,7 +78,7 @@ export function AcademiaSection() {
             { label: "Método orientado a la acción", value: "10", sub: "Años" }
           ].map((stat, i) => (
             <div key={i} className="text-center group">
-              <div className="text-4xl md:text-6xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-500">
+              <div className="text-3xl md:text-5xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-500">
                 {stat.value}
               </div>
               <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 leading-relaxed max-w-[120px] mx-auto">

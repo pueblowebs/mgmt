@@ -7,9 +7,9 @@ export function FocusSection() {
         {/* La Realidad Pyme */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
           <div className="order-2 lg:order-1">
-            <h2 className="font-serif text-4xl md:text-6xl tracking-tighter mb-8 leading-none">
+            <h2 className="font-serif text-3xl md:text-5xl tracking-tighter mb-8 leading-[0.95]">
               La realidad <br />
-              <span className="italic opacity-50">Pyme.</span>
+              <span className="font-bold opacity-50">Pyme.</span>
             </h2>
             <div className="space-y-6 text-xl text-background/70 font-light leading-relaxed">
               <p>Las Pymes no fracasan por falta de esfuerzo. Fracasan por falta de gestión.</p>
@@ -51,7 +51,7 @@ export function FocusSection() {
         <div className="pt-24 border-t border-background/10">
           <div className="max-w-3xl mb-16">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">Nuestro Equipo</h3>
-            <h2 className="font-serif text-3xl md:text-5xl mb-8">Management Pyme nace de la práctica, no de la teoría.</h2>
+            <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">Management Pyme nace de la práctica, no de la teoría.</h2>
             <p className="text-xl text-background/60 leading-relaxed">
               Facu y Charly combinan experiencia en gestión real, dirección y formación ejecutiva. Junto a un equipo de 15 profesores y directivos con experiencia directa en empresas.
             </p>
@@ -91,8 +91,8 @@ export function FocusSection() {
                 <div className="text-9xl font-serif">15</div>
               </div>
               <div className="relative z-10">
-                <div className="text-6xl font-serif text-accent mb-6 leading-none">15</div>
-                <h4 className="text-2xl font-serif mb-4 leading-tight">Profesores y Directivos <br/><span className="text-background/40 italic">con experiencia directa</span></h4>
+                <div className="text-5xl font-serif text-accent mb-6 leading-[0.95]">15</div>
+                <h4 className="text-xl font-serif mb-4 leading-tight">Profesores y Directivos <br/><span className="text-background/40 font-bold">con experiencia directa</span></h4>
                 <p className="text-background/60 leading-relaxed max-w-md">
                   Conocen la presión de la operación y la responsabilidad sobre equipos porque lo viven cada día en empresas reales.
                 </p>
