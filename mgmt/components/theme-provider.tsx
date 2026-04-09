@@ -2,7 +2,7 @@
 
 import * as React from "react"
 
-type Theme = "growth" | "digital"
+type Theme = "institutional" | "growth" | "digital"
 
 interface ThemeContextType {
   theme: Theme
@@ -12,11 +12,11 @@ interface ThemeContextType {
 const ThemeContext = React.createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = React.useState<Theme>("growth")
+  const [theme, setTheme] = React.useState<Theme>("institutional")
 
   React.useEffect(() => {
     const root = window.document.documentElement
-    root.classList.remove("theme-growth", "theme-digital")
+    root.classList.remove("theme-institutional", "theme-growth", "theme-digital")
     root.classList.add(`theme-${theme}`)
   }, [theme])
 
