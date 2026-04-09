@@ -3,6 +3,9 @@ import { Inter, Outfit } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeSwitcher } from '@/components/theme-switcher'
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 import './globals.css'
 
 const outfit = Outfit({ 
@@ -28,7 +31,12 @@ export default function RootLayout({
     <html lang="es" className="scroll-smooth">
       <body className={`${outfit.variable} ${inter.variable} font-sans antialiased`}>
         <ThemeProvider>
-          {children}
+          <Header />
+          <main className="min-h-screen bg-background">
+            {children}
+          </main>
+          <Footer />
+          <WhatsAppButton />
           <ThemeSwitcher />
         </ThemeProvider>
         <Analytics />

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -13,17 +14,17 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navItems = [
-    { label: "Inicio", href: "#" },
-    { label: "Academia", href: "#academia" },
-    { label: "Club de Empresarios", href: "#club" },
-    { label: "PRO", href: "#pro" },
-    { label: "Contacto", href: "#contacto" },
+    { label: "Inicio", href: "/inicio" },
+    { label: "Academia", href: "/academia" },
+    { label: "Club de Empresarios", href: "/clubdeempresarios" },
+    { label: "PRO", href: "/pro" },
+    { label: "Contacto", href: "/contacto" },
   ]
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/10 bg-header-bg text-header-foreground transition-colors duration-300">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <a href="#" className="flex items-center gap-3">
+        <Link href="/inicio" className="flex items-center gap-3">
           <div className="flex items-center gap-1.5 grayscale brightness-200">
             <span className="text-2xl font-light tracking-tight">M</span>
             <span className="text-2xl font-thin">|</span>
@@ -32,17 +33,17 @@ export function Header() {
             <span className="font-serif text-lg leading-none tracking-wider uppercase">Management</span>
             <span className="font-sans text-[10px] tracking-[0.2em] uppercase opacity-70">Pyme Academia</span>
           </div>
-        </a>
+        </Link>
 
         <nav className="hidden md:flex items-center gap-10">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="text-xs font-semibold tracking-widest uppercase opacity-80 hover:opacity-100 transition-all hover:-translate-y-px"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -61,14 +62,14 @@ export function Header() {
                 </div>
                 <nav className="flex flex-col p-8 gap-4">
                   {navItems.map((item) => (
-                    <a
+                    <Link
                       key={item.label}
                       href={item.href}
                       className="py-4 text-sm font-bold tracking-widest uppercase border-b border-white/5 last:border-0 hover:pl-2 transition-all"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.label}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
