@@ -12,7 +12,7 @@ export function TestimonialsSection() {
     { name: "Empresa 2", url: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=200&q=80" },
     { name: "Empresa 3", url: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=200&q=80" },
     { name: "Empresa 4", url: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=200&q=80" },
-    { name: "Empresa 5", url: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=200&q=80" },
+    // { name: "Empresa 5", url: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=200&q=80" },
   ]
 
   const videoTestimonials = [
