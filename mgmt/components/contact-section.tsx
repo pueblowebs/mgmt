@@ -8,7 +8,7 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Hablemos</h3>
-            <h2 className="font-serif text-3xl md:text-5xl text-background leading-[1.0] tracking-tighter mb-12">
+            <h2 className="font-serif text-3xl md:text-5xl text-background leading-none tracking-tighter mb-12">
               Si tu empresa necesita orden, foco o una <span className="font-bold opacity-50">mirada estratégica</span> externa, conversemos.
             </h2>
             

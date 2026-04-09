@@ -40,7 +40,7 @@ export function ClubSection() {
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-3xl mb-16">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">El Club</h3>
-          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[1.0] tracking-tighter mb-8">
+          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-8">
             Pensar la Pyme acompañado cambia la <br />
             <span className="font-bold">calidad de tus decisiones.</span>
           </h2>

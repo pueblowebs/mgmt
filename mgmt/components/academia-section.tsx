@@ -8,7 +8,7 @@ export function AcademiaSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <div>
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Academy</h3>
-            <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[1.0] tracking-tighter mb-8">
+            <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-8">
               Formación que <br />
               <span className="font-bold">transforma la gestión.</span>
             </h2>

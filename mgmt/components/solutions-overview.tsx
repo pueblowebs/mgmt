@@ -7,7 +7,7 @@ export function SolutionsOverview() {
         <div className="flex flex-col lg:flex-row items-end justify-between mb-24 gap-8">
           <div className="max-w-3xl">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Nuestras Soluciones</h3>
-            <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[1.0] tracking-tighter">
+            <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter">
               Acompañamos momentos de <br />
               <span className="font-bold">madurez del negocio.</span>
             </h2>
