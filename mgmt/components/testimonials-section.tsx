@@ -1,7 +1,7 @@
 "use client"
 
-import Image from "next/image"
-import { useState, useRef } from "react"
+// import Image from "next/image"
+import { useState } from "react"
 import { Volume2, VolumeX } from "lucide-react"
 
 export function TestimonialsSection() {
@@ -41,7 +41,7 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section id="testimonios" className="py-24 bg-background min-h-svh flex flex-col justify-center">
+    <section id="testimonios" className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">A quienes acompañamos</h3>
@@ -51,7 +51,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Logos Group */}
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 mb-32 ">
+        {/* <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 mb-32 ">
           {logos.map((logo, i) => (
             <div key={i} className="relative w-32 h-12">
               <Image
@@ -62,7 +62,7 @@ export function TestimonialsSection() {
               />
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Video Testimonials Reels - Compact Row */}
         <div className="flex lg:justify-center gap-6 md:gap-8 mb-24 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide px-4">

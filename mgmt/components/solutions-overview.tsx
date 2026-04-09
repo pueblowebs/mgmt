@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react"
 
 export function SolutionsOverview() {
   return (
-    <section id="soluciones" className="py-32 bg-background min-h-svh flex flex-col justify-center">
+    <section id="soluciones" className="pt-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-end justify-between mb-24 gap-8">
           <div className="max-w-3xl">
@@ -19,7 +19,7 @@ export function SolutionsOverview() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 border-b border-foreground/10 pb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 border-b border-foreground/10 pb-24">
           <div className="space-y-8">
             <p className="text-2xl font-serif text-foreground leading-snug">
               Clarificamos estructura, roles y procesos. Profesionalizamos sin convertir la Pyme en algo que no es.
