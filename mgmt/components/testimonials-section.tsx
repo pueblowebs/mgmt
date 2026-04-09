@@ -4,8 +4,8 @@ export function TestimonialsSection() {
   const logos = [
     { name: "Empresa 1", url: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=200&q=80" },
     { name: "Empresa 2", url: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=200&q=80" },
-    { name: "Empresa 3", url: "https://images.unsplash.com/photo-1614850523597-81132ed85e6c?w=200&q=80" },
-    { name: "Empresa 4", url: "https://images.unsplash.com/photo-1614850523020-c058821158f3?w=200&q=80" },
+    { name: "Empresa 3", url: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=200&q=80" },
+    { name: "Empresa 4", url: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=200&q=80" },
     { name: "Empresa 5", url: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?w=200&q=80" },
   ]
 
@@ -27,14 +27,14 @@ export function TestimonialsSection() {
         </div>
 
         {/* Logos Group */}
-        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 mb-32 opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">
+        <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 mb-32 ">
           {logos.map((logo, i) => (
             <div key={i} className="relative w-32 h-12">
               <Image
                 src={logo.url}
                 alt={logo.name}
                 fill
-                className="object-contain"
+                className="object-contain opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700"
               />
             </div>
           ))}
