@@ -19,6 +19,7 @@ export function Header() {
     { label: "Club de Empresarios", href: "/clubdeempresarios" },
     { label: "PRO", href: "/pro" },
     { label: "Blog", href: "/blog" },
+    { label: "FAQ", href: "/faq" },
     { label: "Contacto", href: "/contacto" },
   ]
 
