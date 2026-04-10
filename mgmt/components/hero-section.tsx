@@ -63,7 +63,7 @@ export function HeroSection() {
               <p className="text-foreground pt-4">Acompañamos decisiones estratégicas, ordenamos estructuras y profesionalizamos la gestión con foco en resultados concretos.</p>
             </div>
           </div>
-          <div>
+          {/* <div>
             <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-6">Nuestro Diferencial</h3>
             <div className="grid grid-cols-1 gap-8">
               {[
@@ -78,7 +78,7 @@ export function HeroSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
