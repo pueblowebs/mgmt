@@ -1,12 +1,33 @@
-"use client"
-
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { BlogCard } from "./blog-card"
+import { getBlogPosts } from "@/lib/api"
+import { BLOG_POSTS as STATIC_POSTS } from "@/lib/blog-data"
 
-import { BLOG_POSTS } from "@/lib/blog-data"
+export async function BlogPreview() {
+  let posts: any[] = []
+  
+  try {
+    const strapiPosts = await getBlogPosts()
+    if (strapiPosts && strapiPosts.length > 0) {
+      posts = strapiPosts.map((post: any) => ({
+        category: post.category || "General",
+        title: post.title,
+        excerpt: post.excerpt,
+        date: post.date || new Date().toLocaleDateString(),
+        image: post.image?.url 
+          ? (post.image.url.startsWith("http") ? post.image.url : `${process.env.NEXT_PUBLIC_STRAPI_URL}${post.image.url}`)
+          : "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+        slug: post.slug,
+      }))
+    } else {
+      posts = STATIC_POSTS
+    }
+  } catch (error) {
+    console.error("Error fetching blog posts from Strapi:", error)
+    posts = STATIC_POSTS
+  }
 
-export function BlogPreview() {
   return (
     <section className="py-32 bg-background border-t border-foreground/5">
       <div className="container mx-auto px-4">
@@ -27,7 +48,7 @@ export function BlogPreview() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {BLOG_POSTS.map((post, i) => (
+          {posts.map((post, i) => (
             <BlogCard key={i} {...post} />
           ))}
         </div>
