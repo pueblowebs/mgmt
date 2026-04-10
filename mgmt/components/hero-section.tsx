@@ -62,6 +62,8 @@ export function HeroSection() {
               <p>• No burocratizamos lo que necesita agilidad.</p>
               <p className="text-foreground pt-4">Acompañamos decisiones estratégicas, ordenamos estructuras y profesionalizamos la gestión con foco en resultados concretos.</p>
             </div>
+          <br />
+          <br />
           </div>
           {/* <div>
             <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-6">Nuestro Diferencial</h3>
