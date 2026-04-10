@@ -47,3 +47,12 @@ export async function getBlogPostBySlug(slug: string) {
   return data.data?.[0] || null;
 }
 
+/**
+ * Get all FAQs
+ */
+export async function getFAQs() {
+  const data = await fetchAPI("faqs", {
+    sort: "order:asc",
+  });
+  return data.data; // Strapi v5
+}

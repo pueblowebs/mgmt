@@ -493,25 +493,27 @@ export interface ApiDescriptionDescription extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiPepePepe extends Struct.SingleTypeSchema {
-  collectionName: 'pepes';
+export interface ApiFaqFaq extends Struct.CollectionTypeSchema {
+  collectionName: 'faqs';
   info: {
-    displayName: 'pepe';
-    pluralName: 'pepes';
-    singularName: 'pepe';
+    displayName: 'FAQ';
+    pluralName: 'faqs';
+    singularName: 'faq';
   };
   options: {
     draftAndPublish: false;
   };
   attributes: {
+    answer: Schema.Attribute.Text & Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<'oneToMany', 'api::pepe.pepe'> &
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::faq.faq'> &
       Schema.Attribute.Private;
-    pepe: Schema.Attribute.String;
+    order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     publishedAt: Schema.Attribute.DateTime;
+    question: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1084,7 +1086,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::blog-post.blog-post': ApiBlogPostBlogPost;
       'api::description.description': ApiDescriptionDescription;
-      'api::pepe.pepe': ApiPepePepe;
+      'api::faq.faq': ApiFaqFaq;
       'api::subtitle.subtitle': ApiSubtitleSubtitle;
       'api::title.title': ApiTitleTitle;
       'plugin::content-releases.release': PluginContentReleasesRelease;

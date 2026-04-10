@@ -5,7 +5,16 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-const faqs = [
+export interface Faq {
+  question: string;
+  answer: string;
+}
+
+export interface FaqSectionProps {
+  faqs?: Faq[];
+}
+
+const defaultFaqs = [
   {
     question: "¿Qué tipo de empresas se benefician de Management Pyme?",
     answer: "Trabajamos principalmente con pymes en etapa de crecimiento o consolidación que buscan profesionalizar sus procesos, tener mayor claridad estratégica y lograr que el área directiva no sea un cuello de botella."
@@ -28,7 +37,9 @@ const faqs = [
   }
 ]
 
-export function FaqSection() {
+export function FaqSection({ faqs }: FaqSectionProps) {
+  const displayFaqs = faqs && faqs.length > 0 ? faqs : defaultFaqs;
+
   return (
     <section className="py-32 bg-background text-foreground min-h-[80vh] flex flex-col justify-center">
       <div className="container mx-auto px-4 max-w-4xl">
@@ -44,7 +55,7 @@ export function FaqSection() {
 
         <div className="mx-auto w-full">
           <Accordion type="single" collapsible className="w-full space-y-4">
-            {faqs.map((faq, index) => (
+            {displayFaqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`} 
