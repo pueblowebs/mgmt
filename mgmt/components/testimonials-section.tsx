@@ -97,10 +97,10 @@ export function TestimonialsSection() {
                  {unmutedIndex === i ? <Volume2 className="w-4 h-4 text-accent" /> : <VolumeX className="w-4 h-4 opacity-50" />}
                </div>
 
-               <div className="absolute bottom-4 left-4 right-4 pointer-events-none">
+               {/* <div className="absolute bottom-4 left-4 right-4 pointer-events-none">
                  <p className="text-[10px] font-bold tracking-widest uppercase text-white drop-shadow-md">{v.name}</p>
                  <div className="w-6 h-px bg-accent mt-1" />
-               </div>
+               </div> */}
             </div>
           ))}
         </div>

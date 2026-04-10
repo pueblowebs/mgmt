@@ -31,8 +31,19 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options = {})
  */
 export async function getBlogPosts() {
   const data = await fetchAPI("blog-posts", {
-    populate: "*", // Populates images and relations
+    populate: "*",
     status: "published",
   });
-  return data.data; // Strapi v5 returns data in { data: [...], meta: {...} }
+  return data.data; // Strapi v5
 }
+
+/**
+ * Get a single Blog Post by Slug
+ */
+export async function getBlogPostBySlug(slug: string) {
+  // Strapi nested queries don't work with URLSearchParams. Building it manually:
+  const data = await fetchAPI(`blog-posts?filters[slug][$eq]=${slug}&populate=*&status=published`);
+  
+  return data.data?.[0] || null;
+}
+

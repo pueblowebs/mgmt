@@ -1,9 +1,9 @@
 import { HeroSection } from "@/components/hero-section"
 import { VisualHero } from "@/components/visual-hero"
 import { FocusSection } from "@/components/focus-section"
-// import { SolutionsOverview } from "@/components/solutions-overview"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { BlogPreview } from "@/components/blog-preview"
+// import { SolutionsOverview } from "@/components/solutions-overview"
+// import { BlogPreview } from "@/components/blog-preview"
 
 export default function InicioPage() {
   return (
@@ -13,7 +13,7 @@ export default function InicioPage() {
       <FocusSection />
       {/* <SolutionsOverview /> */}
       <TestimonialsSection />
-      <BlogPreview />
+      {/* <BlogPreview /> */}
     </>
   )
 }

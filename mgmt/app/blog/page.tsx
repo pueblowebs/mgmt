@@ -1,7 +1,31 @@
 import { BlogCard } from "@/components/blog-card"
-import { BLOG_POSTS } from "@/lib/blog-data"
+import { getBlogPosts } from "@/lib/api"
+import { BLOG_POSTS as STATIC_POSTS } from "@/lib/blog-data"
 
-export default function BlogListingPage() {
+export default async function BlogListingPage() {
+  let posts: any[] = []
+  
+  try {
+    const strapiPosts = await getBlogPosts()
+    if (strapiPosts && strapiPosts.length > 0) {
+      posts = strapiPosts.map((post: any) => ({
+        category: post.category || "General",
+        title: post.title,
+        excerpt: post.excerpt,
+        date: post.date || new Date().toLocaleDateString(),
+        image: post.image?.url 
+          ? (post.image.url.startsWith("http") ? post.image.url : `${process.env.NEXT_PUBLIC_STRAPI_URL}${post.image.url}`)
+          : "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+        slug: post.slug,
+      }))
+    } else {
+      posts = STATIC_POSTS
+    }
+  } catch (error) {
+    console.error("Error fetching blog posts from Strapi:", error)
+    posts = STATIC_POSTS
+  }
+
   return (
     <div className="pt-20 pb-32">
       <section className="bg-secondary/5 border-b border-foreground/5 py-24 mb-20">
@@ -21,7 +45,7 @@ export default function BlogListingPage() {
 
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-          {BLOG_POSTS.map((post, i) => (
+          {posts.map((post, i) => (
             <BlogCard key={i} {...post} />
           ))}
         </div>
