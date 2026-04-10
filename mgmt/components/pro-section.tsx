@@ -16,7 +16,7 @@ export function ProSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-          <div>
+          <div className="bg-secondary/5 p-8 md:p-12 border border-foreground/10 rounded-sm self-start h-full">
             <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Qué abordamos</h4>
             <div className="space-y-12">
               {[
@@ -56,7 +56,7 @@ export function ProSection() {
             
             <div className="mt-12 pt-12 border-t border-foreground/10">
                <p className="text-foreground/80 font-bold mb-6">No entregamos informes. Trabajamos hasta que el cambio se materializa.</p>
-               <button className="w-full py-4 bg-accent text-accent-foreground font-bold rounded-full hover:bg-accent/90 transition-colors cursor-pointer">
+               <button className="w-full text-sm p-4 bg-accent text-accent-foreground font-bold rounded-full hover:bg-accent/90 transition-colors cursor-pointer">
                  Necesito acompañamiento estratégico
                </button>
             </div>
