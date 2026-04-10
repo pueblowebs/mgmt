@@ -58,7 +58,7 @@ export function FocusSection() {
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="flex flex-col md:flex-row gap-8 items-center lg:items-start group">
+            <div className="flex flex-col md:flex-row gap-8 items-center lg:items-start justify-center group">
               <div className="flex -space-x-12 md:-space-x-16">
                 <div className="relative w-40 h-40 md:w-56 md:h-56 shrink-0 overflow-hidden rounded-full grayscale hover:grayscale-0 transition-all duration-500 shadow-2xl border-4 border-foreground z-10">
                   <Image
@@ -77,13 +77,13 @@ export function FocusSection() {
                   />
                 </div>
               </div>
-              <div className="text-center md:text-left">
+              {/* <div className="text-center md:text-left">
                 <h4 className="text-3xl font-serif mb-2">Facu & Charly</h4>
                 <p className="text-accent text-sm font-bold tracking-widest uppercase mb-6">Fundadores</p>
                 <p className="text-background/60 text-lg leading-relaxed max-w-sm">
                   Management Pyme nace de la práctica. Combinan décadas de experiencia en la trinchera de la gestión real y la visión estratégica.
                 </p>
-              </div>
+              </div> */}
             </div>
 
             <div className="relative p-10 md:p-12 bg-background/5 border border-background/10 rounded-2xl overflow-hidden">
