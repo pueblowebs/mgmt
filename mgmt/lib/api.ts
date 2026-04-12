@@ -5,7 +5,7 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options = {})
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
       },
-      cache: "no-store" as RequestCache,
+      next: { revalidate: 3600 }, // ISR: revalida cada 1 hora en background
       ...options,
     };
 
