@@ -9,7 +9,7 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options = {})
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
       },
-      next: { revalidate: 300 }, // ISR: revalida cada 5 min; si falla, se reintenta pronto
+      cache: "no-store" as RequestCache, // siempre dinámico — ISR falla en Vercel free (timeout < cold start de Strapi)
       signal: controller.signal,
       ...options,
     };
