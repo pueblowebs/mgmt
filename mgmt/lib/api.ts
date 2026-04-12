@@ -1,11 +1,16 @@
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
+  // Timeout generoso para soportar cold starts del free tier de Strapi Cloud (puede tardar ~45s)
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 45_000);
+
   try {
     const mergedOptions = {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
       },
-      next: { revalidate: 3600 }, // ISR: revalida cada 1 hora en background
+      next: { revalidate: 300 }, // ISR: revalida cada 5 min; si falla, se reintenta pronto
+      signal: controller.signal,
       ...options,
     };
 
@@ -23,6 +28,8 @@ export async function fetchAPI(path: string, urlParamsObject = {}, options = {})
   } catch (error) {
     console.error(error);
     throw new Error(`Failed to fetch API`);
+  } finally {
+    clearTimeout(timeoutId);
   }
 }
 
