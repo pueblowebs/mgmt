@@ -31,16 +31,7 @@ export function HeroSection() {
               <span>Más impacto real</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="xl"
-                variant="outline"
-                style={{
-                  background: 'linear-gradient(135deg, #BF953F, #FCF6BA, #B38728)',
-                  color: '#3a2a0d',
-                  border: '1px solid #AA771C',
-                  fontWeight: '600',
-                  cursor: 'pointer'
-                }}
-              >
+              <Button size="xl" variant="shiny">
                 Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
               </Button>
             </div>

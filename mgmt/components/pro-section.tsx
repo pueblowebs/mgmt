@@ -5,7 +5,7 @@ export function ProSection() {
   return (
     <section id="pro" className="py-24 bg-background text-foreground min-h-svh flex flex-col justify-center">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
           <div className="max-w-2xl">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Pro</h3>
             <h2 className="font-serif text-3xl md:text-5xl mb-8 leading-none tracking-tighter">

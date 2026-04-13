@@ -19,6 +19,8 @@ const buttonVariants = cva(
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
+        shiny:
+          'bg-[linear-gradient(135deg,#BF953F,#FCF6BA,#B38728)] text-[#3a2a0d] border border-[#AA771C] font-semibold shadow-md hover:brightness-110 active:scale-95 transition-all duration-500',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
