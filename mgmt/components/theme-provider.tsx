@@ -14,11 +14,7 @@ const ThemeContext = React.createContext<ThemeContextType | undefined>(undefined
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = React.useState<Theme>("institutional")
 
-  React.useEffect(() => {
-    const root = window.document.documentElement
-    root.classList.remove("theme-institutional", "theme-growth", "theme-digital")
-    root.classList.add(`theme-${theme}`)
-  }, [theme])
+
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
