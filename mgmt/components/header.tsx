@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -30,10 +31,20 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/10 bg-header-bg text-header-foreground transition-colors duration-300">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/inicio" className="flex items-center gap-3">
-          <div className="flex items-center gap-1.5 grayscale brightness-200">
-            <span className="text-2xl font-light tracking-tight">M</span>
-            <span className="text-2xl font-thin">|</span>
-          </div>
+          <Image 
+            src="/logo/logo-dark.png" 
+            alt="Management Pyme" 
+            width={68} 
+            height={68} 
+            className="object-contain dark:hidden"
+          />
+          <Image 
+            src="/logo/logo-light.png" 
+            alt="Management Pyme" 
+            width={68} 
+            height={68} 
+            className="object-contain hidden dark:block"
+          />
           <div className="flex flex-col">
             <span className="font-serif text-lg leading-none tracking-wider uppercase">Management</span>
             <span className="font-sans text-[10px] tracking-[0.2em] uppercase opacity-70">Pyme Academia</span>
