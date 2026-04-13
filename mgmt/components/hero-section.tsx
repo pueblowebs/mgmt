@@ -31,7 +31,16 @@ export function HeroSection() {
               <span>Más impacto real</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="rounded-full px-8 h-12 text-sm font-bold gap-2 bg-accent hover:bg-accent/90 text-accent-foreground shadow-lg shadow-accent/20 transition-all hover:scale-105 active:scale-95 cursor-pointer">
+              <Button size="xl"
+                variant="outline"
+                style={{
+                  background: 'linear-gradient(135deg, #BF953F, #FCF6BA, #B38728)',
+                  color: '#3a2a0d',
+                  border: '1px solid #AA771C',
+                  fontWeight: '600',
+                  cursor: 'pointer'
+                }}
+              >
                 Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
               </Button>
             </div>
@@ -62,8 +71,8 @@ export function HeroSection() {
               <p>• No burocratizamos lo que necesita agilidad.</p>
               <p className="text-foreground pt-4">Acompañamos decisiones estratégicas, ordenamos estructuras y profesionalizamos la gestión con foco en resultados concretos.</p>
             </div>
-          <br />
-          <br />
+            <br />
+            <br />
           </div>
           {/* <div>
             <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-6">Nuestro Diferencial</h3>
