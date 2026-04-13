@@ -10,7 +10,7 @@ export function VisualHero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/visual-hero-bg.png"
-          alt="Liderazgo y Gestión Profesional"
+          alt="Formación y consultoría para dueños de Pyme en Argentina"
           fill
           priority
           className="object-cover opacity-60 md:opacity-70 scale-105 animate-subtle-zoom"
@@ -24,10 +24,11 @@ export function VisualHero() {
           <div className="inline-block px-4 py-1.5 mb-4 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent-foreground backdrop-blur-md rounded-full border border-accent/20 animate-fade-in-up">
             Management Pyme
           </div>
-          <h1 className="font-serif font-light text-4xl md:text-7xl lg:text-8xl text-white leading-[0.95] tracking-tighter drop-shadow-2xl animate-fade-in-up [animation-delay:200ms]">
-            LIDERAZGO QUE <br />
-            <span className="font-medium">TRANSFORMA</span> <br />
-            RESULTADOS.
+          <h1 className="font-serif font-light text-3xl md:text-5xl lg:text-6xl text-white leading-[0.95] tracking-tighter drop-shadow-2xl animate-fade-in-up [animation-delay:200ms]">
+            Formación y <br />
+            <span className="font-medium">consultoría</span> <br />
+            para dueños de Pyme <br />
+            en Argentina.
           </h1>
           <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 font-light tracking-tight animate-fade-in-up [animation-delay:400ms]">
             Profesionalizamos la gestión de tu empresa con un enfoque humano y orientado a la excelencia operativa.

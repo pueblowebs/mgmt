@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button"
 import {
   Sheet,
   SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet"
 
@@ -59,9 +62,10 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] bg-header-bg text-header-foreground border-l border-white/10 p-0">
               <div className="flex flex-col h-full">
-                <div className="p-8 border-b border-white/10">
-                  <span className="font-serif text-xl tracking-wider uppercase">Management Pyme</span>
-                </div>
+                <SheetHeader className="p-8 border-b border-white/10 text-left space-y-0">
+                  <SheetTitle className="font-serif text-xl tracking-wider uppercase text-header-foreground">Management Pyme</SheetTitle>
+                  <SheetDescription className="sr-only">Menú de navegación móvil</SheetDescription>
+                </SheetHeader>
                 <nav className="flex flex-col p-8 gap-4">
                   {navItems.map((item) => (
                     <Link
