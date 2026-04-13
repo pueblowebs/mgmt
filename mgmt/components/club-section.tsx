@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Users2, MessageSquare, Target, Zap } from "lucide-react"
+import { AgendaModal } from "./agenda-modal"
 
 const clubFeatures = [
   {
@@ -72,9 +73,12 @@ export function ClubSection() {
           <p className="text-sm font-bold tracking-widest uppercase text-foreground/40 mb-8">
             Para quienes toman decisiones y saben que hacerlo solos limita la perspectiva.
           </p>
-          <button className="bg-foreground text-background px-8 py-4 rounded-full font-bold hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer">
-            Ser parte del club
-          </button>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button className="bg-foreground text-background px-8 py-4 rounded-full font-bold hover:bg-accent hover:text-accent-foreground transition-colors cursor-pointer">
+              Ser parte del club
+            </button>
+            <AgendaModal />
+          </div>
         </div>
       </div>
     </section>

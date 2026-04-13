@@ -1,18 +1,32 @@
+import Image from "next/image"
 import { Search, BarChart, Settings, CheckCircle } from "lucide-react"
 
 export function ProSection() {
   return (
     <section id="pro" className="py-24 bg-background text-foreground min-h-svh flex flex-col justify-center">
       <div className="container mx-auto px-4">
-        <div className="max-w-4xl mb-24">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Pro</h3>
-          <h2 className="font-serif text-3xl md:text-5xl mb-8 leading-none tracking-tighter">
-            Acompañamiento estratégico para <br />
-            <span className="font-bold opacity-50">Pymes en crecimiento.</span>
-          </h2>
-          <p className="text-xl text-foreground/60 leading-relaxed font-bold border-l-2 border-accent pl-8">
-            "Cuando la empresa crece, el modelo inicial deja de alcanzar. Para transformar el sistema de una empresa, primero deben transformarse quienes toman las decisiones."
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+          <div className="max-w-2xl">
+            <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Pro</h3>
+            <h2 className="font-serif text-3xl md:text-5xl mb-8 leading-none tracking-tighter">
+              Acompañamiento estratégico para <br />
+              <span className="font-bold opacity-50">Pymes en crecimiento.</span>
+            </h2>
+            <p className="text-xl text-foreground/60 leading-relaxed font-bold border-l-2 border-accent pl-8">
+              "Cuando la empresa crece, el modelo inicial deja de alcanzar. Para transformar el sistema de una empresa, primero deben transformarse quienes toman las decisiones."
+            </p>
+          </div>
+          
+          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto">
+            <div className="absolute -inset-4 bg-accent/5 rounded-4xl rotate-3 -z-10"></div>
+            <div className="absolute inset-0 border border-foreground/10 rounded-4xl -z-10 translate-x-4 translate-y-4"></div>
+            <Image
+              src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
+              alt="Estrategia y Liderazgo"
+              fill
+              className="object-cover rounded-4xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+            />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">

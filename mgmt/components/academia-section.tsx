@@ -1,5 +1,6 @@
 import { CheckCircle2, Calendar, Globe, Users, Trophy, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { AgendaModal } from "./agenda-modal"
 
 export function AcademiaSection() {
   return (
@@ -35,7 +36,10 @@ export function AcademiaSection() {
 
           <div className="bg-secondary/5 rounded-2xl p-8 md:p-12 border border-foreground/5 shadow-inner">
             <div className="mb-12">
-              <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-8">Estructura del Programa</h4>
+              <div className="flex items-center justify-between mb-8">
+                <h4 className="text-sm font-bold uppercase tracking-widest text-accent">Estructura del Programa</h4>
+                <AgendaModal />
+              </div>
               <div className="grid grid-cols-1 gap-8">
                 <div className="flex gap-6 items-start">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
