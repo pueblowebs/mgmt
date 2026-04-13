@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeSwitcher } from '@/components/theme-switcher'
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
-import { WhatsAppButton } from "@/components/whatsapp-button"
+// import { WhatsAppButton } from "@/components/whatsapp-button"
 import './globals.css'
 
 const outfit = Outfit({ 
@@ -36,7 +36,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-          <WhatsAppButton />
+          {/* <WhatsAppButton /> */}
           <ThemeSwitcher />
         </ThemeProvider>
         <Analytics />
