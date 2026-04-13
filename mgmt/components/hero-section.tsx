@@ -1,10 +1,11 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Button2 } from "@/components/ui/button2"
 import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative w-full bg-background transition-colors duration-300 flex flex-col">
+    <section className="relative w-full bg-background transition-colors duration-300 flex flex-col overflow-hidden">
       <div className="container mx-auto px-4 pt-12 md:pt-16 lg:pt-20 pb-12 overflow-visible">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
           <div className="z-10 max-w-2xl">
@@ -34,6 +35,9 @@ export function HeroSection() {
               <Button size="xl" variant="shiny">
                 Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
               </Button>
+              <Button2 className="flex justify-center items-center font-bold text-lg">
+                Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
+              </Button2>
             </div>
           </div>
           <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto">
