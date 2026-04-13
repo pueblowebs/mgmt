@@ -27,21 +27,22 @@ const clubFeatures = [
 
 export function ClubSection() {
   return (
-    <section id="club" className="relative py-24 overflow-hidden min-h-svh flex flex-col justify-center">
+    <section id="club" className="relative py-16 md:py-20 overflow-hidden min-h-svh flex flex-col justify-center">
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?w=1200&q=80"
           alt="Comunidad de empresarios"
           fill
           className="object-cover grayscale opacity-20"
+          priority
         />
         <div className="absolute inset-0 bg-linear-to-b from-background via-background/95 to-background" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-3xl mb-16">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">El Club</h3>
-          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-8">
+        <div className="max-w-4xl mb-10">
+          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4">El Club</h3>
+          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-6">
             Pensar la Pyme acompañado cambia la <br />
             <span className="font-bold">calidad de tus decisiones.</span>
           </h2>
@@ -50,13 +51,13 @@ export function ClubSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
           {clubFeatures.map((feature, index) => (
             <div
               key={index}
-              className="group p-8 bg-secondary/5 border border-foreground/5 rounded-sm hover:bg-accent/5 hover:border-accent/20 transition-all duration-500"
+              className="group p-6 md:p-8 bg-secondary/5 border border-foreground/5 rounded-sm hover:bg-accent/5 hover:border-accent/20 transition-all duration-500"
             >
-              <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <feature.icon className="w-6 h-6 text-accent" />
               </div>
               <h3 className="text-2xl font-serif text-foreground mb-4">
@@ -69,8 +70,8 @@ export function ClubSection() {
           ))}
         </div>
         
-        <div className="mt-16 text-center">
-          <p className="text-sm font-bold tracking-widest uppercase text-foreground/40 mb-8">
+        <div className="mt-10 text-center">
+          <p className="text-sm font-bold tracking-widest uppercase text-foreground/40 mb-6">
             Para quienes toman decisiones y saben que hacerlo solos limita la perspectiva.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

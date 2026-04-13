@@ -30,10 +30,17 @@ export function StepsSection() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mb-16 text-center md:text-left">
-          <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-primary mb-4">Sección de pasos</h2>
+          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-6">
+            Sección de 
+            <span className="font-bold"> pasos.</span>
+          </h2>
+          <p className="text-xl text-foreground/60 leading-relaxed ml-10">
+            recomendada, no excluyente
+          </p>
+          {/* <h2 className="text-xs font-bold tracking-[0.4em] uppercase text-primary mb-4">Sección de pasos</h2>
           <p className="font-serif text-2xl md:text-3xl text-foreground/60 tracking-tight italic">
             (recomendada no excluyente)
-          </p>
+          </p> */}
         </div>
 
         {/* Steps Grid */}
