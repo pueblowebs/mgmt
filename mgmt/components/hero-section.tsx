@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Button2 } from "@/components/ui/button2"
+// import { Button2 } from "@/components/ui/button2"
 import { ArrowRight } from "lucide-react"
 
 export function HeroSection() {
@@ -35,9 +35,9 @@ export function HeroSection() {
               <Button size="xl" variant="shiny">
                 Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
               </Button>
-              <Button2 className="flex justify-center items-center font-bold text-lg">
+              {/* <Button2 className="flex justify-center items-center font-bold text-lg">
                 Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
-              </Button2>
+              </Button2> */}
             </div>
           </div>
           <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto">
