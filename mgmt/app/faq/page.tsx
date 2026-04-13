@@ -1,13 +1,13 @@
 import { FaqSection } from "@/components/faq-section"
+import { getFAQs } from "@/lib/api"
+import { Suspense } from "react"
 
 export const metadata = {
   title: 'FAQ - Management Pyme',
   description: 'Preguntas frecuentes sobre nuestros servicios de consultoría y academia para pymes.',
 }
 
-import { getFAQs } from "@/lib/api"
-
-export default async function FaqPage() {
+async function StrapiFaqContent() {
   let strapiFaqs = undefined
 
   try {
@@ -22,9 +22,16 @@ export default async function FaqPage() {
     console.error("Error fetching FAQs from Strapi, using fallback:", error)
   }
 
+  return <FaqSection faqs={strapiFaqs} />
+}
+
+export default function FaqPage() {
   return (
     <main>
-      <FaqSection faqs={strapiFaqs} />
+      <Suspense fallback={<FaqSection />}>
+        <StrapiFaqContent />
+      </Suspense>
     </main>
   )
 }
+
