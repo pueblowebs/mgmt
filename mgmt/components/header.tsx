@@ -18,8 +18,8 @@ export function Header() {
 
   const navItems = [
     { label: "Inicio", href: "/inicio" },
-    { label: "Academia", href: "/academia" },
-    { label: "Club de Empresarios", href: "/clubdeempresarios" },
+    { label: "Academy", href: "/academy" },
+    { label: "Club", href: "/club" },
     { label: "PRO", href: "/pro" },
     { label: "Blog", href: "/blog" },
     { label: "FAQ", href: "/faq" },

@@ -1,4 +1,10 @@
+const SHOULD_FETCH_STRAPI = false; // Desconectado temporalmente para evitar 503/timeouts
+
 export async function fetchAPI(path: string, urlParamsObject = {}, options = {}) {
+  if (!SHOULD_FETCH_STRAPI) {
+    return { data: [] }; // Retornar estructura vacía para disparar fallbacks locales
+  }
+
   // Timeout generoso para soportar cold starts del free tier de Strapi Cloud (puede tardar ~45s)
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 45_000);
