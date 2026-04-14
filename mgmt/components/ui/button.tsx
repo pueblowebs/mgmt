@@ -19,14 +19,15 @@ const buttonVariants = cva(
         ghost:
           'hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50',
         link: 'text-primary underline-offset-4 hover:underline',
+        // Variante Shiny actualizada para coincidir con la imagen
         shiny:
-          'bg-[linear-gradient(135deg,#BF953F,#FCF6BA,#B38728)] text-[#3a2a0d] border border-[#AA771C] font-semibold shadow-md hover:brightness-110 active:scale-95 transition-all duration-500',
+          'rounded-full bg-[linear-gradient(180deg,#9e7428_0%,#f0da87_50%,#9e7428_100%)] text-[#3a2a0d] font-bold shadow-[inset_0_0_0_1px_#fcf6ba,0_0_0_2px_#222222,0_0_0_4px_#bf953f,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',
-        sm: 'h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5',
-        lg: 'h-10 rounded-md px-6 has-[>svg]:px-4',
-        xl: 'h-12 rounded-md px-8 has-[>svg]:px-6',
+        sm: 'h-8 rounded-full gap-1.5 px-3 has-[>svg]:px-2.5',
+        lg: 'h-10 rounded-full px-6 has-[>svg]:px-4',
+        xl: 'h-12 rounded-full px-8 has-[>svg]:px-6',
         icon: 'size-9',
         'icon-sm': 'size-8',
         'icon-lg': 'size-10',
