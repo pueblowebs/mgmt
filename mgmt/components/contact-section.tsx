@@ -33,7 +33,7 @@ export function ContactSection() {
                </div>
             </div>
 
-            <Button size="lg" className="rounded-full px-12 h-16 text-lg font-bold bg-accent hover:bg-accent/90 text-accent-foreground gap-3 transition-all hover:scale-105 active:scale-95">
+            <Button variant="shiny" size="xl" className="text-base gap-3 transition-all hover:scale-105 active:scale-95">
               Agendar conversación <ArrowRight className="w-6 h-6" />
             </Button>
           </div>

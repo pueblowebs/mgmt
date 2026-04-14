@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Search, BarChart, Settings, CheckCircle } from "lucide-react"
+import { Button } from "./ui/button"
 
 export function ProSection() {
   return (
@@ -68,11 +69,11 @@ export function ProSection() {
               ))}
             </div>
             
-            <div className="mt-12 pt-12 border-t border-foreground/10">
+            <div className="mt-12 pt-12 border-t border-foreground/10 flex flex-col items-center">
                <p className="text-foreground/80 font-bold mb-6">No entregamos informes. Trabajamos hasta que el cambio se materializa.</p>
-               <button className="w-full text-sm p-4 bg-accent text-accent-foreground font-bold rounded-full hover:bg-accent/90 transition-colors cursor-pointer">
+               <Button variant="shiny" size="xl" className="text-base">
                  Necesito acompañamiento estratégico
-               </button>
+               </Button>
             </div>
           </div>
         </div>
