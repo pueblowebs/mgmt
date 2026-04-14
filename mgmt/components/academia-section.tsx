@@ -66,7 +66,7 @@ export function AcademiaSection() {
               <p className="text-foreground/80 font-bold leading-relaxed mb-8">
                 "Academy no forma solo directivos más eficientes; forma líderes capaces de generar impacto, evolucionar sistemas y construir empresas más conscientes."
               </p>
-              <Button size="lg" className="w-full rounded-full bg-accent hover:bg-accent/90 text-accent-foreground font-bold h-14">
+              <Button variant="shiny" size="xl" className="w-full rounded-full bg-accent hover:bg-accent/90 text-base h-14">
                 Conocer Academy
               </Button>
             </div>
