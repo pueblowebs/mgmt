@@ -23,7 +23,7 @@
   --muted: #dfdddf;
   --muted-foreground: #576d7d;
   
-  --accent: #576d7d; /* Temporarily Azul instead of Gold */
+  --accent: #3388cc;
   --accent-foreground: #FFFFFF;
   
   --destructive: oklch(0.577 0.245 27.325);
@@ -117,3 +117,18 @@ html {
     scroll-behavior: smooth;
   }
 
+  /* Animación suave para las flechas */
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 3s ease-in-out infinite;
+  }
