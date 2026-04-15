@@ -34,40 +34,45 @@ export function AcademiaSection() {
             </div>
           </div>
 
-          <div className="bg-secondary/5 rounded-2xl p-8 md:p-12 border border-foreground/5 shadow-inner">
-            <div className="mb-12">
-              <div className="flex items-center justify-between mb-8">
-                <h4 className="text-sm font-bold uppercase tracking-widest text-accent">Estructura del Programa</h4>
-                <AgendaModal />
+          <div className="bg-secondary/5 rounded-2xl p-8 md:p-12 border border-foreground/5 shadow-inner flex flex-col h-full">
+            <div className="mb-12 grow">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-12">
+                <h4 className="text-sm font-bold uppercase tracking-widest text-accent text-center sm:text-left">Estructura del Programa</h4>
+                <AgendaModal trigger={
+                  <button className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-accent/30 text-accent text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300 shadow-sm cursor-pointer group/btn">
+                    <Calendar className="w-3.5 h-3.5 opacity-60 group-hover/btn:opacity-100" />
+                    <span>Cronograma 2026</span>
+                  </button>
+                } />
               </div>
-              <div className="grid grid-cols-1 gap-8">
-                <div className="flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+              <div className="grid grid-cols-1 gap-10">
+                <div className="flex gap-6 items-start group/item transition-all duration-300">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
                     <Globe className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h5 className="font-bold mb-1">5 Módulos Online</h5>
-                    <p className="text-foreground/60 text-sm">Aula virtual en directo para clases teóricas y feedback inmediato.</p>
+                    <h5 className="font-bold mb-1 group-hover/item:text-accent transition-colors">5 Módulos Online</h5>
+                    <p className="text-foreground/60 text-sm leading-relaxed">Aula virtual en directo para clases teóricas y feedback inmediato de expertos.</p>
                   </div>
                 </div>
-                <div className="flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
+                <div className="flex gap-6 items-start group/item transition-all duration-300">
+                  <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover/item:scale-110 transition-transform">
                     <Calendar className="w-6 h-6 text-accent" />
                   </div>
                   <div>
-                    <h5 className="font-bold mb-1">3 Módulos Presenciales</h5>
-                    <p className="text-foreground/60 text-sm">Inicio, Ecuador y Cierre. Inmersión total para networking real.</p>
+                    <h5 className="font-bold mb-1 group-hover/item:text-accent transition-colors">3 Módulos Presenciales</h5>
+                    <p className="text-foreground/60 text-sm leading-relaxed">Inicio, Ecuador y Cierre en Buenos Aires. Inmersión total para networking real.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="pt-8 border-t border-foreground/10">
-              <p className="text-foreground/80 font-bold leading-relaxed mb-8">
-                "Academy no forma solo directivos más eficientes; forma líderes capaces de generar impacto, evolucionar sistemas y construir empresas más conscientes."
+            <div className="pt-10 border-t border-foreground/10 mt-auto">
+              <p className="text-foreground/80 font-bold leading-relaxed mb-10 italic border-l-2 border-accent/20 pl-6">
+                "Academy no forma solo directivos más eficientes; forma líderes capaces de construir empresas conscientes."
               </p>
               <Button variant="shiny" size="xl" className="w-full rounded-full text-base h-14">
-                Conocer Academy
+                Postularme ahora
               </Button>
             </div>
           </div>
