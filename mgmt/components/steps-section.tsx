@@ -64,7 +64,7 @@ export function StepsSection() {
                   </div>
                   
                   <h3 className="font-serif text-2xl mb-3 text-foreground leading-tight tracking-tight">{step.title}</h3>
-                  <p className="text-foreground/50 text-sm leading-relaxed mb-8 flex-grow tracking-wide">
+                  <p className="text-foreground/50 text-sm leading-relaxed mb-8 grow tracking-wide">
                     {step.description}
                   </p>
                   
@@ -92,10 +92,10 @@ export function StepsSection() {
                     </div>
 
                     {/* Mobile Arrow Connector */}
-                    <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 translate-y-1/2 z-20 block lg:hidden">
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 translate-y-8 z-20 block lg:hidden">
                       <div className="relative flex items-center justify-center">
-                        <div className="absolute w-12 h-12 bg-primary/5 rounded-full blur-xl animate-pulse-slow" />
-                        <div className="absolute w-8 h-8 bg-background border border-foreground/5 rounded-full shadow-lg flex items-center justify-center">
+                        <div className="absolute w-12 h-12 bg-primary/5 rounded-full animate-pulse-slow" />
+                        <div className="absolute w-8 h-8 bg-background border border-foreground/5 rounded-full flex items-center justify-center">
                           <ChevronRight className="w-4 h-4 text-primary/40 rotate-90" strokeWidth={1.5} />
                         </div>
                       </div>
