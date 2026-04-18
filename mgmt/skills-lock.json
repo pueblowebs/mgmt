@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "payload-cms": {
+      "source": "connorads/dotfiles",
+      "sourceType": "github",
+      "computedHash": "bd824eb5fadb686747bcce90619cdf0b8fc5ecc489c7f0329cbba140b28f0423"
+    }
+  }
+}
