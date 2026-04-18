@@ -78,7 +78,7 @@ export function AgendaModal({ trigger }: AgendaModalProps) {
                 {items.map((seminar, idx) => (
                   <div 
                     key={idx} 
-                    className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 px-6 py-5 bg-white hover:bg-accent/[0.02] transition-colors items-center group"
+                    className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 px-6 py-5 bg-white hover:bg-accent/2 transition-colors items-center group"
                   >
                     <div className="flex items-start gap-4">
                       <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent/20 group-hover:bg-accent transition-colors shrink-0" />

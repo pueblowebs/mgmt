@@ -24,6 +24,7 @@
   --muted-foreground: #576d7d;
   
   --accent: #3388cc;
+  /* --accent: #576d7d; */
   --accent-foreground: #FFFFFF;
   
   --destructive: oklch(0.577 0.245 27.325);

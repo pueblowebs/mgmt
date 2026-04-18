@@ -56,11 +56,11 @@ export function StepsSection() {
                   <div className="mb-6 flex items-center justify-between">
                     <span 
                       className="inline-block text-[10px] font-bold tracking-[0.3em] uppercase px-4 py-1.5 rounded-full text-white"
-                      style={{ background: 'linear-gradient(135deg, #1a5e95, #3388cc, #1a5e95)' }}
+                      style={{ background: 'linear-gradient(135deg, #576d7d, #0278D5, #576d7d)' }}
                     >
                       Paso {step.number}
                     </span>
-                    <span className="text-3xl font-serif font-bold text-foreground/5 group-hover/card:text-primary/10 transition-colors duration-700">{step.number}</span>
+                    <span className="text-3xl font-serif font-bold text-foreground/5 group-hover/card:text-accent/20 transition-colors duration-700">{step.number}</span>
                   </div>
                   
                   <h3 className="font-serif text-2xl mb-3 text-foreground leading-tight tracking-tight">{step.title}</h3>
@@ -71,7 +71,7 @@ export function StepsSection() {
                   <div className="mt-auto">
                     <a 
                       href={step.href} 
-                      className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-[#1a5e95]/30 text-[#1a5e95] text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-[#1a5e95] hover:text-white hover:scale-105 transition-all duration-300"
+                      className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-accent/30 text-accent text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300"
                     >
                       {step.cta}
                     </a>
