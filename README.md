@@ -5,15 +5,13 @@ Proyecto integral para Management Pyme, compuesto por un frontend en Next.js y u
 ## 🏗️ Arquitectura de Infraestructura
 
 El proyecto utiliza:
-- **Frontend**: Next.js alojado (Vercel).
-- **Backend**: Strapi Cloud (Free Tier).
+- **Frontend + Backend**: Next.js alojado (Vercel) con Payload CMS incrustado.
+- **Base de Datos**: SQLite (como archivo local, recomendado PostgreSQL para prod escalar).
 
-### ⚠️ Limitación de Strapi Cloud (Free Tier)
-El plan gratuito de Strapi Cloud utiliza una estrategia de **"Scale to Zero"**. Esto significa que después de un periodo de inactividad, el servidor se "duerme".
-- **Consecuencia**: El primer usuario que entra después de un tiempo de inactividad experimenta una carga de **30-60 segundos** mientras el servidor despierta (Cold Start).
-- **Problema con ISR**: Debido a que los timeouts de las funciones de Vercel son menores al tiempo de despertar de Strapi, se optó por una estrategia de fetch dinámico (`no-store`) con un timeout extendido en el cliente de API.
-
----
+### 🚀 Ventajas del Nuevo Setup (Payload)
+- **Zero Cold Starts**: Payload corre dentro del mismo entorno de Next.js, por lo que el admin y las consultas a la DB son instantáneas, resolviendo el problema crónico que teníamos con Strapi Cloud Free.
+- **Un Solo Deploy**: No hace falta mantener un repo separado para el backend. Todo vive en la carpeta `/mgmt`.
+- **Panel Admin Integrado**: El gestor de contenidos está disponible directamente en `/admin`.
 
 ## 🛠️ Solución: "Stay Alive" Ping (UptimeRobot)
 

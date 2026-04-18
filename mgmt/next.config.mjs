@@ -1,3 +1,5 @@
+import { withPayload } from '@payloadcms/next/withPayload'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
@@ -7,11 +9,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ambitious-strength-06b607a994.strapiapp.com",
+        hostname: "images.unsplash.com",
       },
     ],
     unoptimized: true,
   },
 }
 
-export default nextConfig
+export default withPayload(nextConfig)

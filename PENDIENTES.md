@@ -3,6 +3,7 @@
 ## Frontend (Next.js)
 - [ ] **Optimización de Caché**: Cambiar `cache: "no-store"` por una estrategia de revalidación (ISR) en `mgmt/lib/api.ts` una vez que la web esté en producción para mejorar la performance.
 - [ ] Conectar el resto de las secciones dinámicas (Testimonios, Servicios, etc.) con Strapi.
+- [ ] Pagina error 404
 
 ## Backend (Strapi)
 - [ ] Configurar roles y permisos finales para producción.

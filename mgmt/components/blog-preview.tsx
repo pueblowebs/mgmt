@@ -8,15 +8,17 @@ export async function BlogPreview() {
   let posts: any[] = []
   
   try {
-    const strapiPosts = await getBlogPosts()
-    if (strapiPosts && strapiPosts.length > 0) {
-      posts = strapiPosts.map((post: any) => ({
+    const payloadPosts = await getBlogPosts()
+    if (payloadPosts && payloadPosts.length > 0) {
+      posts = payloadPosts.map((post: any) => ({
         category: post.category || "General",
         title: post.title,
         excerpt: post.excerpt,
-        date: post.date || new Date().toLocaleDateString(),
+        date: post.date 
+          ? new Date(post.date).toLocaleDateString()
+          : new Date().toLocaleDateString(),
         image: post.image?.url 
-          ? (post.image.url.startsWith("http") ? post.image.url : `${process.env.NEXT_PUBLIC_STRAPI_URL}${post.image.url}`)
+          ? post.image.url
           : "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
         slug: post.slug,
       }))
@@ -24,7 +26,7 @@ export async function BlogPreview() {
       posts = STATIC_POSTS
     }
   } catch (error) {
-    console.error("Error fetching blog posts from Strapi:", error)
+    console.error("Error fetching blog posts from Payload:", error)
     posts = STATIC_POSTS
   }
 

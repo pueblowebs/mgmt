@@ -2,7 +2,13 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
-export function HeroSection() {
+interface HeroSectionProps {
+  title?: string
+  subtitle?: string
+  description?: string
+}
+
+export function HeroSection({ title, subtitle, description }: HeroSectionProps) {
   return (
     <section className="relative w-full bg-background transition-colors duration-300 flex flex-col overflow-hidden">
       <div className="container mx-auto px-4 pt-12 md:pt-16 lg:pt-20 pb-12 overflow-visible">
@@ -13,15 +19,21 @@ export function HeroSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              Impulsando Líderes Conscientes
+              {subtitle || "Impulsando Líderes Conscientes"}
             </div>
             <h1 className="font-serif text-2xl md:text-4xl lg:text-5xl leading-[0.95] tracking-tighter text-foreground mb-6">
-              Tu Pyme no necesita <br />
-              <span className="font-bold block mt-2">parecer una corporación.</span>
-              <span className="block mt-2">Necesita funcionar mejor.</span>
+              {title ? (
+                <span dangerouslySetInnerHTML={{ __html: title.replace(/\n/g, '<br />') }} />
+              ) : (
+                <>
+                  Tu Pyme no necesita <br />
+                  <span className="font-bold block mt-2">parecer una corporación.</span>
+                  <span className="block mt-2">Necesita funcionar mejor.</span>
+                </>
+              )}
             </h1>
             <p className="text-base md:text-lg text-foreground/70 max-w-lg mb-4 leading-relaxed">
-              Gestionar no es hacer más. Es decidir mejor. Ayudamos a dueños y líderes a ordenar, profesionalizar y hacer crecer sus empresas sin perder su esencia.
+              {description || "Gestionar no es hacer más. Es decidir mejor. Ayudamos a dueños y líderes a ordenar, profesionalizar y hacer crecer sus empresas sin perder su esencia."}
             </p>
             <div className="flex flex-wrap gap-4 mb-8 text-[10px] font-bold tracking-widest uppercase text-accent">
               <span>Más claridad</span>
