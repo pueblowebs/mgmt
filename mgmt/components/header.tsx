@@ -47,7 +47,7 @@ export function Header() {
           />
           <div className="flex flex-col">
             <span className="font-serif text-lg leading-none tracking-wider uppercase">Management</span>
-            <span className="font-sans text-[10px] tracking-[0.2em] uppercase opacity-70">Pyme Academia</span>
+            <span className="font-sans text-[10px] tracking-[0.2em] uppercase opacity-70">Pyme Argentina</span>
           </div>
         </Link>
 
