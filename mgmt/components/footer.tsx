@@ -1,4 +1,4 @@
-import { CopyEmail } from "./copy-email"
+import { CopyText } from "./copy-text"
 
 export function Footer() {
   return (
@@ -15,11 +15,11 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Email</span>
-              <CopyEmail email="hola@managementpyme.com" className="text-sm" />
+              <CopyText text="hola@managementpyme.com" className="text-sm" />
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Instagram</span>
-              <a href="https://www.instagram.com/mpyme/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-accent transition-colors">@mpyme</a>
+              <CopyText text="@mpyme" className="text-sm" />
             </div>
           </div>
 

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react"
-import { CopyEmail } from "./copy-email"
+import { CopyText } from "./copy-text"
 
 export function ContactSection() {
   return (
@@ -20,7 +20,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Escríbenos</h4>
-                    <CopyEmail email="hola@managementpyme.com" className="text-2xl font-serif" />
+                    <CopyText text="hola@managementpyme.com" className="text-2xl font-serif" />
                   </div>
                </div>
                 <div className="flex gap-8 group">
@@ -30,15 +30,15 @@ export function ContactSection() {
                    <div className="space-y-4">
                      <div>
                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Academy</h4>
-                       <a href="https://wa.me/5491165442672" target="_blank" rel="noopener noreferrer" className="text-xl font-serif hover:text-accent transition-colors">Facundo: 11 6544 2672</a>
+                       <CopyText text="11 6544 2672" displayValue="Facundo: 11 6544 2672" className="text-xl font-serif" />
                      </div>
                      <div>
                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Club</h4>
-                       <a href="https://wa.me/5493535695541" target="_blank" rel="noopener noreferrer" className="text-xl font-serif hover:text-accent transition-colors">Federico: 353 569 5541</a>
+                       <CopyText text="353 569 5541" displayValue="Federico: 353 569 5541" className="text-xl font-serif" />
                      </div>
                      <div>
                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Pro</h4>
-                       <a href="https://wa.me/5491144782200" target="_blank" rel="noopener noreferrer" className="text-xl font-serif hover:text-accent transition-colors">Charly: 11 4478 2200</a>
+                       <CopyText text="11 4478 2200" displayValue="Charly: 11 4478 2200" className="text-xl font-serif" />
                      </div>
                    </div>
                 </div>
