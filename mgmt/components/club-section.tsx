@@ -80,9 +80,15 @@ export function ClubSection() {
             Para quienes toman decisiones y saben que hacerlo solos limita la perspectiva.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button variant="shiny" size="xl" className="text-base">
-              Ser parte del club
-            </Button>
+            <a 
+              href="https://wa.me/5493535695541?text=Hola%20Federico,%20me%20gustaría%20ser%20parte%20del%20Club%20MGMT." 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="shiny" size="xl" className="text-base">
+                Ser parte del club
+              </Button>
+            </a>
             <AgendaModal />
           </div>
         </div>

@@ -22,15 +22,25 @@ export function ContactSection() {
                     <p className="text-2xl font-serif">hola@managementpyme.com</p>
                   </div>
                </div>
-               <div className="flex gap-8 group">
-                  <div className="w-12 h-12 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-colors">
-                     <Phone className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Llámanos</h4>
-                    <p className="text-2xl font-serif">+54 9 11 0000 0000</p>
-                  </div>
-               </div>
+                <div className="flex gap-8 group">
+                   <div className="w-12 h-12 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-[#25D366] group-hover:border-[#25D366] transition-colors">
+                      <Phone className="w-5 h-5" />
+                   </div>
+                   <div className="space-y-4">
+                     <div>
+                       <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Academy</h4>
+                       <a href="https://wa.me/5491165442672" target="_blank" rel="noopener noreferrer" className="text-xl font-serif hover:text-accent transition-colors">Facundo: 11 6544 2672</a>
+                     </div>
+                     <div>
+                       <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Club</h4>
+                       <a href="https://wa.me/5493535695541" target="_blank" rel="noopener noreferrer" className="text-xl font-serif hover:text-accent transition-colors">Federico: 353 569 5541</a>
+                     </div>
+                     <div>
+                       <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Pro</h4>
+                       <a href="https://wa.me/5491144782200" target="_blank" rel="noopener noreferrer" className="text-xl font-serif hover:text-accent transition-colors">Charly: 11 4478 2200</a>
+                     </div>
+                   </div>
+                </div>
             </div>
 
             <Button variant="shiny" size="xl" className="text-base gap-3 transition-all hover:scale-105 active:scale-95">

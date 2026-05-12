@@ -71,9 +71,16 @@ export function AcademiaSection() {
               <p className="text-foreground/80 font-bold leading-relaxed mb-10 italic border-l-2 border-accent/20 pl-6">
                 "Academy no forma solo directivos más eficientes; forma líderes capaces de construir empresas conscientes."
               </p>
-              <Button variant="shiny" size="xl" className="w-full rounded-full text-base h-14">
-                Postularme ahora
-              </Button>
+              <a 
+                href="https://wa.me/5491165442672?text=Hola%20Facundo,%20me%20gustaría%20postularme%20a%20Academy%20MGMT." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full"
+              >
+                <Button variant="shiny" size="xl" className="w-full rounded-full text-base h-14">
+                  Postularme ahora
+                </Button>
+              </a>
             </div>
           </div>
         </div>
