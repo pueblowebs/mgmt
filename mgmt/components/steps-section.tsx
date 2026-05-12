@@ -28,18 +28,18 @@ export function StepsSection() {
   return (
     <section className="py-32 bg-background relative overflow-hidden">
       {/* Background Decor */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.03] grayscale" 
-           style={{ backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`, backgroundSize: '40px 40px' }} />
-      
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03] grayscale"
+        style={{ backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`, backgroundSize: '40px 40px' }} />
+
       <div className="container mx-auto px-4 relative">
         {/* Header */}
         <div className="mb-20 text-center md:text-left max-w-2xl px-4 md:px-0">
           <h2 className="font-serif text-3xl md:text-6xl text-foreground leading-[1.1] tracking-tighter mb-8">
-            Tu camino hacia la 
-            <span className="block font-bold">excelencia.</span>
+            Tu camino hacia el
+            <span className="block font-bold">potencial.</span>
           </h2>
           <p className="text-xl text-foreground/50 leading-relaxed font-sans max-w-md tracking-tight">
-            Un recorrido diseñado para escalar tu gestión, no es excluyente pero sí recomendado.
+            Un recorrido probado desde la consciencia, hacia la efectividad y la autonomía de tu empresa.
           </p>
         </div>
 
@@ -47,14 +47,14 @@ export function StepsSection() {
         <div className="relative">
           {/* Connecting Line (Desktop) */}
           <div className="absolute top-1/2 left-0 w-full h-px border-t border-dashed border-foreground/10 -z-10 hidden lg:block translate-y-[20px]" />
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 lg:gap-20 relative">
             {steps.map((step, i) => (
               <div key={i} className="group relative">
                 {/* Step Card */}
                 <div className="w-full bg-white border border-foreground/5 p-8 md:p-10 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:-translate-y-2 hover:border-primary/20 transition-all duration-700 z-10 relative flex flex-col h-full group/card">
                   <div className="mb-6 flex items-center justify-between">
-                    <span 
+                    <span
                       className="inline-block text-[10px] font-bold tracking-[0.3em] uppercase px-4 py-1.5 rounded-full text-white"
                       style={{ background: 'linear-gradient(135deg, #576d7d, #0278D5, #576d7d)' }}
                     >
@@ -62,15 +62,15 @@ export function StepsSection() {
                     </span>
                     <span className="text-3xl font-serif font-bold text-foreground/5 group-hover/card:text-accent/20 transition-colors duration-700">{step.number}</span>
                   </div>
-                  
+
                   <h3 className="font-serif text-2xl mb-3 text-foreground leading-tight tracking-tight">{step.title}</h3>
                   <p className="text-foreground/50 text-sm leading-relaxed mb-8 grow tracking-wide">
                     {step.description}
                   </p>
-                  
+
                   <div className="mt-auto">
-                    <a 
-                      href={step.href} 
+                    <a
+                      href={step.href}
                       className="inline-flex items-center justify-center px-6 py-2 rounded-full border border-accent/30 text-accent text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300"
                     >
                       {step.cta}
