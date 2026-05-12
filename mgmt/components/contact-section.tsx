@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react"
+import { CopyEmail } from "./copy-email"
 
 export function ContactSection() {
   return (
@@ -19,7 +20,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Escríbenos</h4>
-                    <p className="text-2xl font-serif">hola@managementpyme.com</p>
+                    <CopyEmail email="hola@managementpyme.com" className="text-2xl font-serif" />
                   </div>
                </div>
                 <div className="flex gap-8 group">

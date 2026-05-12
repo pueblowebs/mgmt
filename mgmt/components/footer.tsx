@@ -1,3 +1,5 @@
+import { CopyEmail } from "./copy-email"
+
 export function Footer() {
   return (
     <footer className="bg-foreground text-background py-20 transition-colors duration-300 border-t border-background/5">
@@ -13,7 +15,7 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Email</span>
-              <a href="mailto:hola@managementpyme.com" className="text-sm hover:text-accent transition-colors">hola@managementpyme.com</a>
+              <CopyEmail email="hola@managementpyme.com" className="text-sm" />
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Instagram</span>

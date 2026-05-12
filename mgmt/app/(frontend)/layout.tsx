@@ -27,6 +27,8 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
+import { Toaster } from "@/components/ui/toaster"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,6 +44,7 @@ export default function RootLayout({
           </main>
           <Footer />
           {/* <WhatsAppButton /> */}
+          <Toaster />
         </ThemeProvider>
         <Analytics />
       </body>
