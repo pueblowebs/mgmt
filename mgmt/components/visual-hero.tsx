@@ -25,13 +25,13 @@ export function VisualHero() {
             Management Pyme
           </div>
           <h1 className="font-serif font-light text-3xl md:text-5xl lg:text-6xl text-white leading-[0.95] tracking-tighter drop-shadow-2xl animate-fade-in-up [animation-delay:200ms]">
-            Formación y <br />
-            <span className="font-medium">consultoría</span> <br />
+            Formación, Dirección y <br />
+            <span className="font-medium">Management</span> <br />
             para dueños de Pyme <br />
             en Argentina.
           </h1>
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-white/80 font-light tracking-tight animate-fade-in-up [animation-delay:400ms]">
-            Profesionalizamos la gestión de tu empresa con un enfoque humano y orientado a la excelencia operativa.
+          <p className="max-w-2xl mx-auto text-sm md:text-xl text-white/80 font-light tracking-tight animate-fade-in-up [animation-delay:400ms]">
+            Profesionalizamos la gestión de tu empresa con un enfoque humano
           </p>
         </div>
       </div>
