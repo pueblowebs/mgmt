@@ -5,7 +5,10 @@ import { cva, type VariantProps } from 'class-variance-authority'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive [&_svg:last-child]:transition-transform [&_svg:last-child]:duration-300 hover:[&_svg:last-child]:translate-x-1",
+  // Versión con brillo (Shimmer effect)
+  "relative overflow-hidden after:absolute after:inset-0 after:top-[-50%] after:left-[-150%] after:w-[40%] after:h-[200%] after:bg-[linear-gradient(to_right,rgba(255,255,255,0)_0%,rgba(255,255,255,0.4)_50%,rgba(255,255,255,0)_100%)] after:rotate-[30deg] after:transition-all after:duration-700 after:ease-[cubic-bezier(0.23,1,0.32,1)] hover:after:left-[150%] after:pointer-events-none inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive [&_svg:last-child]:transition-transform [&_svg:last-child]:duration-300 hover:[&_svg:last-child]:translate-x-1",
+  // Versión original (sin brillo)
+  // "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all cursor-pointer disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive [&_svg:last-child]:transition-transform [&_svg:last-child]:duration-300 hover:[&_svg:last-child]:translate-x-1",
   {
     variants: {
       variant: {
@@ -21,7 +24,8 @@ const buttonVariants = cva(
         link: 'text-primary underline-offset-4 hover:underline',
         // Variante Shiny actualizada para coincidir con la imagen
         shiny:
-          'rounded-full bg-[linear-gradient(180deg,#014A85_0%,#0278D5_50%,#014A85_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#5EBAFF,0_0_0_2px_#222222,0_0_0_4px_#0278D5,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
+          'rounded-full bg-[linear-gradient(180deg,#014A85_0%,#0278D5_50%,#014A85_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#5EBAFF,0_0_0_2px_#222222,0_0_0_4px_#0278D5,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none active:scale-95 transition-all duration-500',
+        // shiny: 'rounded-full bg-[linear-gradient(180deg,#014A85_0%,#0278D5_50%,#014A85_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#5EBAFF,0_0_0_2px_#222222,0_0_0_4px_#0278D5,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
                     // 'rounded-full bg-[linear-gradient(180deg,#1a5e95_0%,#3388cc_50%,#1a5e95_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#9bcceb,0_0_0_2px_#222222,0_0_0_4px_#1a5e95,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
       },
       size: {
