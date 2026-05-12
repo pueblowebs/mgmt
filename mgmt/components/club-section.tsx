@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Users2, MessageSquare, Target, Zap } from "lucide-react"
-import { AgendaModal } from "./agenda-modal"
+import { Users2, MessageSquare, Target, Zap, Calendar } from "lucide-react"
+import { ClubModal } from "./club-modal"
 import { Button } from "./ui/button"
 
 const clubFeatures = [
@@ -89,7 +89,12 @@ export function ClubSection() {
                 Ser parte del club
               </Button>
             </a>
-            <AgendaModal />
+            <ClubModal trigger={
+              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-accent/30 text-accent text-[12px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300 shadow-sm cursor-pointer group/btn">
+                <Calendar className="w-4 h-4 opacity-60 group-hover/btn:opacity-100" />
+                <span>[+ info] Club 2026</span>
+              </button>
+            } />
           </div>
         </div>
       </div>
