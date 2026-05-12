@@ -49,13 +49,13 @@ export function Footer() {
             <h4 className="text-[10px] font-bold tracking-[0.3em] uppercase text-accent mb-8">Visitanos</h4>
             <div className="space-y-4">
               <p className="text-xs text-background/60 leading-relaxed tracking-wider font-medium">
-                Av del Libertador 1717, <br />
-                Vicente López, Buenos Aires
+                Paysandú 12, B1406 <br />
+                Cdad. Autónoma de Buenos Aires, Argentina
               </p>
               <div className="group relative rounded-xl overflow-hidden border border-background/10 h-40 w-full transition-all duration-500 shadow-2xl shadow-black/20">
                 <div className="absolute inset-0 bg-accent/10 z-10 pointer-events-none mix-blend-overlay group-hover:bg-transparent transition-colors duration-700" />
                 <iframe 
-                  src="https://maps.google.com/maps?q=Av%20del%20Libertador%201717,%20Vicente%20L%C3%B3pez,%20Buenos%20Aires%20C11117&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10207.632669259923!2d-58.45492171745677!3d-34.618279232565044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1f1c0065713%3A0x13aab7082fa35421!2sMANAGEMENT%20PYME%20SRL!5e0!3m2!1ses-419!2sus!4v1778595353192!5m2!1ses-419!2sus"
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
