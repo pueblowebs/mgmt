@@ -1,31 +1,17 @@
 import Image from "next/image"
+import { RealityCarousel } from "./reality-carousel"
 
 export function FocusSection() {
   return (
     <section id="about" className="py-24 bg-foreground text-background min-h-svh flex flex-col justify-center">
       <div className="container mx-auto px-4">
         {/* La Realidad Pyme */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-          <div className="order-2 lg:order-1">
-            <h2 className="font-serif text-3xl md:text-5xl tracking-tighter mb-8 leading-[0.95]">
-              La realidad <br />
-              <span className="font-bold opacity-50">Pyme.</span>
-            </h2>
-            <div className="space-y-6 text-xl text-background/70 font-light leading-relaxed">
-              <p>Las Pymes no fracasan por falta de esfuerzo. Fracasan por falta de gestión.</p>
-              <p>El día a día consume todo. Las decisiones se vuelven reactivas. El crecimiento empieza a generar tensión interna.</p>
-              <p className="text-background font-medium">La empresa crece. El orden no siempre. Ahí intervenimos.</p>
-            </div>
-          </div>
-          <div className="order-1 lg:order-2 relative aspect-square group overflow-hidden rounded-2xl">
-            <Image
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
-              alt="Reunión de equipo Pyme"
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
-            />
-            <div className="absolute inset-0 bg-accent/20 mix-blend-multiply"></div>
-          </div>
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+          ... (commented out by user) ...
+        </div> */}
+
+        <div className="mb-32">
+          <RealityCarousel />
         </div>
 
         {/* Qué Creemos */}
