@@ -34,7 +34,7 @@ export function ContactSection() {
                           href="https://wa.me/5491165442672?text=Hola%20Facundo,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20Academy." 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
                         >
                           Facundo: 11 6544 2672
                         </a>
@@ -45,7 +45,7 @@ export function ContactSection() {
                           href="https://wa.me/5493535695541?text=Hola%20Federico,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20el%20Club." 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
                         >
                           Federico: 353 569 5541
                         </a>
@@ -56,7 +56,7 @@ export function ContactSection() {
                           href="https://wa.me/5491144782200?text=Hola%20Charly,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20el%20servicio%20PRO." 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
                         >
                           Charly: 11 4478 2200
                         </a>
