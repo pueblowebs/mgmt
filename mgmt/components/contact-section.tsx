@@ -24,23 +24,44 @@ export function ContactSection() {
                   </div>
                </div>
                 <div className="flex gap-8 group">
-                   <div className="w-12 h-12 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-[#25D366] group-hover:border-[#25D366] transition-colors">
-                      <Phone className="w-5 h-5" />
-                   </div>
-                   <div className="space-y-4">
-                     <div>
-                       <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Academy</h4>
-                       <CopyText text="11 6544 2672" displayValue="Facundo: 11 6544 2672" className="text-xl font-serif" />
-                     </div>
-                     <div>
-                       <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Club</h4>
-                       <CopyText text="353 569 5541" displayValue="Federico: 353 569 5541" className="text-xl font-serif" />
-                     </div>
-                     <div>
-                       <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Pro</h4>
-                       <CopyText text="11 4478 2200" displayValue="Charly: 11 4478 2200" className="text-xl font-serif" />
-                     </div>
-                   </div>
+                    <div className="w-12 h-12 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-[#25D366] group-hover:border-[#25D366] transition-colors text-background">
+                       <Phone className="w-5 h-5 fill-current" />
+                    </div>
+                    <div className="space-y-4">
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Academy</h4>
+                        <a 
+                          href="https://wa.me/5491165442672?text=Hola%20Facundo,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20Academy." 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                        >
+                          Facundo: 11 6544 2672
+                        </a>
+                      </div>
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Club</h4>
+                        <a 
+                          href="https://wa.me/5493535695541?text=Hola%20Federico,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20el%20Club." 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                        >
+                          Federico: 353 569 5541
+                        </a>
+                      </div>
+                      <div>
+                        <h4 className="text-[10px] font-bold uppercase tracking-widest text-accent mb-1">Pro</h4>
+                        <a 
+                          href="https://wa.me/5491144782200?text=Hola%20Charly,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20el%20servicio%20PRO." 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                        >
+                          Charly: 11 4478 2200
+                        </a>
+                      </div>
+                    </div>
                 </div>
             </div>
 
