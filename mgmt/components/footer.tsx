@@ -72,10 +72,10 @@ export function Footer() {
 
         <div className="border-t border-background/5 mt-20 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold tracking-[0.2em] uppercase text-background/20">
           <p>© 2026 Management Pyme. All Rights Reserved.</p>
-          <div className="flex gap-8">
+          {/* <div className="flex gap-8">
             <a href="#" className="hover:text-background/40 transition-colors">LinkedIn</a>
             <a href="https://www.instagram.com/mpyme/" target="_blank" rel="noopener noreferrer" className="hover:text-background/40 transition-colors">Instagram</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
