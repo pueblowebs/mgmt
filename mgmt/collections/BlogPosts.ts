@@ -1,4 +1,5 @@
 import type { CollectionConfig } from 'payload'
+import { canManageContent, canDeleteContent } from '@/lib/access'
 
 export const BlogPosts: CollectionConfig = {
   slug: 'blog-posts',
@@ -6,6 +7,12 @@ export const BlogPosts: CollectionConfig = {
     useAsTitle: 'title',
     defaultColumns: ['title', 'category', 'date', '_status'],
     listSearchableFields: ['title', 'category', 'excerpt'],
+  },
+  access: {
+    create: canManageContent,
+    read: canManageContent,
+    update: canManageContent,
+    delete: canDeleteContent,
   },
   versions: {
     drafts: true,

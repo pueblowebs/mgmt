@@ -1,10 +1,17 @@
 import type { CollectionConfig } from 'payload'
+import { canManageContent, canDeleteContent } from '@/lib/access'
 
 export const FAQs: CollectionConfig = {
   slug: 'faqs',
   admin: {
     useAsTitle: 'question',
     defaultColumns: ['question', 'order', 'createdAt'],
+  },
+  access: {
+    create: canManageContent,
+    read: canManageContent,
+    update: canManageContent,
+    delete: canDeleteContent,
   },
   fields: [
     {

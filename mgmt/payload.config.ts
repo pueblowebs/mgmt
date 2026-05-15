@@ -9,6 +9,7 @@ import { Media } from './collections/Media'
 import { BlogPosts } from './collections/BlogPosts'
 import { FAQs } from './collections/FAQs'
 import { SiteSettings } from './globals/SiteSettings'
+import sharp from 'sharp'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -19,10 +20,17 @@ export default buildConfig({
     meta: {
       titleSuffix: ' — Management Pyme CMS',
     },
+    components: {
+      graphics: {
+        Logo: '/components/admin/AdminLogo#default',
+        Icon: '/components/admin/AdminLogo#default',
+      },
+    },
   },
   collections: [Users, Media, BlogPosts, FAQs],
   globals: [SiteSettings],
   editor: lexicalEditor(),
+  sharp,
   secret: process.env.PAYLOAD_SECRET || 'mgmt-pyme-local-secret-change-in-prod',
   typescript: {
     outputFile: path.resolve(dirname, 'payload-types.ts'),

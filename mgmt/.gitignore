@@ -17,3 +17,16 @@ node_modules/
 .next/
 .DS_Store
 .vercel
+
+# Payload CMS - local dev files
+payload.db          # SQLite local (prod usa Neon)
+payload.db-shm
+payload.db-wal
+
+# Auto-generado por Payload
+app/(payload)/admin/importMap.js
+payload-types.ts
+
+# AI tools
+skills-lock.json
+
