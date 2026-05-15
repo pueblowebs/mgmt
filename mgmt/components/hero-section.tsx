@@ -33,7 +33,7 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
               )}
             </h1>
             <p className="text-base md:text-lg text-foreground/70 max-w-lg mb-4 leading-relaxed">
-              {description || "Gestionar no es hacer más. Es decidir mejor. Ayudamos a dueños y líderes a ordenar, profesionalizar y hacer crecer sus empresas sin perder su esencia."}
+              {description || "Gestionar no es hacer más. Es decidir y hacer mejor. Acompañamos a dueños y líderes a dinamizar y rentabilizar sus empresas desde su esencia."}
             </p>
             <div className="flex flex-wrap gap-4 mb-8 text-[10px] font-bold tracking-widest uppercase text-accent">
               <span>Más claridad</span>
