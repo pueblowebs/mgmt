@@ -17,12 +17,11 @@ export function FocusSection() {
         {/* Qué Creemos */}
         {/* <div className="mb-32">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-12 text-center">En qué creemos</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { t: "Profesionalizar no es corporativizar", d: "Mantener la esencia mientras se mejora la estructura." },
-              { t: "Ordenar no es burocratizar", d: "Buscamos agilidad con criterio, no trabas innecesarias." },
-              { t: "Crecer exige pensar mejor", d: "El volumen de negocio requiere un nuevo nivel de pensamiento." },
-              { t: "Los resultados se construyen", d: "No hay magia, hay método, entrenamiento y ejecución." }
+              { t: "Trascender implica liderar distinto", d: "La empresa aparece mientras cambia el liderazgo del fundador." },
+              { t: "Profesionalizar no es contratar universitarios", d: "Es cambiar el concepto de trabajo, fortaleciendo la esencia." },
+              { t: "La diferencia está en la disciplina", d: "No hay magia, es Dirección Profesional Empresaria sostenida en el tiempo." }
             ].map((belief, i) => (
               <div key={i} className="p-8 border border-background/10 hover:bg-background/5 transition-colors">
                 <span className="text-accent font-serif text-4xl mb-4 block">0{i + 1}</span>
@@ -37,9 +36,9 @@ export function FocusSection() {
         <div className="pt-24 border-t border-background/10">
           <div className="max-w-3xl mb-16">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">Nuestro Equipo</h3>
-            <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">Management Pyme nace de la práctica, no de la teoría.</h2>
+            <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">Porque para la Pyme, no hay nada más práctico que una buena teoría, nace MP.</h2>
             <p className="text-xl text-background/60 leading-relaxed">
-              Facu y Charly combinan experiencia en gestión real, dirección y formación ejecutiva. Junto a un equipo de 15 profesores y directivos con experiencia directa en empresas.
+              Charly y Facu combinan experiencia empresaria, consultoril y formativa en Pymes de los tres sectores dirigiendo equipos multidisciplinarios diseñados a medida de los desafíos y características de cada proyecto.
             </p>
           </div>
           
