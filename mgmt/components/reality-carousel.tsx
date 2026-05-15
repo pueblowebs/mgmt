@@ -12,22 +12,22 @@ import { cn } from "@/lib/utils"
 
 const REALITIES = [
   {
-    title: "El día a día consume todo",
-    description: "Las Pymes no fracasan por falta de esfuerzo. Fracasan por falta de gestión estratégica.",
+    title: "El Límite del Esfuerzo",
+    description: "La Pyme sufre, se estresa y quiebra por exceso de energía, esfuerzo y trabajo operativo y no rentable.",
     image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&q=80",
-    highlight: "Esfuerzo ≠ Gestión"
+    highlight: "Estructura"
   },
   {
-    title: "Decisiones reactivas",
-    description: "Cuando la urgencia reemplaza a la importancia, el crecimiento se vuelve una fuente de tensión interna.",
+    title: "La Trampa del Presente",
+    description: "Responder al día a día consume toda la energía y los recursos disponibles sin generar riqueza.",
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80",
-    highlight: "Reactividad"
+    highlight: "Rentabilidad"
   },
   {
-    title: "Crecimiento sin orden",
-    description: "La empresa crece. El orden no siempre. Estructurar el salto es la clave para la sostenibilidad.",
+    title: "El Vacío de Gestión",
+    description: "La empresa se complejiza sin el conocimiento empresario necesario: por eso existimos",
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80",
-    highlight: "Sostenibilidad"
+    highlight: "Estrategia"
   }
 ]
 
