@@ -66,13 +66,13 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
           <div>
             <h3 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-6">Propuesta de valor</h3>
             <p className="text-xl md:text-2xl font-serif text-foreground leading-[1.1] mb-6">
-              Trabajamos con empresas reales, con recursos reales y problemas reales.
+              Trabajamos con vos, para vos y tu equipo.
             </p>
             <div className="space-y-4 text-foreground/60">
               <p>• No aplicamos recetas corporativas.</p>
-              <p>• No vendemos inspiración vacía.</p>
+              <p>• No cambiamos desde el power point.</p>
               <p>• No burocratizamos lo que necesita agilidad.</p>
-              <p className="text-foreground pt-4">Acompañamos decisiones estratégicas, ordenamos estructuras y profesionalizamos la gestión con foco en resultados concretos.</p>
+              <p className="text-foreground pt-4">Dirigimos la transformación de tu empresa mientras los acompañamos en el día a día.</p>
             </div>
             <br />
             <br />
