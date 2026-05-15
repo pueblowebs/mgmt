@@ -19,7 +19,7 @@ export function ContactSection() {
                      <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Escríbenos</h4>
+                    <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Escribinos</h4>
                     <CopyText text="hola@managementpyme.com" className="text-2xl font-serif" />
                   </div>
                </div>
@@ -34,9 +34,9 @@ export function ContactSection() {
                           href="https://wa.me/5491165442672?text=Hola%20Facundo,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20Academy." 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                          className="text-xl font-serif hover:text-accent transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
                         >
-                          Facundo: 11 6544 2672
+                          Facundo
                         </a>
                       </div>
                       <div>
@@ -45,9 +45,9 @@ export function ContactSection() {
                           href="https://wa.me/5493535695541?text=Hola%20Federico,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20el%20Club." 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                          className="text-xl font-serif hover:text-accent transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
                         >
-                          Federico: 353 569 5541
+                          Federico
                         </a>
                       </div>
                       <div>
@@ -56,16 +56,16 @@ export function ContactSection() {
                           href="https://wa.me/5491144782200?text=Hola%20Charly,%20vengo%20desde%20la%20web%20y%20me%20gustaría%20consultar%20por%20el%20servicio%20PRO." 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="text-xl font-serif hover:text-[#25D366] transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-[#25D366] after:transition-all after:duration-300 hover:after:w-full"
+                          className="text-xl font-serif hover:text-accent transition-colors block relative w-fit after:absolute after:bottom-0 after:left-0 after:h-px after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
                         >
-                          Charly: 11 4478 2200
+                          Charly
                         </a>
                       </div>
                     </div>
                 </div>
             </div>
 
-            <Button variant="shiny" size="xl" className="text-base gap-3 transition-all hover:scale-105 active:scale-95">
+            <Button variant="shiny" size="xl" className="text-base gap-3 transition-all">
               Agendar conversación <ArrowRight className="w-6 h-6" />
             </Button>
           </div>
