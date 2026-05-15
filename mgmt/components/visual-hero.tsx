@@ -29,7 +29,7 @@ export function VisualHero() {
             <span className="font-medium">Management</span> <br />
             para Dueños Pymes
           </h1>
-          <p className="sm:max-w-3xl mx-auto text-sm md:text-2xl text-white/80 font-light tracking-tight animate-fade-in-up [animation-delay:400ms]">
+          <p className="sm:max-w-3xl mx-auto text-lg md:text-2xl text-white/80 font-light tracking-tight animate-fade-in-up [animation-delay:400ms]">
             Profesionalizamos la gestión de tu empresa con un enfoque humano
           </p>
         </div>
