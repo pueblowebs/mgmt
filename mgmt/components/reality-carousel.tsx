@@ -79,7 +79,7 @@ export function RealityCarousel() {
                   <div className="absolute inset-0 bg-linear-to-t md:bg-linear-to-r from-foreground via-foreground/80 md:via-foreground/60 to-transparent" />
                   
                   {/* Content */}
-                  <div className="absolute inset-0 flex flex-col justify-end md:justify-center p-8 md:px-20 max-w-3xl">
+                  <div className="absolute inset-0 flex flex-col justify-end md:justify-center px-8 pt-8 pb-24 md:p-20 max-w-3xl">
                     <span className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4 animate-in fade-in slide-in-from-left-4 duration-700">
                       {reality.highlight}
                     </span>
