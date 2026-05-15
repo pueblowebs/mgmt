@@ -71,9 +71,9 @@ export function ClubModal({ trigger }: ClubModalProps) {
 
           <div className="grid grid-cols-1 gap-3">
             {[
-              { label: "MENTOREO CEO: semanal y mensual virtual / presencial", color: "bg-[#7c3aed]" },
+              { label: "MENTOREO CEO: semanal y mensual virtual / presencial", color: "bg-[#0278D5]" },
               { label: "SESIONES DIRECTORIO: mensual presencial", color: "bg-[#0278D5]" },
-              { label: "EXPERIENCIAS & RETIROS: mitad y fin de año presencial", color: "bg-[#10b981]" },
+              { label: "EXPERIENCIAS & RETIROS: mitad y fin de año presencial", color: "bg-[#0278D5]" },
               { label: "ACADEMY: marzo a noviembre virtual", color: "bg-black" },
             ].map((item, idx) => (
               <div 
