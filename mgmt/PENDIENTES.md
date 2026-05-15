@@ -28,3 +28,6 @@ Este documento centraliza las tareas pendientes, mejoras técnicas y objetivos d
 ## 🛠️ Despliegue y Seguridad
 - [ ] **Roles y Permisos:** Refinar el acceso de 'Editor' para que solo gestione contenido y no configuraciones del sistema.
 - [ ] **Variables de Entorno:** Asegurar que `PAYLOAD_SECRET` y las credenciales de DB estén configuradas en el entorno de producción.
+
+## 🌐 Infraestructura y Cuentas
+- [ ] **Migración de Cuentas:** Migrar Neon y Cloudinary de `pueblowebs@gmail.com` a `mgmtpyme@gmail.com`.
