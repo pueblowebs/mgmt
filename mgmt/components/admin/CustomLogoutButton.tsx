@@ -8,14 +8,14 @@ import { useAuth } from '@payloadcms/ui'
  * Hace que el botón de logout destaque de forma elegante y se lea "Cerrar sesión".
  */
 export default function CustomLogoutButton() {
-  const { logout } = useAuth()
+  const { logOut } = useAuth()
 
   const handleLogout = async (e: React.MouseEvent) => {
     e.preventDefault()
     e.stopPropagation()
     try {
       // 1. Ejecutar el logout nativo de Payload (hace el POST a la API y limpia la cookie HTTP-only)
-      await logout()
+      await logOut()
       // 2. Forzar redirección dura para limpiar cachés de página de Next.js App Router en producción
       window.location.href = '/admin/login'
     } catch (err) {
