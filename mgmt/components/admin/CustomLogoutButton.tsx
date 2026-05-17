@@ -1,20 +1,29 @@
 'use client'
 
 import React from 'react'
-import { useAuth } from '@payloadcms/ui'
 
 export default function CustomLogoutButton() {
-  const { logOut } = useAuth()
-
   const handleLogout = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     e.stopPropagation()
+
     try {
-      await logOut()
+      // Llamamos directamente al endpoint REST de Payload.
+      // credentials: 'include' es CRÍTICO — sin esto el navegador no procesa
+      // el Set-Cookie de respuesta que borra la cookie payload-token.
+      await fetch('/api/users/logout', {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
     } catch {
-      // ignorar errores, forzar redirección de todas formas
+      // continuar de todas formas
     }
-    window.location.href = '/admin/login'
+
+    // Redirección dura que limpia el estado del router de Next.js
+    window.location.replace('/admin/login')
   }
 
   return (
