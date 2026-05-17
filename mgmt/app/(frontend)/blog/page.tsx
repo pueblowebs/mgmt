@@ -49,7 +49,7 @@ async function PayloadBlogContent() {
           : new Date().toLocaleDateString(),
         image: post.image?.url 
           ? post.image.url
-          : "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+          : "/images/blog-placeholder.svg",
         slug: post.slug,
       }))
     } else {

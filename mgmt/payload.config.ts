@@ -21,10 +21,16 @@ export default buildConfig({
     meta: {
       titleSuffix: ' — Management Pyme CMS',
     },
+    avatar: {
+      Component: '/components/admin/AdminAvatar#default',
+    },
     components: {
       graphics: {
         Logo: '/components/admin/AdminLogo#default',
-        Icon: '/components/admin/AdminLogo#default',
+        Icon: '/components/admin/AdminIcon#default',
+      },
+      logout: {
+        Button: '/components/admin/CustomLogoutButton#default',
       },
     },
   },

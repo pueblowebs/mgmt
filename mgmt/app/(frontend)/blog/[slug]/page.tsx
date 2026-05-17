@@ -45,7 +45,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           : new Date((post as any).createdAt || Date.now()).toLocaleDateString(),
         image: post.image?.url 
           ? post.image.url
-          : "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80",
+          : "/images/blog-placeholder.svg",
         content: post.content,
         slug: post.slug
       }

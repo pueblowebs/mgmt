@@ -43,13 +43,14 @@ export default function AdminLogo() {
       </div>
 
       {/* Nombre */}
-      <div style={{ lineHeight: 1 }}>
+      <div style={{ lineHeight: 1, whiteSpace: 'nowrap' }}>
         <span
           style={{
             fontSize: 15,
             fontWeight: 700,
             letterSpacing: '-0.03em',
             color: 'var(--theme-text)',
+            whiteSpace: 'nowrap',
           }}
         >
           Management
@@ -63,6 +64,7 @@ export default function AdminLogo() {
             textTransform: 'uppercase',
             color: 'var(--theme-text-dimmed)',
             marginTop: 1,
+            whiteSpace: 'nowrap',
           }}
         >
           Pyme CMS

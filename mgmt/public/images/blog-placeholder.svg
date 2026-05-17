@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1a1c20" />
+  
+  <!-- Subtle Grid Pattern in background -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#576d7d" stroke-width="1" stroke-opacity="0.15" />
+    </pattern>
+    
+    <linearGradient id="gradient-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#576d7d" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3388cc" stop-opacity="0.4" />
+    </linearGradient>
+    
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3388cc" stop-opacity="0" />
+      <stop offset="50%" stop-color="#3388cc" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3388cc" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Apply grid pattern -->
+  <rect width="1200" height="630" fill="url(#grid)" />
+  
+  <!-- Abstract Premium Geometric Shapes indicating Order and Strategy -->
+  <!-- Left accent triangle/shapes -->
+  <path d="M-100 -100 L400 -100 L150 730 L-100 730 Z" fill="url(#gradient-accent)" opacity="0.2" />
+  
+  <!-- Central design element: Abstract structure -->
+  <g transform="translate(600, 280)">
+    <!-- Elegant circle with crosslines representing Focus / Strategy -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#576d7d" stroke-width="2" stroke-opacity="0.4" />
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#3388cc" stroke-width="1.5" stroke-opacity="0.6" />
+    <circle cx="0" cy="0" r="40" fill="none" stroke="#dfdddf" stroke-width="1" stroke-opacity="0.8" stroke-dasharray="4,4" />
+    
+    <!-- Crosslines -->
+    <line x1="-160" y1="0" x2="160" y2="0" stroke="#576d7d" stroke-width="1" stroke-opacity="0.3" />
+    <line x1="0" y1="-160" x2="0" y2="160" stroke="#576d7d" stroke-width="1" stroke-opacity="0.3" />
+    
+    <!-- Strategic points -->
+    <circle cx="0" cy="-80" r="4" fill="#3388cc" />
+    <circle cx="80" cy="0" r="4" fill="#dfdddf" />
+    <circle cx="0" cy="80" r="4" fill="#576d7d" />
+    <circle cx="-80" cy="0" r="4" fill="#3388cc" />
+  </g>
+  
+  <!-- Branding typography styled with SVG texts -->
+  <text x="600" y="470" font-family="'Outfit', 'Georgia', serif" font-size="36" font-weight="800" fill="#fbfaf8" letter-spacing="0.1em" text-anchor="middle">MANAGEMENT PYME</text>
+  <text x="600" y="515" font-family="'Inter', 'Arial', sans-serif" font-size="14" font-weight="700" fill="#576d7d" letter-spacing="0.4em" text-anchor="middle">PENSAMIENTO • ORDEN • GESTIÓN</text>
+
+  <!-- Accent line decoration -->
+  <line x1="450" y1="485" x2="750" y2="485" stroke="#3388cc" stroke-width="2" stroke-opacity="0.6" />
+</svg>
