@@ -4,6 +4,7 @@ import Link from "next/link"
 import { ArrowLeft, Clock, Tag } from "lucide-react"
 import { getBlogPostBySlug, getBlogPosts } from "@/lib/api"
 import { PayloadBlocks } from "@/components/payload-blocks"
+import { Button } from "@/components/ui/button"
 import { BLOG_POSTS as STATIC_POSTS } from "@/lib/blog-data"
 
 interface BlogPostPageProps {
@@ -125,12 +126,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Footer / CTA Section */}
         <div className="mt-24 pt-16 border-t border-foreground/10 text-center">
           <h3 className="font-serif text-2xl mb-8 leading-none">¿Tu Pyme necesita una mirada estratégica?</h3>
-          <Link 
-            href="/contacto" 
-            className="inline-flex h-14 items-center px-10 bg-foreground text-background font-bold rounded-full hover:bg-accent hover:text-accent-foreground transition-all"
-          >
-            Hablemos hoy
-          </Link>
+          <Button variant="shiny" size="xl" asChild>
+            <Link href="/contacto">
+              Hablemos hoy
+            </Link>
+          </Button>
         </div>
       </div>
     </article>

@@ -10,9 +10,25 @@ import { useAuth } from '@payloadcms/ui'
 export default function CustomLogoutButton() {
   const { logOut } = useAuth()
 
+  const handleLogout = async (e: React.MouseEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    try {
+      // 1. Ejecutar el logout nativo de Payload (hace el POST a la API y limpia la cookie HTTP-only)
+      await logOut()
+      // 2. Forzar redirección dura para limpiar cachés de página de Next.js App Router en producción
+      window.location.href = '/admin/login'
+    } catch (err) {
+      console.error('Error al cerrar sesión:', err)
+      // Fallback inmediato por si falla el fetch local en producción
+      window.location.href = '/admin/login'
+    }
+  }
+
   return (
     <button
-      onClick={logOut}
+      type="button"
+      onClick={handleLogout}
       style={{
         minWidth: '100%',
         alignSelf: 'stretch',
