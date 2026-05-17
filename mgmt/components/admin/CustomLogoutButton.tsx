@@ -3,26 +3,18 @@
 import React from 'react'
 import { useAuth } from '@payloadcms/ui'
 
-/**
- * Botón de cerrar sesión personalizado para el admin panel de Payload.
- * Hace que el botón de logout destaque de forma elegante y se lea "Cerrar sesión".
- */
 export default function CustomLogoutButton() {
   const { logOut } = useAuth()
 
-  const handleLogout = async (e: React.MouseEvent) => {
+  const handleLogout = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     e.stopPropagation()
     try {
-      // 1. Ejecutar el logout nativo de Payload (hace el POST a la API y limpia la cookie HTTP-only)
       await logOut()
-      // 2. Forzar redirección dura para limpiar cachés de página de Next.js App Router en producción
-      window.location.href = '/admin/login'
-    } catch (err) {
-      console.error('Error al cerrar sesión:', err)
-      // Fallback inmediato por si falla el fetch local en producción
-      window.location.href = '/admin/login'
+    } catch {
+      // ignorar errores, forzar redirección de todas formas
     }
+    window.location.href = '/admin/login'
   }
 
   return (
