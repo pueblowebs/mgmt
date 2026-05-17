@@ -3,27 +3,12 @@
 import React from 'react'
 
 export default function CustomLogoutButton() {
-  const handleLogout = async (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleLogout = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
     e.stopPropagation()
-
-    try {
-      // Llamamos directamente al endpoint REST de Payload.
-      // credentials: 'include' es CRÍTICO — sin esto el navegador no procesa
-      // el Set-Cookie de respuesta que borra la cookie payload-token.
-      await fetch('/api/users/logout', {
-        method: 'POST',
-        credentials: 'include',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-    } catch {
-      // continuar de todas formas
-    }
-
-    // Redirección dura que limpia el estado del router de Next.js
-    window.location.replace('/admin/login')
+    // Ir a nuestra ruta server-side que borra la cookie directamente
+    // y redirige al login. Payload no puede regenerar el token en este flujo.
+    window.location.replace('/api/logout')
   }
 
   return (
