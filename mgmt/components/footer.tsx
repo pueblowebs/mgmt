@@ -8,9 +8,9 @@ export function Footer() {
           {/* Brand and Mission */}
           <div className="md:col-span-5 space-y-8">
             <div>
-              <span className="font-serif text-2xl tracking-wider uppercase text-background">Management Pyme</span>
+              <span className="font-serif text-2xl tracking-wider uppercase text-background">Management PYME</span>
               <p className="mt-4 text-background/50 text-sm leading-relaxed max-w-sm">
-                Acompañamos a dueños y líderes a profesionalizar la gestión de sus empresas con pensamiento estratégico y resultados reales.
+                Formamos empresarios y rentabilizamos PyMEs mientras las transformamos en ágiles, saludables y competitivas.
               </p>
             </div>
             <div className="flex flex-col gap-1">
