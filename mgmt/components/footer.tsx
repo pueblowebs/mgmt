@@ -28,19 +28,20 @@ export function Footer() {
             <h4 className="text-[10px] font-bold tracking-[0.3em] uppercase text-accent mb-8">Navegación</h4>
             <ul className="space-y-4 text-sm text-background/60">
               <li><a href="/inicio" className="hover:text-background transition-colors">Inicio</a></li>
-              <li><a href="/academia" className="hover:text-background transition-colors">Academy</a></li>
-              <li><a href="/clubdeempresarios" className="hover:text-background transition-colors">Club</a></li>
-              <li><a href="/pro" className="hover:text-background transition-colors">Programas</a></li>
+              <li><a href="/academy" className="hover:text-background transition-colors">Academy</a></li>
+              <li><a href="/club" className="hover:text-background transition-colors">Club</a></li>
+              <li><a href="/pro" className="hover:text-background transition-colors">PRO</a></li>
+              <li><a href="/nosotros" className="hover:text-background transition-colors">Nosotros</a></li>
             </ul>
           </div>
 
           {/* Legal / Secondary Links */}
           <div className="md:col-span-2">
-            <h4 className="text-[10px] font-bold tracking-[0.3em] uppercase text-accent mb-8">Legal</h4>
+            <h4 className="text-[10px] font-bold tracking-[0.3em] uppercase text-accent mb-8">Contenido</h4>
             <ul className="space-y-4 text-sm text-background/60">
-              <li><a href="#" className="hover:text-background transition-colors">Privacidad</a></li>
-              <li><a href="#" className="hover:text-background transition-colors">Términos</a></li>
+              <li><a href="/blog" className="hover:text-background transition-colors">Blog</a></li>
               <li><a href="/faq" className="hover:text-background transition-colors">FAQ</a></li>
+              <li><a href="/contacto" className="hover:text-background transition-colors">Contacto</a></li>
             </ul>
           </div>
 

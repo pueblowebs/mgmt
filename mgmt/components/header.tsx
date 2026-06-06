@@ -22,6 +22,7 @@ export function Header() {
     { label: "Academy", href: "/academy" },
     { label: "Club", href: "/club" },
     { label: "PRO", href: "/pro" },
+    { label: "Nosotros", href: "/nosotros" },
     { label: "Blog", href: "/blog" },
     { label: "FAQ", href: "/faq" },
     { label: "Contacto", href: "/contacto" },
