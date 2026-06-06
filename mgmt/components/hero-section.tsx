@@ -43,8 +43,14 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
               <span>Más impacto real</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="xl" variant="shiny">
-                Ordenar mi Pyme <ArrowRight className="w-5 h-5" />
+              <Button size="xl" variant="shiny" asChild>
+                <a 
+                  href="https://wa.me/5491165442672?text=Hola,%20me%20gustaría%20rentabilizar%20mi%20Pyme."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Rentabilizar mi Pyme <ArrowRight className="w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>
