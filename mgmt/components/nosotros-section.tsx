@@ -35,24 +35,44 @@ export function NosotrosSection() {
 
   const academyProfessionals = [
     {
-      name: "xxxxxxx xxxxxxxxxx",
-      role: "Especialista en Procesos",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+      name: "Vero Capurro",
+      role: "Branding",
+      image: "/team/vero-capurro.webp"
     },
     {
-      name: "xxxxxxx xxxxxxxxxx",
-      role: "Estrategia de Ventas B2B",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+      name: "Melisa Intrieri",
+      role: "Personas & Cultura",
+      image: "/team/melisa-intrieri.webp"
     },
     {
-      name: "xxxxxxx xxxxxxxxxx",
-      role: "Desarrollo Organizacional",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+      name: "Cecilia Oreggioni",
+      role: "Desarrollo Personal",
+      image: "/team/cecilia-oreggioni.webp"
     },
     {
-      name: "xxxxxxx xxxxxxxxxx",
-      role: "Control de Gestión",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80"
+      name: "Hugo Arinovich",
+      role: "Administración y Control de Gestión",
+      image: "/team/hugo-arinovich.webp"
+    },
+    {
+      name: "Pablo Kanterewicz",
+      role: "Directorio y Organización Requerida",
+      image: "/team/pablo-kanterewicz.webp"
+    },
+    {
+      name: "Santiago Alfonso",
+      role: "Excelencia en Operaciones",
+      image: "/team/santiago-alfonso.webp"
+    },
+    {
+      name: "Atilio Penna",
+      role: "Transición de CEO a Director",
+      image: "/team/atilio-penna.webp"
+    },
+    {
+      name: "Viviana Coustarot",
+      role: "Riesgos Legales",
+      image: "/team/viviana-coustarot.webp"
     }
   ]
 
@@ -175,7 +195,7 @@ export function NosotrosSection() {
         </div>
 
         {/* Profesionales @ Academy */}
-        {/* <div>
+        <div>
           <div className="mb-16">
             <div className="flex items-center gap-3 mb-4">
               <GraduationCap className="w-5 h-5 text-accent" />
@@ -207,7 +227,7 @@ export function NosotrosSection() {
               </div>
             ))}
           </div>
-        </div> */}
+        </div>
 
       </div>
     </section>
