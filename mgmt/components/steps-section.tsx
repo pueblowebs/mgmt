@@ -5,21 +5,21 @@ export function StepsSection() {
     {
       number: "01",
       title: "Academy",
-      description: "Formación técnica y mentalidad para el dueño de Pyme.",
-      cta: "Ver cursos",
+      description: "Formación empresaria integral para quienes tienen el poder y el peso de la supervivencia de la empresa",
+      cta: "Ver programa",
       href: "/academy"
     },
     {
       number: "02",
       title: "Club de Empresarios",
-      description: "Networking, mentoría entre pares y comunidad de gestión.",
+      description: "Directorio, Mentoreo y Comunidad entre empresarios Egresados de Academy",
       cta: "Unirme al Club",
       href: "/club"
     },
     {
       number: "03",
       title: "Pro",
-      description: "Consultoría personalizada para escalar tu empresa al siguiente nivel.",
+      description: "Equipo de rentabilización y profesionalización empresaria",
       cta: "Solicitar Pro",
       href: "/pro"
     }
