@@ -1,4 +1,7 @@
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 import { RealityCarousel } from "./reality-carousel"
 
 export function FocusSection() {
@@ -66,21 +69,29 @@ export function FocusSection() {
                 <h4 className="text-3xl font-serif mb-2">Facu & Charly</h4>
                 <p className="text-accent text-sm font-bold tracking-widest uppercase mb-6">Fundadores</p>
                 <p className="text-background/60 text-lg leading-relaxed max-w-sm">
-                  Management Pyme nace de la práctica. Combinan décadas de experiencia en la trinchera de la gestión real y la visión estratégica.
+                  Management Pyme nace de la práctica. Combinan décadas de experiencia en la trinchera de la gestión real and la visión estratégica.
                 </p>
               </div> */}
             </div>
 
             <div className="relative p-10 md:p-12 bg-background/5 border border-background/10 rounded-2xl overflow-hidden">
               <div className="absolute top-0 right-0 p-4 opacity-5">
-                <div className="text-9xl font-serif">15</div>
+                <div className="text-9xl font-serif">+15</div>
               </div>
-              <div className="relative z-10">
-                <div className="text-5xl font-serif text-accent mb-6 leading-[0.95]">15</div>
-                <h4 className="text-xl font-serif mb-4 leading-tight">Profesores y Directivos <br/><span className="text-background/40 font-bold">con experiencia directa</span></h4>
-                <p className="text-background/60 leading-relaxed max-w-md">
-                  Conocen la presión de la operación y la responsabilidad sobre equipos porque lo viven cada día en empresas reales.
-                </p>
+              <div className="relative z-10 flex flex-col justify-between h-full">
+                <div>
+                  <div className="text-5xl font-serif text-accent mb-6 leading-[0.95]">+15</div>
+                  <h4 className="text-xl font-serif mb-4 leading-tight">Profesionales</h4>
+                  <p className="text-background/60 leading-relaxed max-w-md">
+                    Personas con experiencia y actualidad en dinámica y realidad Pyme en Argentina y en el exterior.
+                  </p>
+                </div>
+                <Link 
+                  href="/nosotros" 
+                  className="inline-flex items-center gap-2 px-5 py-2.5 mt-8 rounded-full border border-accent/30 text-accent text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white hover:scale-105 transition-all duration-300 shadow-sm cursor-pointer w-fit group/btn"
+                >
+                  Conocé al Equipo <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" />
+                </Link>
               </div>
             </div>
           </div>
