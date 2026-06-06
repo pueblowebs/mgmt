@@ -30,7 +30,7 @@ export function VisualHero() {
             para Dueños Pymes
           </h1>
           <p className="sm:max-w-3xl mx-auto text-lg md:text-2xl text-white/80 font-light tracking-tight animate-fade-in-up [animation-delay:400ms]">
-            Profesionalizamos la gestión de tu empresa con un enfoque humano
+            Rentabilizamos y profesionalizamos la Dirección y la Gestión de tu empresa en comunidad
           </p>
         </div>
       </div>
