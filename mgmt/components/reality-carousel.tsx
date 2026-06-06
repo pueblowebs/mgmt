@@ -59,7 +59,7 @@ export function RealityCarousel() {
       <div className="max-w-3xl mb-12">
         <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">La Realidad Pyme</h3>
         <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">
-          Profesionalizar la gestión es el primer paso para el crecimiento.
+          Profesionalizar la Dirección es el primer paso para rentabilizar la empresa.
         </h2>
       </div>
 
