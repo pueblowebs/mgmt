@@ -118,7 +118,7 @@ export function NosotrosSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {directors.map((member, index) => (
               <div key={index} className="group border border-foreground/5 rounded-sm overflow-hidden bg-secondary/5 hover:border-accent/30 transition-all duration-500">
-                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
                     src={member.image}
                     alt={member.name}
@@ -157,7 +157,7 @@ export function NosotrosSection() {
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {mentors.map((mentor, index) => (
               <div key={index} className="group border border-foreground/5 rounded-sm overflow-hidden bg-secondary/5 hover:border-accent/30 transition-all duration-500">
-                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                <div className="relative aspect-4/5 w-full overflow-hidden">
                   <Image
                     src={mentor.image}
                     alt={mentor.name}
