@@ -108,32 +108,36 @@
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-  /* Animación suave para las flechas */
-  @keyframes pulse-slow {
-    0%, 100% {
-      opacity: 0.6;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.9;
-      transform: scale(1.05);
-    }
-  }
-  
-  .animate-pulse-slow {
-    animation: pulse-slow 3s ease-in-out infinite;
-  }
+* {
+  @apply border-border outline-ring/50;
+}
 
-  .animate-pulse-slow {
-    animation: pulse-slow 3s ease-in-out infinite;
+body {
+  @apply bg-background text-foreground;
+}
+
+/* Animación suave para las flechas */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
   }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Evitar saltos de layout cuando se abren modales de Radix/Shadcn */
+html[data-scroll-locked],
+body[data-scroll-locked] {
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+}

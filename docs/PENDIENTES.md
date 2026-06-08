@@ -24,6 +24,8 @@
 | 13 | Hero visual de PRO: fondo negro, letras azules, foto premium | `app/(frontend)/pro/page.tsx` + `public/images/pro-hero-bg.png` |
 | 10 | Sección Academy: título, subtítulo, Dimensiones, Estructura, Cita y Descargar Programa | `academia-section.tsx` |
 | 4.2/9/11/13 | Capa oscura añadida a `VisualHero` para mejorar contraste de texto | `visual-hero.tsx` |
+| 12 | Cambios en sección CLUB: tag CLUB, H2, descripción y las 4 actividades | `club-section.tsx` |
+| 14 | Cambios en sección PRO: H2, subtítulo, Qué cubrimos (5 roles), Cómo trabajamos (3 ítems) y CTA | `pro-section.tsx` |
 
 ---
 
@@ -41,39 +43,6 @@
 **Cliente pide:** cambiar `"La realidad Pyme"` por → `"La realidad Pyme"` y `"Profesionalizar la Dirección es el primer paso para rentabilizar la empresa."`
 (En realidad el cliente aprueba la estética y pide actualizar las etiquetas/títulos del carrusel de realidades)
 - [ ] Revisar `reality-carousel.tsx` y ajustar las etiquetas y el título de la sección.
-
----
-
-### 12. Cambios en sección CLUB — Página 20
-**Cliente pide cambios en `club-section.tsx`:**
-
-- [ ] Título del tag: cambiar `"El Club"` → `"CLUB"` (sin artículo)
-- [ ] Título H2: `"Dirección que sostiene y potencia"`
-- [ ] Descripción: `"Comunidad de Empresarios y CEOs egresados de Academy que co-dirigen sus planes de rentabilidad, sustentabilidad y profesionalización."`
-- [ ] Reemplazar las 4 tarjetas de features actuales por las **4 Actividades del Club**:
-  1. **Mentoreo al CEO:** cada CEO tiene un Mentor Empresario asignado semanal.
-  2. **Directorio:** mensualmente los miembros visitan empresas del Club como Directores independientes.
-  3. **Wellness:** dos meses al año, dos actividades de retiro (bienestar y comunidad).
-  4. **Academy & Speakers:** acceso gratuito e ilimitado a seminarios y speakers de Management Pyme.
-
----
-
-### 14. Cambios en sección PRO — Páginas 24–25
-**Cliente pide cambios en `pro-section.tsx`:**
-
-- [ ] Título H2: `"El equipo que tu empresa necesita para ser rentable."`
-- [ ] Subtítulo/descripción: `"Competir, rentabilizar y sostener la empresa requiere habilidades y experiencia que la Pyme no tiene y nosotros cubrimos."`
-- [ ] Reemplazar "Qué abordamos" con **"Qué cubrimos"** — 5 roles:
-  1. **Fundador:** convivimos con el fundador día a día, ayudándolo a salir donde sufre y ubicarlo donde disfruta.
-  2. **CEO:** co-gerenciamos la empresa, rentabilizándola, profesionalizándola y haciéndola competitiva.
-  3. **Comercial:** dirigimos la estrategia de rentabilización y co-gerenciamos el equipo comercial.
-  4. **Control de Gestión:** lideramos administración y finanzas, construyendo estados contables básicos y panel de monitoreo.
-  5. **Personas y Cultura:** lideramos la transformación estructural y cultural para rentabilizar la empresa.
-- [ ] Reemplazar "Cómo trabajamos" con los 3 items del cliente:
-  1. **"All In":** equipo completo, somos una empresa.
-  2. **Cross land-cross time:** estamos donde tenemos que estar cuando tenemos que estar.
-  3. **Tercer tiempo:** co-creamos ambiente de aprendizaje para incrementar autonomía y responsabilidad.
-- [ ] Cambiar el CTA de `"Necesito acompañamiento estratégico"` → `"Quiero completar mi equipo con PRO"`
 
 ---
 

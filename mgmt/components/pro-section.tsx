@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Search, BarChart, Settings, CheckCircle } from "lucide-react"
+import { Users, Clock, Smile } from "lucide-react"
 import { Button } from "./ui/button"
 
 export function ProSection() {
@@ -10,11 +10,10 @@ export function ProSection() {
           <div className="max-w-2xl">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Pro</h3>
             <h2 className="font-serif text-3xl md:text-5xl mb-8 leading-none tracking-tighter">
-              Acompañamiento estratégico para <br />
-              <span className="font-bold opacity-50">Pymes en crecimiento.</span>
+              El equipo que tu empresa necesita para ser rentable.
             </h2>
             <p className="text-xl text-foreground/60 leading-relaxed font-bold border-l-2 border-accent pl-8">
-              "Cuando la empresa crece, el modelo inicial deja de alcanzar. Para transformar el sistema de una empresa, primero deben transformarse quienes toman las decisiones."
+              "Competir, rentabilizar y sostener la empresa requiere habilidades y experiencia que la Pyme no tiene y nosotros cubrimos."
             </p>
           </div>
           
@@ -32,13 +31,14 @@ export function ProSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
           <div className="bg-secondary/5 p-8 md:p-12 border border-foreground/10 rounded-sm self-start h-full">
-            <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Qué abordamos</h4>
+            <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Qué cubrimos</h4>
             <div className="space-y-12">
               {[
-                { t: "Diagnóstico estratégico", d: "Entendemos dónde estás y hacia dónde realmente puede ir tu negocio." },
-                { t: "Organización interna", d: "Estructuramos la empresa para que soporte el crecimiento sin colapsar." },
-                { t: "Procesos y roles", d: "Clarificamos quién hace qué y cómo para eliminar cuellos de botella." },
-                { t: "Decisiones estructurales", d: "Te acompañamos en los movimientos que definen el futuro de la Pyme." }
+                { t: "Fundador", d: "Convivimos con el fundador día a día, ayudándolo a salir donde sufre y ubicarlo donde disfruta." },
+                { t: "CEO", d: "Co-gerenciamos la empresa, rentabilizándola, profesionalizándola y haciéndola competitiva." },
+                { t: "Comercial", d: "Dirigimos la estrategia de rentabilización y co-gerenciamos el equipo comercial." },
+                { t: "Control de Gestión", d: "Lideramos administración y finanzas, construyendo estados contables básicos y panel de monitoreo." },
+                { t: "Personas y Cultura", d: "Lideramos la transformación estructural y cultural para rentabilizar la empresa." }
               ].map((item, i) => (
                 <div key={i} className="group">
                   <h5 className="text-2xl font-serif mb-2 group-hover:text-accent transition-colors">{item.t}</h5>
@@ -52,10 +52,9 @@ export function ProSection() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Cómo trabajamos</h4>
             <div className="space-y-10">
               {[
-                { icon: Search, t: "Escuchamos y entendemos", d: "No venimos con soluciones enlatadas." },
-                { icon: BarChart, t: "Analizamos la situación real", d: "Datos y hechos por sobre las suposiciones." },
-                { icon: Settings, t: "Proponemos acciones concretas", d: "Ejecutables desde el primer día." },
-                { icon: CheckCircle, t: "Acompañamos la implementación", d: "Estamos ahí hasta que el cambio se materializa." }
+                { icon: Users, t: "All In", d: "Equipo completo, somos una empresa." },
+                { icon: Clock, t: "Cross land-cross time", d: "Estamos donde tenemos que estar cuando tenemos que estar." },
+                { icon: Smile, t: "Tercer tiempo", d: "Co-creamos ambiente de aprendizaje para incrementar autonomía y responsabilidad." }
               ].map((step, i) => (
                 <div key={i} className="flex gap-6">
                   <div className="shrink-0 w-10 h-10 rounded-full border border-foreground/20 flex items-center justify-center">
@@ -70,14 +69,14 @@ export function ProSection() {
             </div>
             
             <div className="mt-12 pt-12 border-t border-foreground/10 flex flex-col items-center">
-               <p className="text-foreground/80 font-bold mb-6">No entregamos informes. Trabajamos hasta que el cambio se materializa.</p>
+               <p className="text-foreground/80 font-bold mb-6 text-center">No entregamos informes. Trabajamos hasta que el cambio se materializa.</p>
                <a 
                  href="https://wa.me/5491144782200?text=Hola%20Charly,%20necesito%20acompañamiento%20estratégico%20Pro." 
                  target="_blank" 
                  rel="noopener noreferrer"
                >
                  <Button variant="shiny" size="xl" className="text-base">
-                   Necesito acompañamiento estratégico
+                   Quiero completar mi equipo con PRO
                  </Button>
                </a>
             </div>

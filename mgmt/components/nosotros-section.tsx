@@ -77,57 +77,72 @@ export function NosotrosSection() {
   ]
 
   return (
-    <section id="nosotros" className="py-24 bg-background text-foreground min-h-screen flex flex-col justify-center">
-      <div className="container mx-auto px-4">
-        {/* Hero Header */}
-        <div className="max-w-3xl mb-20">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Nosotros</h3>
-          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl mb-8 leading-none tracking-tighter">
-            El equipo detrás de la <br />
-            <span className="font-bold opacity-50">transformación de tu Pyme.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-foreground/60 leading-relaxed max-w-2xl">
-            Acompañamos a dueños, directores y mandos medios a estructurar sistemas de gestión eficientes y rentables.
-          </p>
+    <section id="nosotros" className="bg-background text-foreground min-h-screen">
+      {/* Visual Hero Header - Less tall than screen */}
+      <div className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden bg-black mb-12">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/club-lapicera.webp"
+            alt="Nosotros - MGMT"
+            fill
+            priority
+            className="object-cover opacity-25 scale-105"
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-background" />
         </div>
 
-        {/* Propósito y Valores */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-32">
-          {/* Propósito */}
-          <div className="bg-secondary/5 p-8 md:p-12 border border-foreground/10 rounded-sm flex flex-col justify-between">
+        {/* Content */}
+        <div className="container relative z-10 px-4 mx-auto text-center">
+          <div className="max-w-4xl mx-auto space-y-4">
+            <span className="inline-block px-4 py-1.5 text-[10px] font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent border border-accent/20 rounded-full">
+              Nosotros
+            </span>
+            <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
+              El equipo detrás de la <span className="font-bold text-accent">transformación</span> de tu Pyme
+            </h1>
+            <p className="max-w-xl mx-auto text-sm md:text-base text-white/70 leading-relaxed font-light">
+              Acompañamos a dueños, directores y mandos medios a estructurar sistemas de gestión eficientes y rentables.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Cards container overlapping the bottom of the hero */}
+      <div className="container mx-auto px-4 -mt-20 md:-mt-28 relative z-20 mb-32">
+        {/* Redesigned Propósito y Valores Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {/* Propósito Card */}
+          <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500">
             <div>
-              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-8">
+              <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Target className="w-5 h-5 text-accent" />
               </div>
-              <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-6">Propósito</h4>
-              <p className="text-2xl font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-6 md:pl-8">
-                "Descubrir y actualizar el potencial de desempeño individual y colectivo de nuestra comunidad."
+              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Propósito</h4>
+              <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
+                "Descubrir y actualizar el potencial de desempeño individual y colectivo."
               </p>
             </div>
-            <p className="mt-8 text-sm text-foreground/50">
-              Creemos que las empresas crecen cuando crecen las personas que toman las decisiones día a día.
-            </p>
           </div>
 
-          {/* Valores */}
-          <div className="bg-secondary/5 p-8 md:p-12 border border-foreground/10 rounded-sm flex flex-col justify-between">
+          {/* Valores Card */}
+          <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500">
             <div>
-              <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center mb-8">
+              <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <ShieldCheck className="w-5 h-5 text-accent" />
               </div>
-              <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-6">Valores</h4>
-              <p className="text-2xl font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-6 md:pl-8">
-                "Nuestros valores los descubrís en la práctica."
+              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Valores</h4>
+              <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
+                "Nuestros valores se descubren en la práctica diaria de gestión."
               </p>
             </div>
-            <p className="mt-8 text-sm text-foreground/50 leading-relaxed">
-              No listamos palabras genéricas en una pared. Demostramos el compromiso, la honestidad intelectual y la orientación a resultados en cada sesión de consultoría y mentoría.
-            </p>
           </div>
         </div>
+      </div>
 
+      <div className="container mx-auto px-4">
         {/* Socios y Directores */}
-        <div className="mb-32">
+        <div id="team-start" className="mb-32">
           <div className="mb-16">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4">Dirección</h3>
             <h2 className="font-serif text-3xl md:text-4xl leading-none tracking-tighter">
@@ -137,16 +152,21 @@ export function NosotrosSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {directors.map((member, index) => (
-              <div key={index} className="group border border-foreground/5 rounded-sm overflow-hidden bg-secondary/5 hover:border-accent/30 transition-all duration-500">
-                <div className="relative aspect-4/5 w-full overflow-hidden">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  />
+              <div key={index} className="group flex flex-col items-center p-8 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500">
+                <div className="relative w-52 aspect-2/3 mb-6">
+                  {/* Premium offset borders and backgrounds */}
+                  <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
+                  <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1.5 translate-y-1.5 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-500 -z-10"></div>
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-md">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    />
+                  </div>
                 </div>
-                <div className="p-6">
+                <div className="text-center">
                   <h4 className="text-xl font-serif font-bold text-foreground mb-1">{member.name}</h4>
                   <span className="text-[10px] font-bold uppercase tracking-widest text-accent">{member.role}</span>
                 </div>
@@ -176,16 +196,20 @@ export function NosotrosSection() {
           
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {mentors.map((mentor, index) => (
-              <div key={index} className="group border border-foreground/5 rounded-sm overflow-hidden bg-secondary/5 hover:border-accent/30 transition-all duration-500">
-                <div className="relative aspect-4/5 w-full overflow-hidden">
-                  <Image
-                    src={mentor.image}
-                    alt={mentor.name}
-                    fill
-                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  />
+              <div key={index} className="group flex flex-col items-center p-6 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500">
+                <div className="relative w-40 aspect-2/3 mb-5">
+                  <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
+                  <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
+                    <Image
+                      src={mentor.image}
+                      alt={mentor.name}
+                      fill
+                      className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    />
+                  </div>
                 </div>
-                <div className="p-4">
+                <div className="text-center">
                   <h4 className="text-lg font-serif font-bold text-foreground mb-0.5">{mentor.name}</h4>
                   <span className="text-[9px] font-bold uppercase tracking-widest text-accent">{mentor.role}</span>
                 </div>
@@ -209,18 +233,22 @@ export function NosotrosSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
             {academyProfessionals.map((prof, index) => (
-              <div key={index} className="group border border-foreground/5 rounded-sm overflow-hidden bg-secondary/5 hover:border-accent/20 transition-all duration-500">
-                <div className="relative aspect-square w-full overflow-hidden">
-                  <Image
-                    src={prof.image}
-                    alt={prof.name}
-                    fill
-                    className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                  />
+              <div key={index} className="group flex flex-col items-center transition-all duration-500">
+                <div className="relative w-32 aspect-2/3 mb-4">
+                  <div className="absolute -inset-1 bg-accent/5 rounded-xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
+                  <div className="absolute inset-0 border border-foreground/15 rounded-xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
+                  <div className="relative w-full h-full rounded-xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
+                    <Image
+                      src={prof.image}
+                      alt={prof.name}
+                      fill
+                      className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                    />
+                  </div>
                 </div>
-                <div className="p-4">
+                <div className="text-center">
                   <h4 className="text-base font-serif font-bold text-foreground mb-0.5">{prof.name}</h4>
                   <span className="text-[9px] font-bold uppercase tracking-widest text-foreground/50">{prof.role}</span>
                 </div>

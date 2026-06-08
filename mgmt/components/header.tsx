@@ -3,8 +3,10 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 import {
   Sheet,
   SheetContent,
@@ -16,6 +18,7 @@ import {
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const pathname = usePathname()
 
   const navItems = [
     { label: "Inicio", href: "/inicio" },
@@ -53,15 +56,27 @@ export function Header() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-xs font-semibold tracking-widest uppercase opacity-80 hover:opacity-100 transition-all hover:-translate-y-px"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isActive = pathname === item.href || (item.href !== "/inicio" && pathname?.startsWith(item.href + "/"));
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                className={cn(
+                  "relative text-xs font-semibold tracking-widest uppercase transition-all pb-1.5 group",
+                  isActive ? "opacity-100" : "opacity-70 hover:opacity-100"
+                )}
+              >
+                {item.label}
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-0 h-[1.5px] bg-header-foreground transition-all duration-300",
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  )}
+                />
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-4">
@@ -72,23 +87,29 @@ export function Header() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-header-bg text-header-foreground border-l border-white/10 p-0">
+            <SheetContent side="right" className="w-[240px] bg-header-bg text-header-foreground border-l border-white/10 p-0">
               <div className="flex flex-col h-full">
-                <SheetHeader className="p-8 border-b border-white/10 text-left space-y-0">
-                  <SheetTitle className="font-serif text-xl tracking-wider uppercase text-header-foreground">Management Pyme</SheetTitle>
+                <SheetHeader className="p-6 border-b border-white/10 text-left space-y-0">
+                  <SheetTitle className="font-serif text-lg tracking-wider uppercase text-header-foreground">Management Pyme</SheetTitle>
                   <SheetDescription className="sr-only">Menú de navegación móvil</SheetDescription>
                 </SheetHeader>
-                <nav className="flex flex-col p-8 gap-4">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="py-4 text-sm font-bold tracking-widest uppercase border-b border-white/5 last:border-0 hover:pl-2 transition-all"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                <nav className="flex flex-col p-6 gap-2">
+                  {navItems.map((item) => {
+                    const isActive = pathname === item.href || (item.href !== "/inicio" && pathname?.startsWith(item.href + "/"));
+                    return (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        className={cn(
+                          "py-3 text-xs font-semibold tracking-widest uppercase border-b border-white/5 last:border-0 transition-all",
+                          isActive ? "text-header-foreground opacity-100" : "text-header-foreground opacity-50 hover:opacity-100"
+                        )}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+                    );
+                  })}
                 </nav>
               </div>
             </SheetContent>
@@ -96,6 +117,5 @@ export function Header() {
         </div>
       </div>
     </header>
-
   )
 }

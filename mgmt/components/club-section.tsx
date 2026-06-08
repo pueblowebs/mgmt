@@ -1,28 +1,28 @@
 import Image from "next/image"
-import { Users2, MessageSquare, Target, Zap, Calendar } from "lucide-react"
+import { Users2, MessageSquare, Sparkles, GraduationCap, Calendar } from "lucide-react"
 import { ClubModal } from "./club-modal"
 import { Button } from "./ui/button"
 
 const clubFeatures = [
   {
-    title: "Conversación estructurada",
-    description: "Espacios diseñados para el intercambio profundo de ideas y soluciones entre pares.",
+    title: "Mentoreo al CEO",
+    description: "Cada CEO tiene un Mentor Empresario asignado semanal.",
     icon: MessageSquare
   },
   {
-    title: "Casos reales",
-    description: "Análisis de situaciones concretas que enfrentan dueños de Pymes en su día a día.",
-    icon: Target
-  },
-  {
-    title: "Mirada estratégica compartida",
-    description: "Perspectivas diversas que enriquecen tu toma de decisiones y amplían tu visión.",
+    title: "Directorio",
+    description: "Mensualmente los miembros visitan empresas del Club como Directores independientes.",
     icon: Users2
   },
   {
-    title: "Acompañamiento continuo",
-    description: "No estás solo ante el desafío; la comunidad y los mentores te respaldan constantemente.",
-    icon: Zap
+    title: "Wellness",
+    description: "Dos meses al año, dos actividades de retiro (bienestar y comunidad).",
+    icon: Sparkles
+  },
+  {
+    title: "Academy & Speakers",
+    description: "Acceso gratuito e ilimitado a seminarios y speakers de Management Pyme.",
+    icon: GraduationCap
   }
 ]
 
@@ -42,13 +42,12 @@ export function ClubSection() {
 
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-4xl mb-6 md:mb-8">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-2 md:mb-4">El Club</h3>
+          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-2 md:mb-4">CLUB</h3>
           <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-4">
-            Pensar la Pyme acompañado cambia la <br />
-            <span className="font-bold">calidad de tus decisiones.</span>
+            Dirección que sostiene y potencia
           </h2>
           <p className="text-lg md:text-xl text-foreground/60 leading-relaxed max-w-2xl">
-            Una comunidad de dueños y líderes que comparten experiencias reales, desafíos concretos y análisis estratégico.
+            Comunidad de Empresarios y CEOs egresados de Academy que co-dirigen sus planes de rentabilidad, sustentabilidad y profesionalización.
           </p>
         </div>
 
