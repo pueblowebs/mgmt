@@ -1,6 +1,7 @@
 import { CheckCircle2, Calendar, Globe, Users, Trophy, BookOpen, Video, MessageCircle, FolderOpen, ArrowDownToLine, Compass, LineChart, Layers, Quote, Clock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { AgendaModal } from "./agenda-modal"
+import { ScrollReveal } from "./scroll-reveal"
 
 export function AcademiaSection() {
   return (
@@ -9,7 +10,7 @@ export function AcademiaSection() {
         
         {/* Section 1: Metodología (Dimensiones) */}
         <div className="mb-28">
-          <div className="max-w-3xl mb-16">
+          <ScrollReveal className="max-w-3xl mb-16">
             <span className="text-xs font-bold uppercase tracking-[0.3em] text-accent block mb-3">Metodología</span>
             <h2 className="text-3xl md:text-5xl font-serif text-foreground font-bold tracking-tight">
               Dimensiones Críticas Abordadas
@@ -17,7 +18,7 @@ export function AcademiaSection() {
             <p className="mt-4 text-foreground/60 leading-relaxed font-sans max-w-2xl text-base md:text-lg">
               Analizamos y profesionalizamos tu Pyme a través de cuatro ejes fundamentales diseñados para garantizar su sostenibilidad y crecimiento.
             </p>
-          </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
@@ -44,21 +45,23 @@ export function AcademiaSection() {
             ].map((item, i) => {
               const Icon = item.icon;
               return (
-                <div key={i} className="group bg-secondary/5 backdrop-blur-md p-6 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-lg flex flex-col justify-between transition-all duration-500">
-                  <div>
-                    <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-5 group-hover:scale-110 transition-transform duration-300">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <div className="border-l-2 border-accent/20 group-hover:border-accent pl-4 transition-colors duration-500">
-                      <h3 className="font-bold text-foreground text-xs uppercase tracking-wider block mb-2 group-hover:text-accent transition-colors duration-500">
-                        {item.title}
-                      </h3>
-                      <p className="text-foreground/60 text-xs leading-relaxed block font-medium">
-                        {item.desc}
-                      </p>
+                <ScrollReveal key={i} delay={i * 100} className="h-full flex flex-col">
+                  <div className="group bg-secondary/5 backdrop-blur-md p-6 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-lg flex flex-col justify-between transition-all duration-500 h-full">
+                    <div>
+                      <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <div className="border-l-2 border-accent/20 group-hover:border-accent pl-4 transition-colors duration-500">
+                        <h3 className="font-bold text-foreground text-xs uppercase tracking-wider block mb-2 group-hover:text-accent transition-colors duration-500">
+                          {item.title}
+                        </h3>
+                        <p className="text-foreground/60 text-xs leading-relaxed block font-medium">
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </ScrollReveal>
               )
             })}
           </div>
@@ -67,7 +70,7 @@ export function AcademiaSection() {
         {/* Section 2: Estructura del Programa (Split Layout) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center py-20 border-t border-foreground/5">
           {/* Left Column: Info & CTA */}
-          <div className="lg:col-span-5 space-y-8">
+          <ScrollReveal className="lg:col-span-5 space-y-8">
             <div>
               <span className="text-xs font-bold uppercase tracking-[0.3em] text-accent block mb-3">Estructura</span>
               <h2 className="text-3xl md:text-5xl font-serif text-foreground font-bold tracking-tight">
@@ -97,10 +100,10 @@ export function AcademiaSection() {
                 </Button>
               </a>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Right Column: Key Details Card */}
-          <div className="lg:col-span-7">
+          <ScrollReveal className="lg:col-span-7">
             <div className="bg-secondary/5 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-foreground/5 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full blur-3xl pointer-events-none" />
               
@@ -171,7 +174,7 @@ export function AcademiaSection() {
                 </div>
               </div>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
 
         {/* Section 3: MGMT en Números */}
@@ -182,14 +185,14 @@ export function AcademiaSection() {
             { label: "Alumnos transformados", value: "+500", icon: BookOpen },
             { label: "Método orientado a la acción", value: "10", sub: "Años" }
           ].map((stat, i) => (
-            <div key={i} className="text-center group">
+            <ScrollReveal key={i} delay={i * 100} className="text-center group">
               <div className="text-3xl md:text-5xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-500">
                 {stat.value}
               </div>
               <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 leading-relaxed max-w-[120px] mx-auto">
                 {stat.label}
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

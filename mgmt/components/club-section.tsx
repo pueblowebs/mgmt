@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Users2, MessageSquare, Sparkles, GraduationCap, Calendar } from "lucide-react"
 import { ClubModal } from "./club-modal"
 import { Button } from "./ui/button"
+import { ScrollReveal } from "./scroll-reveal"
 
 const clubFeatures = [
   {
@@ -41,7 +42,7 @@ export function ClubSection() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-4xl mb-6 md:mb-8">
+        <ScrollReveal className="max-w-4xl mb-6 md:mb-8">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-2 md:mb-4">CLUB</h3>
           <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-4">
             Dirección que sostiene y potencia
@@ -49,32 +50,33 @@ export function ClubSection() {
           <p className="text-lg md:text-xl text-foreground/60 leading-relaxed max-w-2xl">
             Comunidad de Empresarios y CEOs egresados de Academy que co-dirigen sus planes de rentabilidad, sustentabilidad y profesionalización.
           </p>
-        </div>
+        </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {clubFeatures.map((feature, index) => (
-            <div
-              key={index}
-              className="group p-5 md:p-6 bg-secondary/5 border border-foreground/5 rounded-sm hover:bg-accent/5 hover:border-accent/20 transition-all duration-500"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-5 h-5 text-accent" />
-                </div>
+            <ScrollReveal key={index} delay={index * 100} className="h-full flex flex-col">
+              <div
+                className="group bg-secondary/5 backdrop-blur-md p-6 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-lg flex flex-col justify-between transition-all duration-500 h-full"
+              >
                 <div>
-                  <h3 className="text-xl md:text-2xl font-serif text-foreground mb-1 md:mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm text-foreground/60 leading-relaxed">
-                    {feature.description}
-                  </p>
+                  <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <feature.icon className="w-5 h-5 text-accent" />
+                  </div>
+                  <div className="border-l-2 border-accent/20 group-hover:border-accent pl-4 transition-colors duration-500">
+                    <h3 className="text-lg font-serif text-foreground mb-2 group-hover:text-accent transition-colors duration-500">
+                      {feature.title}
+                    </h3>
+                    <p className="text-xs text-foreground/60 leading-relaxed font-medium">
+                      {feature.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
         
-        <div className="mt-8 md:mt-10 text-center">
+        <ScrollReveal className="mt-8 md:mt-10 text-center" delay={200}>
           <p className="text-xs font-bold tracking-widest uppercase text-foreground/40 mb-4 md:mb-6">
             Para quienes toman decisiones y saben que hacerlo solos limita la perspectiva.
           </p>
@@ -95,7 +97,7 @@ export function ClubSection() {
               </button>
             } />
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   )

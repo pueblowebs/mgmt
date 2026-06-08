@@ -7,7 +7,7 @@ export default function ClubPage() {
       <VisualHero 
         bgImage="/images/club-hero-bg.png"
         altText="Club de Empresarios MGMT"
-        tag="El Club"
+        tag="Club"
         title={
           <>
             Comunidad de <br />

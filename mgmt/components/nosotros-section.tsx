@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Target, ShieldCheck, Users, Briefcase, GraduationCap } from "lucide-react"
+import { ScrollReveal } from "./scroll-reveal"
 
 export function NosotrosSection() {
   const directors = [
@@ -77,7 +78,7 @@ export function NosotrosSection() {
   ]
 
   return (
-    <section id="nosotros" className="bg-background text-foreground min-h-screen">
+    <section id="nosotros" className="bg-background text-foreground min-h-screen pb-24">
       {/* Visual Hero Header - Less tall than screen */}
       <div className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden bg-black mb-12">
         {/* Background Image with Overlay */}
@@ -101,7 +102,7 @@ export function NosotrosSection() {
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
               El equipo detrás de la <span className="font-bold text-accent">transformación</span> de tu Pyme
             </h1>
-            <p className="max-w-xl mx-auto text-sm md:text-base text-white/70 leading-relaxed font-light">
+            <p className="max-w-xl mx-auto text-xs md:text-base text-white/70 leading-relaxed font-light">
               Acompañamos a dueños, directores y mandos medios a estructurar sistemas de gestión eficientes y rentables.
             </p>
           </div>
@@ -109,75 +110,81 @@ export function NosotrosSection() {
       </div>
 
       {/* Cards container overlapping the bottom of the hero */}
-      <div className="container mx-auto px-4 -mt-20 md:-mt-28 relative z-20 mb-32">
+      <div className="container mx-auto px-4 -mt-12 md:-mt-28 relative z-20 mb-20 md:mb-32">
         {/* Redesigned Propósito y Valores Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {/* Propósito Card */}
-          <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500">
-            <div>
-              <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Target className="w-5 h-5 text-accent" />
+          <ScrollReveal>
+            <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-5 h-5 text-accent" />
+                </div>
+                <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Propósito</h4>
+                <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
+                  "Descubrir y actualizar el potencial de desempeño individual y colectivo."
+                </p>
               </div>
-              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Propósito</h4>
-              <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
-                "Descubrir y actualizar el potencial de desempeño individual y colectivo."
-              </p>
             </div>
-          </div>
+          </ScrollReveal>
 
           {/* Valores Card */}
-          <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500">
-            <div>
-              <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                <ShieldCheck className="w-5 h-5 text-accent" />
+          <ScrollReveal delay={100}>
+            <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
+              <div>
+                <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <ShieldCheck className="w-5 h-5 text-accent" />
+                </div>
+                <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Valores</h4>
+                <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
+                  "Nuestros valores se descubren en la práctica diaria de gestión."
+                </p>
               </div>
-              <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Valores</h4>
-              <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
-                "Nuestros valores se descubren en la práctica diaria de gestión."
-              </p>
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
 
       <div className="container mx-auto px-4">
         {/* Socios y Directores */}
-        <div id="team-start" className="mb-32">
-          <div className="mb-16">
-            <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4">Dirección</h3>
+        <div id="team-start" className="mb-20 md:mb-32">
+          <ScrollReveal className="mb-10 md:mb-16">
+            <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-3">Dirección</h3>
             <h2 className="font-serif text-3xl md:text-4xl leading-none tracking-tighter">
               Socios y <span className="font-bold">Directores</span>
             </h2>
-          </div>
+          </ScrollReveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {directors.map((member, index) => (
-              <div key={index} className="group flex flex-col items-center p-8 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500">
-                <div className="relative w-52 aspect-2/3 mb-6">
-                  {/* Premium offset borders and backgrounds */}
-                  <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
-                  <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1.5 translate-y-1.5 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-500 -z-10"></div>
-                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-md">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                    />
+              <ScrollReveal key={index} delay={index * 100}>
+                <div className="group flex flex-col items-center p-6 md:p-8 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
+                  <div className="relative w-48 md:w-56 aspect-2/3 mb-6">
+                    {/* Premium offset borders and backgrounds */}
+                    <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
+                    <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1.5 translate-y-1.5 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-500 -z-10"></div>
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-md">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-lg md:text-xl font-serif font-bold text-foreground mb-1">{member.name}</h4>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-accent">{member.role}</span>
                   </div>
                 </div>
-                <div className="text-center">
-                  <h4 className="text-xl font-serif font-bold text-foreground mb-1">{member.name}</h4>
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-accent">{member.role}</span>
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
 
         {/* Mentores @ Club */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-32">
-          <div className="lg:col-span-4 space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center mb-20 md:mb-32">
+          <ScrollReveal className="lg:col-span-4 space-y-4 md:space-y-6">
             <div className="flex items-center gap-3">
               <Users className="w-5 h-5 text-accent" />
               <span className="text-xs font-bold tracking-[0.4em] uppercase text-accent">Club de Empresarios</span>
@@ -192,67 +199,71 @@ export function NosotrosSection() {
             <div className="inline-block px-4 py-2 bg-accent/5 border border-accent/20 rounded-full text-[10px] font-bold tracking-widest uppercase text-accent">
               Acompañamiento Estratégico
             </div>
-          </div>
+          </ScrollReveal>
           
           <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {mentors.map((mentor, index) => (
-              <div key={index} className="group flex flex-col items-center p-6 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500">
-                <div className="relative w-40 aspect-2/3 mb-5">
-                  <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
-                  <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
-                  <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
-                    <Image
-                      src={mentor.image}
-                      alt={mentor.name}
-                      fill
-                      className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                    />
+              <ScrollReveal key={index} delay={index * 100}>
+                <div className="group flex flex-col items-center p-6 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
+                  <div className="relative w-40 md:w-44 aspect-2/3 mb-5">
+                    <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
+                    <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
+                    <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
+                      <Image
+                        src={mentor.image}
+                        alt={mentor.name}
+                        fill
+                        className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-base md:text-lg font-serif font-bold text-foreground mb-0.5">{mentor.name}</h4>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-accent">{mentor.role}</span>
                   </div>
                 </div>
-                <div className="text-center">
-                  <h4 className="text-lg font-serif font-bold text-foreground mb-0.5">{mentor.name}</h4>
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-accent">{mentor.role}</span>
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
 
         {/* Profesionales @ Academy */}
-        <div>
-          <div className="mb-16">
-            <div className="flex items-center gap-3 mb-4">
+        <div className="mb-8">
+          <ScrollReveal className="mb-10 md:mb-16">
+            <div className="flex items-center gap-3 mb-3">
               <GraduationCap className="w-5 h-5 text-accent" />
               <span className="text-xs font-bold tracking-[0.4em] uppercase text-accent">Academy</span>
             </div>
             <h2 className="font-serif text-3xl md:text-4xl leading-none tracking-tighter">
               Profesionales <span className="font-bold">@ Academy</span>
             </h2>
-            <p className="text-foreground/60 mt-4 text-sm max-w-xl">
+            <p className="text-foreground/60 mt-3 text-sm max-w-xl">
               Especialistas y facilitadores dedicados al desarrollo de capacidades clave para la rentabilidad de las Pymes.
             </p>
-          </div>
+          </ScrollReveal>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 md:gap-x-6 gap-y-8 md:gap-y-12">
             {academyProfessionals.map((prof, index) => (
-              <div key={index} className="group flex flex-col items-center transition-all duration-500">
-                <div className="relative w-32 aspect-2/3 mb-4">
-                  <div className="absolute -inset-1 bg-accent/5 rounded-xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
-                  <div className="absolute inset-0 border border-foreground/15 rounded-xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
-                  <div className="relative w-full h-full rounded-xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
-                    <Image
-                      src={prof.image}
-                      alt={prof.name}
-                      fill
-                      className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
-                    />
+              <ScrollReveal key={index} delay={(index % 4) * 80}>
+                <div className="group flex flex-col items-center transition-all duration-500 h-full">
+                  <div className="relative w-32 md:w-36 aspect-2/3 mb-4">
+                    <div className="absolute -inset-1 bg-accent/5 rounded-xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
+                    <div className="absolute inset-0 border border-foreground/15 rounded-xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
+                    <div className="relative w-full h-full rounded-xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
+                      <Image
+                        src={prof.image}
+                        alt={prof.name}
+                        fill
+                        className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <h4 className="text-sm md:text-base font-serif font-bold text-foreground mb-0.5">{prof.name}</h4>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-foreground/50">{prof.role}</span>
                   </div>
                 </div>
-                <div className="text-center">
-                  <h4 className="text-base font-serif font-bold text-foreground mb-0.5">{prof.name}</h4>
-                  <span className="text-[9px] font-bold uppercase tracking-widest text-foreground/50">{prof.role}</span>
-                </div>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
