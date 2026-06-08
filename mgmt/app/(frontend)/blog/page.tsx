@@ -2,23 +2,38 @@ import { BlogCard } from "@/components/blog-card"
 import { getBlogPosts } from "@/lib/api"
 import { BLOG_POSTS as STATIC_POSTS } from "@/lib/blog-data"
 import { Suspense } from "react"
+import Image from "next/image"
 
 function BlogHeader() {
   return (
-    <section className="bg-secondary/5 border-b border-foreground/5 py-24 mb-20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">El Blog</h3>
-          <h1 className="font-serif text-4xl md:text-6xl text-foreground tracking-tighter leading-none mb-8">
-            Pensamiento y <br />
-            <span className="font-bold opacity-50">Gestión.</span>
+    <div className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden bg-black mb-16">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1200&q=80"
+          alt="Blog - MGMT"
+          fill
+          priority
+          className="object-cover opacity-25 scale-105"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-background" />
+      </div>
+
+      {/* Content */}
+      <div className="container relative z-10 px-4 mx-auto text-center">
+        <div className="max-w-4xl mx-auto space-y-4">
+          <span className="inline-block px-4 py-1.5 text-[10px] font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent border border-accent/20 rounded-full">
+            El Blog
+          </span>
+          <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
+            Pensamiento y <span className="font-bold text-accent">Gestión.</span>
           </h1>
-          <p className="text-xl text-foreground/60 leading-relaxed max-w-2xl font-bold">
+          <p className="max-w-2xl mx-auto text-xs md:text-base text-white/70 leading-relaxed font-light">
             Artículos decantados de la práctica real. Ideas para líderes que buscan orden, profesionalización y un nuevo nivel de conciencia en sus empresas.
           </p>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
@@ -53,7 +68,6 @@ async function PayloadBlogContent() {
         slug: post.slug,
       }))
     } else {
-      // Si no hay posts en Payload, podemos mostrar los estáticos o vacío
       posts = STATIC_POSTS
     }
   } catch (error) {
@@ -66,7 +80,7 @@ async function PayloadBlogContent() {
 
 export default function BlogListingPage() {
   return (
-    <div className="pt-20 pb-32">
+    <div className="pb-32">
       <BlogHeader />
       <Suspense fallback={<BlogGrid posts={STATIC_POSTS} />}>
         <PayloadBlogContent />
@@ -74,4 +88,3 @@ export default function BlogListingPage() {
     </div>
   )
 }
-

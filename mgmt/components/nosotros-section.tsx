@@ -160,9 +160,8 @@ export function NosotrosSection() {
               <ScrollReveal key={index} delay={index * 100}>
                 <div className="group flex flex-col items-center p-6 md:p-8 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
                   <div className="relative w-48 md:w-56 aspect-2/3 mb-6">
-                    {/* Premium offset borders and backgrounds */}
+                    {/* Premium offset backgrounds */}
                     <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
-                    <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1.5 translate-y-1.5 group-hover:translate-x-1 group-hover:translate-y-1 transition-all duration-500 -z-10"></div>
                     <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-md">
                       <Image
                         src={member.image}
@@ -207,7 +206,6 @@ export function NosotrosSection() {
                 <div className="group flex flex-col items-center p-6 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
                   <div className="relative w-40 md:w-44 aspect-2/3 mb-5">
                     <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
-                    <div className="absolute inset-0 border border-foreground/10 rounded-2xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
                     <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
                       <Image
                         src={mentor.image}
@@ -248,7 +246,6 @@ export function NosotrosSection() {
                 <div className="group flex flex-col items-center transition-all duration-500 h-full">
                   <div className="relative w-32 md:w-36 aspect-2/3 mb-4">
                     <div className="absolute -inset-1 bg-accent/5 rounded-xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
-                    <div className="absolute inset-0 border border-foreground/15 rounded-xl translate-x-1 translate-y-1 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-all duration-500 -z-10"></div>
                     <div className="relative w-full h-full rounded-xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
                       <Image
                         src={prof.image}
