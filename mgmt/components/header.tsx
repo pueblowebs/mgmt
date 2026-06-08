@@ -31,10 +31,17 @@ export function Header() {
     { label: "Contacto", href: "/contacto" },
   ]
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/inicio" || pathname === "/") {
+      e.preventDefault()
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/10 bg-header-bg text-header-foreground transition-colors duration-300">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href="/inicio" className="flex items-center gap-3">
+        <Link href="/inicio" onClick={handleLogoClick} className="flex items-center gap-3">
           <Image 
             src="/logo/logo-dark.png" 
             alt="Management Pyme" 

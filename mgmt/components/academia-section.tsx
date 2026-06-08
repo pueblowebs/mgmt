@@ -69,13 +69,13 @@ export function AcademiaSection() {
                       href="https://wa.me/5491165442672?text=Hola,%20me%20gustaría%20descargar%20el%20programa%20de%20Academy%20MGMT." 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-accent/20 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white hover:border-accent hover:scale-[1.03] transition-all duration-300 shadow-sm cursor-pointer group/btn"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-accent/20 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 shadow-sm cursor-pointer group/btn"
                     >
                       <ArrowDownToLine className="w-3 h-3 opacity-70 group-hover/btn:opacity-100" />
                       <span>Programa</span>
                     </a>
                     <AgendaModal trigger={
-                      <button className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-accent/10 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white hover:scale-[1.03] transition-all duration-300 shadow-sm cursor-pointer group/btn">
+                      <button className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-accent/10 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-sm cursor-pointer group/btn">
                         <Calendar className="w-3 h-3 opacity-70 group-hover/btn:opacity-100" />
                         <span>Cronograma</span>
                       </button>
@@ -145,7 +145,7 @@ export function AcademiaSection() {
                   rel="noopener noreferrer"
                   className="block w-full"
                 >
-                  <Button variant="shiny" size="xl" className="w-full rounded-full text-sm font-bold tracking-wider h-14 hover:scale-[1.02] transition-transform">
+                  <Button variant="shiny" size="xl" className="w-full rounded-full text-sm font-bold tracking-wider h-14 transition-transform">
                     Postularme ahora
                   </Button>
                 </a>

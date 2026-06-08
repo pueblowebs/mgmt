@@ -52,7 +52,7 @@ export function StepsSection() {
             {steps.map((step, i) => (
               <div key={i} className="group relative">
                 {/* Step Card */}
-                <div className="w-full bg-white border border-foreground/5 p-8 md:p-10 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:-translate-y-2 hover:border-primary/20 transition-all duration-700 z-10 relative flex flex-col h-full group/card">
+                <div className="w-full bg-white border border-foreground/5 p-8 md:p-10 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:border-primary/20 transition-all duration-700 z-10 relative flex flex-col h-full group/card">
                   <div className="mb-6 flex items-center justify-between">
                     <span
                       className="inline-block text-[10px] font-bold tracking-[0.3em] uppercase px-4 py-1.5 rounded-full text-white"
