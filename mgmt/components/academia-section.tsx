@@ -150,7 +150,7 @@ export function AcademiaSection() {
                 ].map((item, i) => {
                   const Icon = item.icon;
                   return (
-                    <div key={i} className="flex gap-3.5 items-start p-4 rounded-xl bg-background/40 border border-foreground/[0.02] hover:border-accent/10 transition-all duration-300">
+                    <div key={i} className="flex gap-3.5 items-start p-4 rounded-xl bg-background/40 border border-foreground/2 hover:border-accent/10 transition-all duration-300">
                       <Icon className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                       <div>
                         <h4 className="text-xs font-bold text-foreground/40 uppercase tracking-wider mb-1">{item.label}</h4>
@@ -161,7 +161,7 @@ export function AcademiaSection() {
                 })}
               </div>
 
-              <div className="mt-6 p-5 rounded-2xl bg-background/60 border border-foreground/[0.02] flex gap-3.5 items-start">
+              <div className="mt-6 p-5 rounded-2xl bg-background/60 border border-foreground/2 flex gap-3.5 items-start">
                 <FolderOpen className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <div>
                   <h4 className="text-xs font-bold text-foreground/40 uppercase tracking-wider mb-1.5">Drive Compartido Acceso 24/7</h4>

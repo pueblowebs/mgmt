@@ -47,7 +47,7 @@ export function ClubModal({ trigger }: ClubModalProps) {
         </DialogHeader>
         
         {/* Roadmap / Timeline Section */}
-        <div className="mb-20">
+        
           <div className="grid grid-cols-[auto_1fr_auto] gap-x-4 mb-12">
             {/* Labels Row */}
             <div className="text-[11px] font-bold uppercase tracking-widest text-accent mb-1">Inicio</div>
@@ -87,10 +87,9 @@ export function ClubModal({ trigger }: ClubModalProps) {
               </div>
             ))}
           </div>
-        </div>
 
         {/* Pricing Table Section */}
-        <div>
+        {/* <div>
           <div className="flex items-center gap-4 mb-8">
             <h3 className="text-xs font-bold tracking-[0.5em] uppercase text-accent whitespace-nowrap">Membresías Anuales</h3>
             <div className="w-full h-px bg-linear-to-r from-accent/20 to-transparent" />
@@ -132,9 +131,9 @@ export function ClubModal({ trigger }: ClubModalProps) {
               <span>2- El tipo de cambio referencia es promedio USD oficial.</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="mt-20 pt-8 border-t border-accent/10 text-center">
+        <div className="mt-8 pt-8 border-t border-accent/10 text-center">
           <p className="text-[10px] text-foreground/30 uppercase tracking-[0.3em] font-medium max-w-lg mx-auto leading-relaxed">
             Formación y consultoría estratégica para dueños de Pyme que buscan profesionalizar su gestión y resultados.
           </p>
