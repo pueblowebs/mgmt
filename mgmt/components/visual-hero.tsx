@@ -43,7 +43,8 @@ export function VisualHero({
           priority
           className={`object-cover scale-105 animate-subtle-zoom ${overlayOpacity}`}
         />
-        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-transparent 60% to-background/30" />
+        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-black/80" />
       </div>
 
       {/* Content */}
