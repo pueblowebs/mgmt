@@ -37,6 +37,26 @@ function BlogHeader() {
   )
 }
 
+function BlogSkeleton() {
+  return (
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+        {[1, 2, 3].map((n) => (
+          <div key={n} className="flex flex-col space-y-4 animate-pulse">
+            <div className="w-full aspect-video bg-foreground/10 rounded-2xl" />
+            <div className="space-y-3">
+              <div className="h-3 bg-foreground/10 rounded-sm w-1/4" />
+              <div className="h-5 bg-foreground/10 rounded-sm w-3/4" />
+              <div className="h-3 bg-foreground/10 rounded-sm w-full" />
+              <div className="h-3 bg-foreground/10 rounded-sm w-5/6" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 function BlogGrid({ posts }: { posts: any[] }) {
   return (
     <div className="container mx-auto px-4">
@@ -82,7 +102,7 @@ export default function BlogListingPage() {
   return (
     <div className="pb-32">
       <BlogHeader />
-      <Suspense fallback={<BlogGrid posts={STATIC_POSTS} />}>
+      <Suspense fallback={<BlogSkeleton />}>
         <PayloadBlogContent />
       </Suspense>
     </div>

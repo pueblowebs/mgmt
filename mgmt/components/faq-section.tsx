@@ -41,18 +41,8 @@ export function FaqSection({ faqs }: FaqSectionProps) {
   const displayFaqs = faqs && faqs.length > 0 ? faqs : defaultFaqs;
 
   return (
-    <section className="py-32 bg-background text-foreground min-h-[80vh] flex flex-col justify-center">
+    <section className="pb-32 bg-background text-foreground min-h-[50vh] flex flex-col justify-center">
       <div className="container mx-auto px-4 max-w-4xl">
-        <div className="mb-20">
-          <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">Preguntas Frecuentes</h3>
-          <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-[0.95] tracking-tighter mb-6">
-            Resolvemos tus <span className="font-bold opacity-50">dudas</span>
-          </h2>
-          <p className="text-lg text-foreground/60 font-medium">
-            Respuestas claras y directas para que puedas tomar decisiones con mayor seguridad.
-          </p>
-        </div>
-
         <div className="mx-auto w-full">
           <Accordion type="single" collapsible className="w-full space-y-4">
             {displayFaqs.map((faq, index) => (
