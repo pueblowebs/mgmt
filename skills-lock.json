@@ -1,6 +1,18 @@
 {
   "version": 1,
   "skills": {
+    "cloudinary-docs": {
+      "source": "cloudinary-devs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/cloudinary-docs/SKILL.md",
+      "computedHash": "2035bffb3ae42e704e01d4da43c28aa0f6c904dd70dd8f35a4b7a19af5c1f2bf"
+    },
+    "next16-expert": {
+      "source": "yuniorglez/gemini-elite-core",
+      "sourceType": "github",
+      "skillPath": "skills/next16-expert/SKILL.md",
+      "computedHash": "4f1fc4005466314fa4e3cb3dc1d757e2ceea95066df05da6d4f6c5d5e57fafe9"
+    },
     "payload-cms": {
       "source": "connorads/dotfiles",
       "sourceType": "github",
@@ -10,6 +22,12 @@
       "source": "mkshahzad77/claude-skill-strapi-expert",
       "sourceType": "github",
       "computedHash": "8fcb40e614ce8a4b1ceed69cadebe94f4509021fed1211de299e49f60ff0f628"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "f3bc47f890f42a44db1007ab390709ec368e4b8c089baee6b0007182236ac474"
     }
   }
 }
