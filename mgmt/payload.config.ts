@@ -10,6 +10,7 @@ import { BlogPosts } from './collections/BlogPosts'
 import { FAQs } from './collections/FAQs'
 import { SiteSettings } from './globals/SiteSettings'
 import sharp from 'sharp'
+import { cloudinaryStorage } from 'payload-storage-cloudinary'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -58,4 +59,16 @@ export default buildConfig({
       fileSize: 5_000_000, // 5MB
     },
   },
+  plugins: [
+    cloudinaryStorage({
+      collections: {
+        [Media.slug]: true,
+      },
+      cloudConfig: {
+        cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+        api_key: process.env.CLOUDINARY_API_KEY,
+        api_secret: process.env.CLOUDINARY_API_SECRET,
+      },
+    }),
+  ],
 })
