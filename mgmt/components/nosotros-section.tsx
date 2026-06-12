@@ -79,13 +79,13 @@ export function NosotrosSection() {
 
   return (
     <section id="nosotros" className="bg-background text-foreground min-h-screen pb-24">
-      {/* Visual Hero Header - Less tall than screen */}
-      <div className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden bg-black mb-12">
+      {/* Visual Hero Header - Designed to safely overlap cards without collisions */}
+      <div className="relative w-full overflow-hidden bg-black">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
             src="/club-lapicera.webp"
-            alt="Nosotros - MGMT"
+            alt="Nosotros - PyME"
             fill
             priority
             className="object-cover opacity-25 scale-105"
@@ -94,7 +94,7 @@ export function NosotrosSection() {
         </div>
 
         {/* Content */}
-        <div className="container relative z-10 px-4 mx-auto text-center">
+        <div className="container relative z-10 px-4 mx-auto text-center pt-24 pb-28 md:pb-44">
           <div className="max-w-4xl mx-auto space-y-4">
             <span className="inline-block px-4 py-1.5 text-[10px] font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent border border-accent/20 rounded-full">
               Nosotros
@@ -110,7 +110,7 @@ export function NosotrosSection() {
       </div>
 
       {/* Cards container overlapping the bottom of the hero */}
-      <div className="container mx-auto px-4 -mt-12 md:-mt-28 relative z-20 mb-20 md:mb-32">
+      <div className="container mx-auto px-4 -mt-16 md:-mt-24 relative z-20 mb-20 md:mb-32">
         {/* Redesigned Propósito y Valores Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {/* Propósito Card */}
