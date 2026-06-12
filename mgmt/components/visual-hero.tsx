@@ -18,7 +18,7 @@ interface VisualHeroProps {
 export function VisualHero({
   bgImage = "/images/visual-hero-bg.png",
   altText = "Formación y consultoría para dueños de PyME en Argentina",
-  tag = "Management PyME",
+  tag = "",
   title = (
     <>
       Formación, Dirección y <br />
@@ -50,9 +50,11 @@ export function VisualHero({
       {/* Content */}
       <div className="container relative z-10 px-4 mx-auto text-center">
         <div className="max-w-5xl mx-auto space-y-6">
-          <div className={`inline-block px-4 py-1.5 mb-4 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase backdrop-blur-md rounded-full border animate-fade-in-up ${tagClassName}`}>
-            {tag}
-          </div>
+          {tag &&
+            <div className={`inline-block px-4 py-1.5 mb-4 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase backdrop-blur-md rounded-full border animate-fade-in-up ${tagClassName}`}>
+              {tag}
+            </div>
+          }
           <h1 className={`font-serif font-light text-3xl md:text-5xl lg:text-6xl leading-[1.15] tracking-tighter drop-shadow-2xl animate-fade-in-up [animation-delay:200ms] ${titleClassName}`}>
             {title}
           </h1>
@@ -63,7 +65,7 @@ export function VisualHero({
       </div>
 
       {/* Scroll Indicator */}
-      <div 
+      <div
         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce cursor-pointer opacity-50 hover:opacity-100 transition-opacity"
       >

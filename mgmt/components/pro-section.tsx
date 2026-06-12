@@ -34,7 +34,7 @@ export function ProSection() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Qué cubrimos</h4>
             <div className="space-y-12">
               {[
-                { t: "Fundador", d: "Convivimos con el fundador día a día, ayudándolo a salir donde sufre y ubicarlo donde disfruta." },
+                { t: "Fundador", d: "Convivimos con el fundador día a día, ayudándolo a salir de donde sufre y ubicarlo donde disfruta." },
                 { t: "CEO", d: "Co-gerenciamos la empresa, rentabilizándola, profesionalizándola y haciéndola competitiva." },
                 { t: "Comercial", d: "Dirigimos la estrategia de rentabilización y co-gerenciamos el equipo comercial." },
                 { t: "Control de Gestión", d: "Lideramos administración y finanzas, construyendo estados contables básicos y panel de monitoreo." },
