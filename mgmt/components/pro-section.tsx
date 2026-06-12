@@ -13,7 +13,7 @@ export function ProSection() {
               El equipo que tu empresa necesita para ser rentable.
             </h2>
             <p className="text-xl text-foreground/60 leading-relaxed font-bold border-l-2 border-accent pl-8">
-              "Competir, rentabilizar y sostener la empresa requiere habilidades y experiencia que la Pyme no tiene y nosotros cubrimos."
+              "Competir, rentabilizar y sostener la empresa requiere habilidades y experiencia que la PyME no tiene y nosotros cubrimos."
             </p>
           </div>
           

@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand and Mission */}
           <div className="md:col-span-5 space-y-8">
             <div>
-              <span className="font-serif text-2xl tracking-wider uppercase text-background">Management PYME</span>
+              <span className="font-serif text-2xl tracking-wider uppercase text-background">Management PyME</span>
               <p className="mt-4 text-background/50 text-sm leading-relaxed max-w-sm">
                 Formamos empresarios y rentabilizamos PyMEs mientras las transformamos en ágiles, saludables y competitivas.
               </p>
@@ -63,7 +63,7 @@ export function Footer() {
                   allowFullScreen={false} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Oficinas de Management Pyme"
+                  title="Oficinas de Management PyME"
                   className="absolute inset-0 transition-all duration-1000 lg:grayscale lg:contrast-125 lg:opacity-40 lg:group-hover:grayscale-0 lg:group-hover:opacity-100 lg:group-hover:contrast-100"
                 ></iframe>
               </div>
@@ -72,7 +72,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-background/5 mt-20 pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-bold tracking-[0.2em] uppercase text-background/20">
-          <p>© 2026 Management Pyme. All Rights Reserved.</p>
+          <p>© 2026 Management PyME. All Rights Reserved.</p>
           {/* <div className="flex gap-8">
             <a href="#" className="hover:text-background/40 transition-colors">LinkedIn</a>
             <a href="https://www.instagram.com/mpyme/" target="_blank" rel="noopener noreferrer" className="hover:text-background/40 transition-colors">Instagram</a>

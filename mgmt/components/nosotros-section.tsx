@@ -100,7 +100,7 @@ export function NosotrosSection() {
               Nosotros
             </span>
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
-              El equipo detrás de la <span className="font-bold text-accent">transformación</span> de tu Pyme
+              El equipo detrás de la <span className="font-bold text-accent">transformación</span> de tu PyME
             </h1>
             <p className="max-w-xl mx-auto text-xs md:text-base text-white/70 leading-relaxed font-light">
               Acompañamos a dueños, directores y mandos medios a estructurar sistemas de gestión eficientes y rentables.
@@ -236,7 +236,7 @@ export function NosotrosSection() {
               Profesionales <span className="font-bold">@ Academy</span>
             </h2>
             <p className="text-foreground/60 mt-3 text-sm max-w-xl">
-              Especialistas y facilitadores dedicados al desarrollo de capacidades clave para la rentabilidad de las Pymes.
+              Especialistas y facilitadores dedicados al desarrollo de capacidades clave para la rentabilidad de las PyMEs.
             </p>
           </ScrollReveal>
 

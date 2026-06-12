@@ -68,7 +68,7 @@ async function seed() {
     },
     {
       question: '¿Cuánto tiempo dura un proceso de consultoría?',
-      answer: 'Depende de las necesidades de la Pyme, pero típicamente los procesos base duran entre 3 y 6 meses para ver resultados estructurales sólidos.',
+      answer: 'Depende de las necesidades de la PyME, pero típicamente los procesos base duran entre 3 y 6 meses para ver resultados estructurales sólidos.',
       order: 2,
     },
   ]

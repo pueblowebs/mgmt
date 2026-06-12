@@ -22,7 +22,7 @@ const clubFeatures = [
   },
   {
     title: "Academy & Speakers",
-    description: "Acceso gratuito e ilimitado a seminarios y speakers de Management Pyme.",
+    description: "Acceso gratuito e ilimitado a seminarios y speakers de Management PyME.",
     icon: GraduationCap
   }
 ]

@@ -20,7 +20,7 @@ export default buildConfig({
   admin: {
     user: Users.slug,
     meta: {
-      titleSuffix: ' — Management Pyme CMS',
+      titleSuffix: ' — Management PyME CMS',
     },
     avatar: {
       Component: '/components/admin/AdminAvatar#default',

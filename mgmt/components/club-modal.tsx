@@ -16,11 +16,11 @@ interface ClubModalProps {
 
 const memberships = [
   { id: 1, category: "EMPRENDEDOR", price: "3.000 USD", financing: "12 CUOTAS" },
-  { id: 2, category: "MiPYME <11 empleados", price: "4.200 USD", financing: "12 CUOTAS" },
-  { id: 3, category: "PYME <20 empleados", price: "5.000 USD", financing: "12 CUOTAS" },
-  { id: 4, category: "PYME <50 empleados", price: "6.500 USD", financing: "10 CUOTAS" },
-  { id: 5, category: "PYME <100 empleados", price: "7.500 USD", financing: "10 CUOTAS" },
-  { id: 6, category: "PYME <130 empleados", price: "9.000 USD", financing: "10 CUOTAS" },
+  { id: 2, category: "MiPyME <11 empleados", price: "4.200 USD", financing: "12 CUOTAS" },
+  { id: 3, category: "PyME <20 empleados", price: "5.000 USD", financing: "12 CUOTAS" },
+  { id: 4, category: "PyME <50 empleados", price: "6.500 USD", financing: "10 CUOTAS" },
+  { id: 5, category: "PyME <100 empleados", price: "7.500 USD", financing: "10 CUOTAS" },
+  { id: 6, category: "PyME <130 empleados", price: "9.000 USD", financing: "10 CUOTAS" },
 ]
 
 export function ClubModal({ trigger }: ClubModalProps) {
@@ -135,7 +135,7 @@ export function ClubModal({ trigger }: ClubModalProps) {
 
         <div className="mt-8 pt-8 border-t border-accent/10 text-center">
           <p className="text-[10px] text-foreground/30 uppercase tracking-[0.3em] font-medium max-w-lg mx-auto leading-relaxed">
-            Formación y consultoría estratégica para dueños de Pyme que buscan profesionalizar su gestión y resultados.
+            Formación y consultoría estratégica para dueños de PyME que buscan profesionalizar su gestión y resultados.
           </p>
         </div>
       </DialogContent>

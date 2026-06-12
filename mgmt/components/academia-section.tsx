@@ -16,7 +16,7 @@ export function AcademiaSection() {
               Dimensiones Críticas Abordadas
             </h2>
             <p className="mt-4 text-foreground/60 leading-relaxed font-sans max-w-2xl text-base md:text-lg">
-              Analizamos y profesionalizamos tu Pyme a través de cuatro ejes fundamentales diseñados para garantizar su sostenibilidad y crecimiento.
+              Analizamos y profesionalizamos tu PyME a través de cuatro ejes fundamentales diseñados para garantizar su sostenibilidad y crecimiento.
             </p>
           </ScrollReveal>
 

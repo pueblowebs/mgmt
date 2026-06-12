@@ -73,7 +73,7 @@ export function ContactSection() {
           <div className="flex flex-col justify-end">
             <div className="p-12 border border-background/10 bg-background/5 rounded-2xl relative overflow-hidden">
                <div className="absolute top-0 right-0 w-32 h-32 bg-accent opacity-10 rounded-full blur-3xl -mr-16 -mt-16"></div>
-               <h4 className="text-2xl font-serif mb-8 text-accent">Management Pyme</h4>
+               <h4 className="text-2xl font-serif mb-8 text-accent">Management PyME</h4>
                <p className="text-xl text-background/60 leading-relaxed font-bold mb-8">
                  "Pensamiento, orden y gestión para empresas más allá de la gestión tradicional."
                </p>

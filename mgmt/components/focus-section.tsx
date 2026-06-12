@@ -8,7 +8,7 @@ export function FocusSection() {
   return (
     <section id="about" className="py-24 bg-foreground text-background min-h-svh flex flex-col justify-center">
       <div className="container mx-auto px-4">
-        {/* La Realidad Pyme */}
+        {/* La Realidad PyME */}
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
           ... (commented out by user) ...
         </div> */}
@@ -39,9 +39,9 @@ export function FocusSection() {
         <div className="pt-24 border-t border-background/10">
           <div className="max-w-3xl mb-16">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">Nuestro Equipo</h3>
-            <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">Porque para la Pyme, no hay nada más práctico que una buena teoría, nace MP.</h2>
+            <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">Porque para la PyME, no hay nada más práctico que una buena teoría, nace MP.</h2>
             <p className="text-xl text-background/60 leading-relaxed">
-              Charly y Facu combinan experiencia empresaria, consultoril y formativa en Pymes de los tres sectores dirigiendo equipos multidisciplinarios diseñados a medida de los desafíos y características de cada proyecto.
+              Charly y Facu combinan experiencia empresaria, consultoril y formativa en PyMEs de los tres sectores dirigiendo equipos multidisciplinarios diseñados a medida de los desafíos y características de cada proyecto.
             </p>
           </div>
           
@@ -83,7 +83,7 @@ export function FocusSection() {
                   <div className="text-5xl font-serif text-accent mb-6 leading-[0.95]">+15</div>
                   <h4 className="text-xl font-serif mb-4 leading-tight">Profesionales</h4>
                   <p className="text-background/60 leading-relaxed max-w-md">
-                    Personas con experiencia y actualidad en dinámica y realidad Pyme en Argentina y en el exterior.
+                    Personas con experiencia y actualidad en dinámica y realidad PyME en Argentina y en el exterior.
                   </p>
                 </div>
                 <Link 

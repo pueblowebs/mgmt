@@ -12,7 +12,7 @@ export default function ClubPage() {
           <>
             Comunidad de <br />
             <span className="font-medium text-slate-300">Dueños y Socios</span> <br />
-            de Pymes
+            de PyMEs
           </>
         }
         subtitle="Un espacio exclusivo de networking, análisis y reflexión para potenciar tus decisiones empresariales"

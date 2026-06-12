@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils"
 const REALITIES = [
   {
     title: "El Límite del Esfuerzo",
-    description: "La Pyme sufre, se estresa y quiebra por exceso de energía, esfuerzo y trabajo operativo y no rentable.",
+    description: "La PyME sufre, se estresa y quiebra por exceso de energía, esfuerzo y trabajo operativo y no rentable.",
     image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&q=80",
     highlight: "Estructura"
   },
@@ -57,7 +57,7 @@ export function RealityCarousel() {
     <div className="w-full">
       {/* Section Header (Outside Carousel) */}
       <div className="max-w-3xl mb-12">
-        <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">La Realidad Pyme</h3>
+        <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">La Realidad PyME</h3>
         <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">
           Profesionalizar la Dirección es el primer paso para rentabilizar la empresa.
         </h2>

@@ -44,21 +44,21 @@ export function Header() {
         <Link href="/inicio" onClick={handleLogoClick} className="flex items-center gap-3">
           <Image 
             src="/logo/logo-dark.png" 
-            alt="Management Pyme" 
+            alt="Management PyME" 
             width={68} 
             height={68} 
             className="object-contain dark:hidden"
           />
           <Image 
             src="/logo/logo-light.png" 
-            alt="Management Pyme" 
+            alt="Management PyME" 
             width={68} 
             height={68} 
             className="object-contain hidden dark:block"
           />
           <div className="flex flex-col">
             <span className="font-serif text-lg leading-none tracking-wider uppercase">Management</span>
-            <span className="font-sans text-[10px] tracking-[0.2em] uppercase opacity-70">Pyme Argentina</span>
+            <span className="font-sans text-[10px] tracking-[0.2em] uppercase opacity-70">PyME Argentina</span>
           </div>
         </Link>
 
@@ -97,7 +97,7 @@ export function Header() {
             <SheetContent side="right" className="w-[240px] bg-header-bg text-header-foreground border-l border-white/10 p-0">
               <div className="flex flex-col h-full">
                 <SheetHeader className="p-6 border-b border-white/10 text-left space-y-0">
-                  <SheetTitle className="font-serif text-lg tracking-wider uppercase text-header-foreground">Management Pyme</SheetTitle>
+                  <SheetTitle className="font-serif text-lg tracking-wider uppercase text-header-foreground">Management PyME</SheetTitle>
                   <SheetDescription className="sr-only">Menú de navegación móvil</SheetDescription>
                 </SheetHeader>
                 <nav className="flex flex-col p-6 gap-2">

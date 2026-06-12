@@ -21,7 +21,7 @@ export default function NotFound() {
           <div className="space-y-6 animate-in fade-in slide-in-from-bottom-8 duration-1000 [animation-delay:400ms]">
             <p className="mx-auto max-w-lg text-lg md:text-xl text-foreground/60 leading-relaxed">
               Parece que la página que buscabas no está disponible o ha cambiado de lugar. 
-              Retomemos el camino hacia la gestión consciente de tu Pyme.
+              Retomemos el camino hacia la gestión consciente de tu PyME.
             </p>
             
             <div className="flex flex-col items-center justify-center gap-4 pt-4">

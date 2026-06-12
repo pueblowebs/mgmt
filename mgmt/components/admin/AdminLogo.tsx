@@ -67,7 +67,7 @@ export default function AdminLogo() {
             whiteSpace: 'nowrap',
           }}
         >
-          Pyme CMS
+          PyME CMS
         </span>
       </div>
     </div>

@@ -22,8 +22,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await getSiteSettings()
   
   return {
-    title: settings.title || 'Management Pyme - Rentabilidad & Profesionalización para Pymes.',
-    description: settings.description || 'El liderazgo consciente es el verdadero motor de transformación de una empresa. Impulsa una visión estratégica con impacto real y sostenible en tu Pyme.',
+    title: settings.title || 'Management PyME - Rentabilidad & Profesionalización para PyMEs.',
+    description: settings.description || 'El liderazgo consciente es el verdadero motor de transformación de una empresa. Impulsa una visión estratégica con impacto real y sostenible en tu PyME.',
   }
 }
 

@@ -17,13 +17,13 @@ interface VisualHeroProps {
 
 export function VisualHero({
   bgImage = "/images/visual-hero-bg.png",
-  altText = "Formación y consultoría para dueños de Pyme en Argentina",
-  tag = "Management Pyme",
+  altText = "Formación y consultoría para dueños de PyME en Argentina",
+  tag = "Management PyME",
   title = (
     <>
       Formación, Dirección y <br />
       <span className="font-medium">Management</span> <br />
-      para Dueños Pymes
+      para Dueños PyME
     </>
   ),
   subtitle = "Rentabilizamos y profesionalizamos la Dirección y la Gestión de tu empresa en comunidad",

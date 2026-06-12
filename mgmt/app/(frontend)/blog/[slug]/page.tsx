@@ -126,7 +126,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* Footer / CTA Section */}
         <div className="mt-24 pt-16 border-t border-foreground/10 text-center">
-          <h3 className="font-serif text-2xl mb-8 leading-none">¿Tu Pyme necesita una mirada estratégica?</h3>
+          <h3 className="font-serif text-2xl mb-8 leading-none">¿Tu PyME necesita una mirada estratégica?</h3>
           <Button variant="shiny" size="xl" asChild>
             <Link href="/contacto">
               Hablemos hoy

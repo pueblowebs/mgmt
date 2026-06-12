@@ -26,7 +26,7 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
                 <span dangerouslySetInnerHTML={{ __html: title.replace(/\n/g, '<br />') }} />
               ) : (
                 <>
-                  Tu Pyme no necesita <br />
+                  Tu PyME no necesita <br />
                   <span className="font-bold block mt-2">parecer una corporación.</span>
                   <span className="block mt-2">Necesita funcionar mejor.</span>
                 </>
@@ -45,11 +45,11 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="xl" variant="shiny" asChild>
                 <a 
-                  href="https://wa.me/5491165442672?text=Hola,%20me%20gustaría%20rentabilizar%20mi%20Pyme."
+                  href="https://wa.me/5491165442672?text=Hola,%20me%20gustaría%20rentabilizar%20mi%20PyME."
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Rentabilizar mi Pyme <ArrowRight className="w-5 h-5" />
+                  Rentabilizar mi PyME <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
             </div>

@@ -6,7 +6,7 @@ export default function AcademiaPage() {
     <>
       <VisualHero 
         bgImage="/images/academy-hero-bg.png"
-        altText="Academy MGMT - Formación para dueños de Pymes"
+        altText="Academy MGMT - Formación para dueños de PyMEs"
         tag="Academy"
         title="Formación que transforma."
         subtitle="Diseñada para quienes tienen el poder de cambiar el rumbo."

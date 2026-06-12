@@ -4,8 +4,8 @@ import { Suspense } from "react"
 import Image from "next/image"
 
 export const metadata = {
-  title: 'FAQ - Management Pyme',
-  description: 'Preguntas frecuentes sobre nuestros servicios de consultoría y academia para pymes.',
+  title: 'FAQ - Management PyME',
+  description: 'Preguntas frecuentes sobre nuestros servicios de consultoría y academia para PyMEs.',
 }
 
 function FaqHeader() {

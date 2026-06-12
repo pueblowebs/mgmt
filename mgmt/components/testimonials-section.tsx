@@ -22,8 +22,8 @@ export function TestimonialsSection() {
   ]
 
   const testimonials = [
-    { text: "El cambio en la toma de decisiones fue inmediato. Ahora tenemos claridad.", author: "Dueño de Pyme Industrial" },
-    { text: "Management Pyme nos ayudó a profesionalizar el equipo sin perder la agilidad que nos trajo hasta acá.", author: "Fundadora de Startup" },
+    { text: "El cambio en la toma de decisiones fue inmediato. Ahora tenemos claridad.", author: "Dueño de PyME Industrial" },
+    { text: "Management PyME nos ayudó a profesionalizar el equipo sin perder la agilidad que nos trajo hasta acá.", author: "Fundadora de Startup" },
     { text: "No es solo teoría, es acompañamiento real en la trinchera.", author: "Director Comercial" },
     { text: "El Club es mi espacio seguro para pensar la estrategia una vez al mes.", author: "CEO de Empresa de Servicios" }
   ]

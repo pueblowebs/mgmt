@@ -22,7 +22,7 @@ export function SolutionsOverview() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 border-b border-foreground/10 pb-24">
           <div className="space-y-8">
             <p className="text-2xl font-serif text-foreground leading-snug">
-              Clarificamos estructura, roles y procesos. Profesionalizamos sin convertir la Pyme en algo que no es.
+              Clarificamos estructura, roles y procesos. Profesionalizamos sin convertir la PYME en algo que no es.
             </p>
             <p className="text-foreground/60 leading-relaxed">
               Ayudamos a tomar decisiones estratégicas con criterio. Tres formas de trabajar la gestión. Tres niveles de profundidad. Un mismo enfoque: impacto real.

@@ -27,10 +27,10 @@ const seminars = [
   { title: "Aprendizaje Organizacional", month: "Septiembre", speaker: "Facundo Penna" },
   { title: "Comercialización", month: "Septiembre", speaker: "Paolo Vozzi" },
   { title: "Gestión de Riesgos", month: "Octubre", speaker: "Viviana Coustarot" },
-  { title: "De CEO a Director Pyme", month: "Octubre", speaker: "Atilio Penna" },
+  { title: "De CEO a Director PyME", month: "Octubre", speaker: "Atilio Penna" },
   { title: "Proyectos Estratégicos", month: "Octubre", speaker: "Santiago Alfonso" },
   { title: "Historias Empresarias", month: "Noviembre", speaker: "Daniel Llobera" },
-  { title: "Valuación Pyme", month: "Noviembre", speaker: "Hugo Arinovich" },
+  { title: "Valuación PyME", month: "Noviembre", speaker: "Hugo Arinovich" },
   { title: "Business Plan Dir Ppta", month: "Noviembre", speaker: "Facundo Penna" },
 ]
 
@@ -109,7 +109,7 @@ export function AgendaModal({ trigger }: AgendaModalProps) {
             <span className="text-[10px] text-accent font-bold uppercase tracking-widest">Método MGMT — Transformando la Gestión</span>
           </div>
           <p className="text-[10px] text-foreground/30 uppercase tracking-[0.3em] font-medium">
-            Formación y consultoría para dueños de Pyme
+            Formación y consultoría para dueños de PyME
           </p>
         </div>
       </DialogContent>

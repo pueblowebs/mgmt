@@ -16,8 +16,8 @@ export interface FaqSectionProps {
 
 const defaultFaqs = [
   {
-    question: "¿Qué tipo de empresas se benefician de Management Pyme?",
-    answer: "Trabajamos principalmente con pymes en etapa de crecimiento o consolidación que buscan profesionalizar sus procesos, tener mayor claridad estratégica y lograr que el área directiva no sea un cuello de botella."
+    question: "¿Qué tipo de empresas se benefician de Management PyME?",
+    answer: "Trabajamos principalmente con PyMEs en etapa de crecimiento o consolidación que buscan profesionalizar sus procesos, tener mayor claridad estratégica y lograr que el área directiva no sea un cuello de botella."
   },
   {
     question: "¿En qué consiste la primera consulta o diagnóstico?",
