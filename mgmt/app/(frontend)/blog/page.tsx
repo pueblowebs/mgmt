@@ -3,6 +3,7 @@ import { getBlogPosts } from "@/lib/api"
 import { BLOG_POSTS as STATIC_POSTS } from "@/lib/blog-data"
 import { Suspense } from "react"
 import Image from "next/image"
+import { notFound } from "next/navigation"
 
 function BlogHeader() {
   return (
@@ -99,6 +100,7 @@ async function PayloadBlogContent() {
 }
 
 export default function BlogListingPage() {
+  notFound()
   return (
     <div className="pb-32">
       <BlogHeader />

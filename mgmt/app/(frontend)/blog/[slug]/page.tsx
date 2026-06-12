@@ -29,6 +29,7 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  notFound()
   const { slug } = await params
   let post: any = null
 
