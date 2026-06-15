@@ -1,5 +1,7 @@
+"use client"
+
 import Image from "next/image"
-import { Target, ShieldCheck, Users, Briefcase, GraduationCap } from "lucide-react"
+import { Target, ShieldCheck, Users, Briefcase, GraduationCap, ChevronDown } from "lucide-react"
 import { ScrollReveal } from "./scroll-reveal"
 
 export function NosotrosSection() {
@@ -107,10 +109,11 @@ export function NosotrosSection() {
             </p>
           </div>
         </div>
+
       </div>
 
       {/* Cards container overlapping the bottom of the hero */}
-      <div className="container mx-auto px-4 -mt-16 md:-mt-24 relative z-20 mb-20 md:mb-32">
+      <div className="container mx-auto px-4 -mt-16 md:-mt-24 relative z-20 mb-16">
         {/* Redesigned Propósito y Valores Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {/* Propósito Card */}
@@ -142,6 +145,21 @@ export function NosotrosSection() {
               </div>
             </div>
           </ScrollReveal>
+        </div>
+      </div>
+
+      {/* Scroll Indicator (Below Cards) */}
+      <div className="flex justify-center mb-20 relative z-20">
+        <div
+          onClick={() => {
+            const element = document.getElementById("team-start");
+            if (element) {
+              element.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="animate-bounce cursor-pointer opacity-50 hover:opacity-100 transition-opacity"
+        >
+          <ChevronDown className="w-8 h-8 text-foreground/45 hover:text-accent" />
         </div>
       </div>
 
