@@ -1,28 +1,50 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react"
 import { CopyText } from "./copy-text"
+import Image from "next/image"
 
 export function ContactSection() {
   return (
-    <section id="contacto" className="py-32 bg-foreground text-background min-h-svh flex flex-col justify-center">
+    <section id="contacto" className="bg-foreground text-background min-h-svh pb-24">
+      {/* Header - Styled exactly like FAQ and Blog but using the Contact info/image */}
+      <div className="relative w-full h-[35vh] md:h-[35vh] flex items-center justify-center overflow-hidden bg-black mb-6">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/oficina.webp"
+            alt="Contacto - MGMT"
+            fill
+            priority
+            className="object-cover opacity-25 scale-105"
+          />
+          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-foreground" />
+        </div>
+
+        {/* Content */}
+        <div className="container relative z-10 px-4 mx-auto text-center">
+          <div className="max-w-4xl mx-auto space-y-4">
+            <span className="inline-block px-4 py-1.5 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent border border-accent/20 rounded-full">
+              Hablemos
+            </span>
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight drop-shadow-lg">
+              Si tu empresa necesita orden, foco o una <span className="font-bold text-accent">mirada estratégica</span> externa, conversemos.
+            </h1>
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <div className="inline-block px-4 py-1.5 mb-8 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase backdrop-blur-md rounded-full border border-accent/20 bg-accent/20 text-accent-foreground animate-fade-in-up w-fit">
-              Hablemos
-            </div>
-            <h2 className="font-serif text-3xl md:text-5xl text-background leading-none tracking-tighter mb-12">
-              Si tu empresa necesita orden, foco o una <span className="font-bold opacity-50">mirada estratégica</span> externa, conversemos.
-            </h2>
             
-            <div className="space-y-12 mb-16">
+            <div className="space-y-8 mb-12">
                <div className="flex gap-8 group">
                   <div className="w-12 h-12 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-accent group-hover:border-accent transition-colors">
                      <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Escribinos</h4>
-                    <CopyText text="hola@managementpyme.com" className="text-2xl font-serif" />
+                    <CopyText text="hola@managementpyme.com" className="text-lg md:text-2xl font-serif" />
                   </div>
                </div>
                 <div className="flex gap-8 group">
@@ -67,9 +89,11 @@ export function ContactSection() {
                 </div>
             </div>
 
-            <Button variant="shiny" size="xl" className="text-base gap-3 transition-all">
-              Agendar conversación <ArrowRight className="w-6 h-6" />
-            </Button>
+            <div className="flex justify-center ">
+              <Button variant="shiny" size="xl" className="text-base gap-3 transition-all">
+                Agendar conversación <ArrowRight className="w-6 h-6" />
+              </Button>
+            </div>
           </div>
 
           <div className="flex flex-col justify-end">
