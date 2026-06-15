@@ -52,7 +52,7 @@ export function ProSection() {
             <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Cómo trabajamos</h4>
             <div className="space-y-10">
               {[
-                { icon: Users, t: "All In", d: "Equipo completo, somos una empresa." },
+                { icon: Users, t: '"All In"', d: "Equipo completo, somos una empresa." },
                 { icon: Clock, t: "Cross land-cross time", d: "Estamos donde tenemos que estar cuando tenemos que estar." },
                 { icon: Smile, t: "Tercer tiempo", d: "Co-creamos ambiente de aprendizaje para incrementar autonomía y responsabilidad." }
               ].map((step, i) => (
