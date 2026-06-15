@@ -69,7 +69,6 @@ export function ProSection() {
             </div>
             
             <div className="mt-12 pt-12 border-t border-foreground/10 flex flex-col items-center">
-               <p className="text-foreground/80 font-bold mb-6 text-center">No entregamos informes. Trabajamos hasta que el cambio se materializa.</p>
                <a 
                  href="https://wa.me/5491144782200?text=Hola%20Charly,%20necesito%20acompañamiento%20estratégico%20Pro." 
                  target="_blank" 
