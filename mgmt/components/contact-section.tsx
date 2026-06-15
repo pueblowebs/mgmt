@@ -8,7 +8,9 @@ export function ContactSection() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-8">Hablemos</h3>
+            <div className="inline-block px-4 py-1.5 mb-8 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase backdrop-blur-md rounded-full border border-accent/20 bg-accent/20 text-accent-foreground animate-fade-in-up w-fit">
+              Hablemos
+            </div>
             <h2 className="font-serif text-3xl md:text-5xl text-background leading-none tracking-tighter mb-12">
               Si tu empresa necesita orden, foco o una <span className="font-bold opacity-50">mirada estratégica</span> externa, conversemos.
             </h2>
