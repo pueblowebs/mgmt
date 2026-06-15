@@ -101,7 +101,7 @@ export function StepsSection() {
 
           <div 
             ref={scrollerRef}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 relative steps-carousel lg:!overflow-visible lg:!flex-row"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 relative steps-carousel lg:overflow-visible! lg:flex-row!"
           >
             {steps.map((step, i) => (
               <div 
