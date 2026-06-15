@@ -43,18 +43,11 @@ export function Header() {
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/inicio" onClick={handleLogoClick} className="flex items-center gap-3">
           <Image 
-            src="/logo/logo-dark.png" 
+            src="/logo-white/logo-white.svg" 
             alt="Management PyME" 
-            width={68} 
-            height={68} 
-            className="object-contain dark:hidden"
-          />
-          <Image 
-            src="/logo/logo-light.png" 
-            alt="Management PyME" 
-            width={68} 
-            height={68} 
-            className="object-contain hidden dark:block"
+            width={50} 
+            height={50} 
+            className="object-contain"
           />
           <div className="flex flex-col">
             <span className="font-serif text-lg leading-none tracking-wider uppercase">Management</span>
