@@ -5,7 +5,7 @@ export default function ClubPage() {
   return (
     <>
       <VisualHero 
-        bgImage="/images/club-hero-bg.png"
+        bgImage="/quincho.webp"
         altText="Club de Empresarios MGMT"
         tag="Club"
         title={
