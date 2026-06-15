@@ -5,7 +5,7 @@ export default function AcademiaPage() {
   return (
     <>
       <VisualHero 
-        bgImage="/oficina.webp"
+        bgImage="/collage.webp"
         altText="Academy MGMT - Formación para dueños de PyMEs"
         tag="Academy"
         title={<>Formación <br/> que <br/> transforma</>}
