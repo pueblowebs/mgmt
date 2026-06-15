@@ -5,10 +5,10 @@ export default function AcademiaPage() {
   return (
     <>
       <VisualHero 
-        bgImage="/images/academy-hero-bg.png"
+        bgImage="/oficina.webp"
         altText="Academy MGMT - Formación para dueños de PyMEs"
         tag="Academy"
-        title="Formación que transforma."
+        title={<>Formación <br/> que <br/> transforma</>}
         subtitle="Diseñada para quienes tienen el poder de cambiar el rumbo."
         tagClassName="bg-[#3388cc]/20 text-[#3388cc] border-[#3388cc]/20"
       />

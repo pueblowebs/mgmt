@@ -16,7 +16,7 @@ interface VisualHeroProps {
 }
 
 export function VisualHero({
-  bgImage = "/oficina.webp",
+  bgImage = "/collage.webp",
   altText = "Formación y consultoría para dueños de PyME en Argentina",
   tag = "",
   title = (
