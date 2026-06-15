@@ -58,7 +58,7 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
             <div className="absolute -inset-4 bg-accent/5 rounded-4xl rotate-3 -z-10"></div>
             <div className="absolute inset-0 border border-foreground/10 rounded-4xl -z-10 translate-x-4 translate-y-4"></div>
             <Image
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80"
+              src="/lafo-docente.webp"
               alt="Empresario profesional"
               fill
               className="object-cover rounded-4xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"

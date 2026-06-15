@@ -26,7 +26,7 @@ function FaqHeader() {
       {/* Content */}
       <div className="container relative z-10 px-4 mx-auto text-center">
         <div className="max-w-4xl mx-auto space-y-4">
-          <span className="inline-block px-4 py-1.5 text-[10px] font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent border border-accent/20 rounded-full">
+          <span className="inline-block px-4 py-1.5 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase bg-accent/20 text-accent border border-accent/20 rounded-full">
             PREGUNTAS FRECUENTES
           </span>
           <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
