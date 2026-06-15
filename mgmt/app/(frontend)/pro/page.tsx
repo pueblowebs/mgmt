@@ -5,7 +5,7 @@ export default function ProPage() {
   return (
     <>
       <VisualHero 
-        bgImage="/images/pro-hero-bg.png"
+        bgImage="/quincho-2.webp"
         altText="Pro MGMT - Acompañamiento Estratégico"
         tag="Pro"
         title={
