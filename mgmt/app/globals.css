@@ -141,3 +141,29 @@ body[data-scroll-locked] {
   margin-right: 0px !important;
   padding-right: 0px !important;
 }
+
+/* Mobile-only swipe carousel para StepsSection */
+@media (max-width: 1023px) {
+  .steps-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 1.25rem;
+    padding-inline: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .steps-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .steps-carousel .carousel-item {
+    flex: 0 0 82vw;
+    max-width: 340px;
+    scroll-snap-align: center;
+  }
+}
+

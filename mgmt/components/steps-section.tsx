@@ -1,7 +1,13 @@
+"use client"
+
+import { useEffect, useRef, useState } from "react"
 import { ArrowRight, ChevronRight } from "lucide-react"
 import { ScrollReveal } from "./scroll-reveal"
 
 export function StepsSection() {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const scrollerRef = useRef<HTMLDivElement>(null)
+
   const steps = [
     {
       number: "01",
@@ -26,6 +32,50 @@ export function StepsSection() {
     }
   ]
 
+  useEffect(() => {
+    const scroller = scrollerRef.current
+    if (!scroller || window.innerWidth >= 1024) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = Number(entry.target.getAttribute("data-index"))
+            if (!isNaN(index)) {
+              setActiveIndex(index)
+            }
+          }
+        })
+      },
+      {
+        root: scroller,
+        rootMargin: "0px -40%",
+        threshold: 0.1
+      }
+    )
+
+    const items = scroller.querySelectorAll(".carousel-item")
+    items.forEach((item) => observer.observe(item))
+
+    return () => {
+      items.forEach((item) => observer.unobserve(item))
+    }
+  }, [])
+
+  const scrollToSlide = (index: number) => {
+    const scroller = scrollerRef.current
+    if (!scroller) return
+    const items = scroller.querySelectorAll<HTMLElement>(".carousel-item")
+    const targetItem = items[index]
+    if (targetItem) {
+      scroller.scrollTo({
+        left: targetItem.offsetLeft - (scroller.clientWidth - targetItem.clientWidth) / 2,
+        behavior: "smooth"
+      })
+      setActiveIndex(index)
+    }
+  }
+
   return (
     <section className="py-20 md:py-24 bg-background relative overflow-hidden">
       {/* Background Decor */}
@@ -44,17 +94,26 @@ export function StepsSection() {
           </p>
         </ScrollReveal>
 
-        {/* Steps Grid */}
+        {/* Steps Grid / Carousel Container */}
         <div className="relative">
           {/* Connecting Line (Desktop) */}
           <div className="absolute top-1/2 left-0 w-full h-px border-t border-dashed border-foreground/10 -z-10 hidden lg:block translate-y-[20px]" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 relative">
+          <div 
+            ref={scrollerRef}
+            className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 relative steps-carousel lg:!overflow-visible lg:!flex-row"
+          >
             {steps.map((step, i) => (
-              <div key={i} className="group relative">
+              <div 
+                key={i} 
+                className="group relative carousel-item"
+                data-index={i}
+              >
                 {/* Step Card */}
                 <ScrollReveal delay={i * 150} className="h-full flex flex-col">
-                  <div className="w-full bg-white border border-foreground/10 p-6 md:p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] hover:border-accent/40 transition-all duration-500 z-10 relative flex flex-col h-full group/card">
+                  <div className={`w-full bg-white border p-6 md:p-8 rounded-2xl shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)] hover:border-accent/40 transition-all duration-500 z-10 relative flex flex-col h-full group/card ${
+                    activeIndex === i ? 'border-accent/40 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.08)]' : 'border-foreground/10'
+                  }`}>
                     <div className="mb-6 flex items-center justify-between">
                       <span
                         className="inline-block text-[10px] font-bold tracking-[0.3em] uppercase px-4 py-1.5 rounded-full text-white"
@@ -81,31 +140,34 @@ export function StepsSection() {
                   </div>
                 </ScrollReveal>
 
-                {/* Stationary Connectors (Decoupled from hover) */}
+                {/* Stationary Connectors (Desktop only) */}
                 {i < steps.length - 1 && (
-                  <>
-                    {/* Desktop Arrow Connector */}
-                    <div className="absolute top-1/2 -right-8 translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block transition-all duration-500 group-hover:scale-110">
-                      <div className="relative flex items-center justify-center">
-                        <div className="absolute w-12 h-12 bg-primary/5 rounded-full blur-xl animate-pulse-slow" />
-                        <div className="absolute w-9 h-9 bg-background border border-foreground/10 rounded-full shadow-md flex items-center justify-center">
-                          <ChevronRight className="w-4 h-4 text-primary/40 group-hover:text-primary transition-colors duration-500" strokeWidth={1.5} />
-                        </div>
+                  <div className="absolute top-1/2 -right-8 translate-x-1/2 -translate-y-1/2 z-20 hidden lg:block transition-all duration-500 group-hover:scale-110">
+                    <div className="relative flex items-center justify-center">
+                      <div className="absolute w-12 h-12 bg-primary/5 rounded-full blur-xl animate-pulse-slow" />
+                      <div className="absolute w-9 h-9 bg-background border border-foreground/10 rounded-full shadow-md flex items-center justify-center">
+                        <ChevronRight className="w-4 h-4 text-primary/40 group-hover:text-primary transition-colors duration-500" strokeWidth={1.5} />
                       </div>
                     </div>
-
-                    {/* Mobile Arrow Connector */}
-                    <div className="absolute top-full left-1/2 -translate-x-1/2 translate-y-5 z-20 block lg:hidden">
-                      <div className="relative flex items-center justify-center">
-                        <div className="absolute w-10 h-10 bg-primary/5 rounded-full animate-pulse-slow" />
-                        <div className="absolute w-8 h-8 bg-background border border-foreground/10 rounded-full flex items-center justify-center">
-                          <ChevronRight className="w-4 h-4 text-primary/40 rotate-90" strokeWidth={1.5} />
-                        </div>
-                      </div>
-                    </div>
-                  </>
+                  </div>
                 )}
               </div>
+            ))}
+          </div>
+
+          {/* Dots Indicator (Mobile only) */}
+          <div className="flex justify-center items-center gap-2.5 mt-8 lg:hidden" aria-label="Navegar por pasos">
+            {steps.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => scrollToSlide(i)}
+                className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
+                  activeIndex === i 
+                    ? 'bg-accent w-6' 
+                    : 'bg-foreground/20 w-2.5'
+                }`}
+                aria-label={`Ir al paso ${i + 1}`}
+              />
             ))}
           </div>
         </div>
@@ -113,3 +175,4 @@ export function StepsSection() {
     </section>
   )
 }
+
