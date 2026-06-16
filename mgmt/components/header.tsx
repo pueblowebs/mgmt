@@ -62,6 +62,12 @@ export function Header() {
               <Link
                 key={item.label}
                 href={item.href}
+                onClick={(e) => {
+                  if (item.href === "/inicio" && (pathname === "/inicio" || pathname === "/")) {
+                    e.preventDefault()
+                    window.scrollTo({ top: 0, behavior: "smooth" })
+                  }
+                }}
                 className={cn(
                   "relative text-xs font-semibold tracking-widest uppercase transition-all pb-1.5 group",
                   isActive ? "opacity-100" : "opacity-70 hover:opacity-100"
@@ -104,7 +110,13 @@ export function Header() {
                           "py-3 text-xs font-semibold tracking-widest uppercase border-b border-white/5 last:border-0 transition-all",
                           isActive ? "text-header-foreground opacity-100" : "text-header-foreground opacity-50 hover:opacity-100"
                         )}
-                        onClick={() => setIsOpen(false)}
+                        onClick={(e) => {
+                          setIsOpen(false)
+                          if (item.href === "/inicio" && (pathname === "/inicio" || pathname === "/")) {
+                            e.preventDefault()
+                            window.scrollTo({ top: 0, behavior: "smooth" })
+                          }
+                        }}
                       >
                         {item.label}
                       </Link>

@@ -1,62 +1,54 @@
-# 📋 Correcciones del Cliente — Estado General
-> Basado en documento "MP WEB Dev 2 290526 FP" — revisado el 06/06/2026
+# 📋 Plan de Trabajo y Pendientes — Management PyME
+
+Este documento centraliza todas las tareas pendientes, mejoras técnicas, objetivos de diseño e historial de implementaciones del proyecto.
 
 ---
 
-## ✅ Ya implementado
+## ❌ Pendientes / Por Implementar
 
-| # | Corrección del cliente | Dónde |
-|---|---|---|
-| 3 | Sección "Nosotros" agregada después de PRO | `/app/(frontend)/nosotros/`, `header.tsx`, `footer.tsx` |
-| 3 | Nosotros: Propósito exacto del cliente | `nosotros-section.tsx` |
-| 3 | Nosotros: Valores exactos del cliente | `nosotros-section.tsx` |
-| 3 | Nosotros: Equipo completo — Facu, Charly, Patricio, Gustavo y Federico Vionnet | `nosotros-section.tsx` |
-| 3 | Nosotros: Profesionales @ Academy con fotos | `nosotros-section.tsx` |
-| 4.2 | Texto visual hero: "Rentabilizamos y profesionalizamos..." | `visual-hero.tsx` |
-| 5 | Descripciones de Academy, Club y PRO actualizadas | `steps-section.tsx` |
-| 5 | Botón Academy dice "Ver programa" | `steps-section.tsx` |
-| 6 | Botón CTA dice "Rentabilizar mi Pyme" | `hero-section.tsx` |
-| 6 | Botón CTA va al WhatsApp +11 6544 2672 | `hero-section.tsx` |
-| 8 | Nuestro Equipo: botón "Conocé al Equipo" → `/nosotros` | `focus-section.tsx` |
-| 8 | Texto "+15 Profesionales" con descripción correcta | `focus-section.tsx` |
-| 9 | Hero visual de Academy: fondo negro, letras azules, foto premium | `app/(frontend)/academy/page.tsx` + `public/images/academy-hero-bg.png` |
-| 11 | Hero visual de Club: fondo negro, letras azules, foto premium | `app/(frontend)/club/page.tsx` + `public/images/club-hero-bg.png` |
-| 13 | Hero visual de PRO: fondo negro, letras azules, foto premium | `app/(frontend)/pro/page.tsx` + `public/images/pro-hero-bg.png` |
-| 10 | Sección Academy: título, subtítulo, Dimensiones, Estructura, Cita y Descargar Programa | `academia-section.tsx` |
-| 4.2/9/11/13 | Capa oscura añadida a `VisualHero` para mejorar contraste de texto | `visual-hero.tsx` |
-| 12 | Cambios en sección CLUB: tag CLUB, H2, descripción y las 4 actividades | `club-section.tsx` |
-| 14 | Cambios en sección PRO: H2, subtítulo, Qué cubrimos (5 roles), Cómo trabajamos (3 ítems) y CTA | `pro-section.tsx` |
+### 🎨 Identidad, Branding y Media
+- [ ] **Foto principal (Visual Hero de Inicio):** Buscar y seleccionar fotos propias de la carpeta del cliente (Facu/Charly), o armar un tríptico de fotos reales para reemplazar la imagen actual (`/oficina.webp`).
+- [ ] **Crear Logo Oficial:** Diseñar las versiones finales (principal, negativa e icono).
+- [ ] **Implementar Logo en Frontend:** Actualizar el componente `Navbar` / `Header` con el nuevo archivo del logo oficial.
+- [ ] **Personalizar CMS:** Cambiar el logo en `payload.config.ts` (Admin UI) y el favicon del panel de administración.
+- [ ] **Favicons:** Generar e implementar el set completo de favicons para el sitio público.
 
----
+### ⚙️ Desarrollo CMS (Payload)
+- [ ] **Dinamizar Carrusel de Realidades:** Mover el array `REALITIES` de `reality-carousel.tsx` a una Global o Colección en Payload.
+- [ ] **Sección de Enfoque (Focus):** Dinamizar las "Creencias" y los textos de la sección de equipo.
+- [ ] **Gestión de Leads:** Crear colección `Inquiries` o `Leads` para capturar y almacenar datos del formulario de contacto.
+- [ ] **Configuración de Email:** Instalar y configurar un adapter de email (ej. Resend o SMTP) para notificaciones automáticas de contacto.
+- [ ] **Configuración de Caché (ISR):** Cambiar `cache: "no-store"` por Regeneración Incremental Estática (ISR) en `lib/api.ts` para producción.
+- [ ] **Conectar Secciones Restantes:** Vincular otras secciones estáticas/semi-estáticas con Payload CMS (ej. Testimonios).
 
-## ❌ Pendiente / Falta implementar
+### 🚀 Frontend y UI/UX
+- [ ] **Formulario de Contacto:** Diseñar/implementar el formulario de contacto con validación mediante **Zod** y manejo de estados de carga y éxito (`loading`/`success`) en la página `/contacto`.
+- [ ] **Página de Blog:** Implementar la visualización y listado dinámico de posts, así como la vista de detalle del post (actualmente con mocks).
+- [ ] **Newsletter:** Crear un componente de suscripción en el footer.
+- [ ] **Optimización de Imágenes:** Asegurar la correcta instalación y funcionamiento de `sharp` (requerido por Payload) para el procesamiento de imágenes en producción.
 
----
+### 🔍 SEO, Performance y Analytics
+- [ ] **Metadatos Dinámicos:** Vincular la configuración global del sitio (`SiteSettings` en Payload) con el objeto `metadata` de Next.js.
+- [ ] **Sitemap y Robots.txt:** Generar dinámicamente según las colecciones del CMS (páginas, posts, etc.).
+- [ ] **Analytics:** Configurar el ID de Vercel Analytics o Google Analytics.
 
-### 4.1 Foto principal (Visual Hero de Inicio) — Página 6
-**Cliente pide:** buscar una foto de su carpeta (fotos propias de Facu/Charly), o un tríptico de fotos propias.
-- [ ] El cliente tiene que compartir sus fotos o elegir entre las de su carpeta. La imagen actual es generada/stock.
-
----
-
-### 7. Cambio en Etiqueta y Título (Reality Carousel) — Página 9/10
-**Cliente pide:** cambiar `"La realidad Pyme"` por → `"La realidad Pyme"` y `"Profesionalizar la Dirección es el primer paso para rentabilizar la empresa."`
-(En realidad el cliente aprueba la estética y pide actualizar las etiquetas/títulos del carrusel de realidades)
-- [ ] Revisar `reality-carousel.tsx` y ajustar las etiquetas y el título de la sección.
+### 🛠️ Despliegue, Seguridad e Infraestructura
+- [ ] **Roles y Permisos:** Refinar el acceso de 'Editor' en Payload para que solo gestione contenido y no configuraciones del sistema.
+- [ ] **Variables de Entorno:** Asegurar que `PAYLOAD_SECRET` y las credenciales de base de datos estén configuradas correctamente en producción.
+- [ ] **Migración de Cuentas:** Migrar las cuentas de Neon (Base de datos) y Cloudinary (Almacenamiento de archivos/imágenes) desde `pueblowebs@gmail.com` a `mgmtpyme@gmail.com`.
 
 ---
 
-### A. Bug de Funcionalidad — Página 26
-**Cliente reporta:** Desde `/inicio`, hacer click en "inicio" en la navbar no lleva al inicio de la página (scroll-to-top). Para las demás páginas funciona bien.
-- [ ] Revisar el comportamiento del link "Inicio" en el `header.tsx` cuando ya se está en `/inicio` — agregar lógica de `scrollTo(0,0)` o `window.location.reload()` si la ruta actual es `/inicio`.
+## ✅ Completado / Ya Implementado
 
----
-
-## 🔧 Técnico / Infra (pre-existente)
-
-- [ ] Optimización de Caché: cambiar `cache: "no-store"` por ISR en `lib/api.ts` (para producción).
-- [ ] Conectar el resto de secciones dinámicas con Payload CMS (Testimonios, etc.).
-- [ ] Configurar roles y permisos finales en Payload para producción.
-- [ ] Migración de cuentas Neon y Cloudinary a `mgmtpyme@gmail.com`.
-- [ ] Sitemap y robots.txt dinámicos.
-- [ ] Formulario de contacto: validación con Zod y estados loading/success.
+| Item / Corrección | Dónde / Componente |
+|---|---|
+| **Bug de Funcionalidad (Scroll-to-top):** Al hacer clic en "Inicio" estando en `/inicio`, la página realiza un scroll suave hacia el inicio. | `header.tsx` |
+| **Reality Carousel:** Título y etiquetas actualizados ("La Realidad PyME" y "Profesionalizar la Dirección es el primer paso...") | `reality-carousel.tsx` |
+| **Sección "Nosotros":** Creada con propósito, valores, equipo completo (Facu, Charly, Patricio, Gustavo, Federico V.) y fotos de profesionales. | `/app/(frontend)/nosotros/`, `header.tsx`, `footer.tsx`, `nosotros-section.tsx` |
+| **Texto visual hero:** "Rentabilizamos y profesionalizamos..." | `visual-hero.tsx` |
+| **Descripciones de Academy, Club y PRO:** Actualizadas y unificadas. | `steps-section.tsx` |
+| **Botones y CTAs:** Botón de Academy dice "Ver programa"; CTA principal lleva a WhatsApp con el texto correcto. | `steps-section.tsx`, `hero-section.tsx` |
+| **Secciones de Servicios:** Academy (estructura, cita, descarga), Club (actividades) y PRO (roles, cómo trabajamos, CTAs) completadas y estilizadas. | `academia-section.tsx`, `club-section.tsx`, `pro-section.tsx` |
+| **Mejoras de contraste:** Capa oscura añadida a `VisualHero` para mejorar legibilidad. | `visual-hero.tsx` |
+| **Sección de Enfoque:** Botón "Conocé al Equipo" redirige correctamente a `/nosotros` y textos de profesionales corregidos. | `focus-section.tsx` |
