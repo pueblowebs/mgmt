@@ -10,7 +10,7 @@ export const metadata = {
 
 function FaqHeader() {
   return (
-    <div className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden bg-black mb-16">
+    <div className="relative w-full h-[45vh] md:h-[55vh] flex items-center justify-center overflow-hidden bg-black mb-10">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -60,11 +60,13 @@ async function PayloadFaqContent() {
 
 export default function FaqPage() {
   return (
-    <div className="pb-32">
+    <div className="relative">
       <FaqHeader />
-      <Suspense fallback={<FaqSection />}>
-        <PayloadFaqContent />
-      </Suspense>
+      <div className="relative z-10 -mt-12 md:-mt-20">
+        <Suspense fallback={<FaqSection />}>
+          <PayloadFaqContent />
+        </Suspense>
+      </div>
     </div>
   )
 }

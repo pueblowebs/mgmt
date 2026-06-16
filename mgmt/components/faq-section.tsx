@@ -41,7 +41,7 @@ export function FaqSection({ faqs }: FaqSectionProps) {
   const displayFaqs = faqs && faqs.length > 0 ? faqs : defaultFaqs;
 
   return (
-    <section className="pb-32 bg-background text-foreground min-h-[50vh] flex flex-col justify-center">
+    <section className="pb-32 text-foreground min-h-[50vh] flex flex-col justify-center">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="mx-auto w-full">
           <Accordion type="single" collapsible className="w-full space-y-4">
