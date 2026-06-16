@@ -149,18 +149,19 @@ export function NosotrosSection() {
       </div>
 
       {/* Scroll Indicator (Below Cards) */}
-      <div className="flex justify-center mb-20 relative z-20">
-        <div
+      <div className="flex justify-center mb-16 relative z-30">
+        <button
           onClick={() => {
             const element = document.getElementById("team-start");
             if (element) {
-              element.scrollIntoView({ behavior: "smooth" });
+              element.scrollIntoView({ behavior: "smooth", block: "start" });
             }
           }}
-          className="animate-bounce cursor-pointer opacity-50 hover:opacity-100 transition-opacity"
+          className="animate-bounce cursor-pointer opacity-50 hover:opacity-100 transition-opacity p-2 rounded-full focus:outline-hidden"
+          aria-label="Ir a la sección de Socios y Directores"
         >
           <ChevronDown className="w-8 h-8 text-foreground/45 hover:text-accent" />
-        </div>
+        </button>
       </div>
 
       <div className="container mx-auto px-4">

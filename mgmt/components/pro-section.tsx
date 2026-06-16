@@ -4,7 +4,7 @@ import { Button } from "./ui/button"
 
 export function ProSection() {
   return (
-    <section id="pro" className="py-24 bg-background text-foreground min-h-svh flex flex-col justify-center">
+    <section id="pro" className="py-24 bg-background text-foreground">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
           <div className="max-w-2xl">
@@ -17,9 +17,9 @@ export function ProSection() {
             </p>
           </div>
           
-          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto">
-            <div className="absolute -inset-4 bg-accent/5 rounded-4xl rotate-3 -z-10"></div>
-            <div className="absolute inset-0 border border-foreground/10 rounded-4xl -z-10 translate-x-4 translate-y-4"></div>
+          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto overflow-hidden rounded-4xl">
+            <div className="absolute inset-0 bg-accent/5 rounded-4xl rotate-3"></div>
+            <div className="absolute inset-0 border border-foreground/10 rounded-4xl"></div>
             <Image
               src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
               alt="Estrategia y Liderazgo"

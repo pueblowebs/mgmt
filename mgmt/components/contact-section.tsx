@@ -108,7 +108,7 @@ export function ContactSection() {
                </p>
             </div>
             
-            <div className="mt-12 flex gap-8 items-center opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">
+            <div className="mt-12 flex md:justify-evenly justify-between items-center opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-700">
                <div className="text-sm font-bold tracking-widest uppercase">Buenos Aires</div>
                <div className="text-sm font-bold tracking-widest uppercase">Madrid</div>
                <div className="text-sm font-bold tracking-widest uppercase">Ciudad de México</div>
