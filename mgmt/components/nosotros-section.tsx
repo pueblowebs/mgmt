@@ -166,7 +166,7 @@ export function NosotrosSection() {
 
       <div className="container mx-auto px-4">
         {/* Socios y Directores */}
-        <div id="team-start" className="mb-20 md:mb-32">
+        <div id="team-start" className="mb-20 md:mb-32 scroll-mt-26">
           <ScrollReveal className="mb-10 md:mb-16">
             <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-3">Dirección</h3>
             <h2 className="font-serif text-3xl md:text-4xl leading-none tracking-tighter">
