@@ -109,18 +109,20 @@ export function AcademiaSection() {
               
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8 pb-6 border-b border-foreground/5">
                 <span className="text-lg font-serif text-foreground font-bold">Detalles de la Cursada</span>
-                <div className="flex flex-wrap gap-2.5">
+                <div className="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
                   <a 
                     href="https://wa.me/5491165442672?text=Hola,%20me%20gustaría%20descargar%20el%20programa%20de%20Academy%20MGMT." 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/20 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 shadow-sm cursor-pointer group/btn"
+                    className="w-full sm:w-auto"
                   >
-                    <ArrowDownToLine className="w-3 h-3 opacity-70 group-hover/btn:opacity-100" />
-                    <span>Programa</span>
+                    <button className="inline-flex items-center justify-center gap-2 px-4 h-8 rounded-full border border-accent/20 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 shadow-sm cursor-pointer group/btn w-full sm:w-[130px]">
+                      <ArrowDownToLine className="w-3 h-3 opacity-70 group-hover/btn:opacity-100" />
+                      <span>Programa</span>
+                    </button>
                   </a>
                   <AgendaModal trigger={
-                    <button className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-sm cursor-pointer group/btn">
+                    <button className="inline-flex items-center justify-center gap-2 px-4 h-8 rounded-full bg-accent/10 border border-transparent text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-sm cursor-pointer group/btn w-full sm:w-[130px]">
                       <Calendar className="w-3 h-3 opacity-70 group-hover/btn:opacity-100" />
                       <span>Cronograma</span>
                     </button>
