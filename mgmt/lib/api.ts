@@ -57,15 +57,4 @@ export async function getFAQs() {
   
   return result.docs
 }
-/**
- * Get Site Settings
- */
-export async function getSiteSettings() {
-  const payload = await getCachedPayload()
-  
-  const result = await payload.findGlobal({
-    slug: 'site-settings',
-  })
-  
-  return result
-}
+

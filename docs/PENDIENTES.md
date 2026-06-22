@@ -16,6 +16,7 @@ Este documento centraliza todas las tareas pendientes, mejoras técnicas, objeti
 
 ### ⚙️ Desarrollo CMS (Payload)
 
+- [x] **Borrar del CMS Site Settings.**
 - [ ] **Dinamizar Carrusel de Realidades:** Mover el array `REALITIES` de `reality-carousel.tsx` a una Global o Colección en Payload.
 - [ ] **Sección de Enfoque (Focus):** Dinamizar las "Creencias" y los textos de la sección de equipo.
 - [ ] **Gestión de Leads:** Crear colección `Inquiries` o `Leads` para capturar y almacenar datos del formulario de contacto.

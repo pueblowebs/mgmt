@@ -8,7 +8,6 @@ import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { BlogPosts } from './collections/BlogPosts'
 import { FAQs } from './collections/FAQs'
-import { SiteSettings } from './globals/SiteSettings'
 import sharp from 'sharp'
 import { cloudinaryStorage } from 'payload-storage-cloudinary'
 
@@ -36,7 +35,7 @@ export default buildConfig({
     },
   },
   collections: [Users, Media, BlogPosts, FAQs],
-  globals: [SiteSettings],
+  globals: [],
   editor: lexicalEditor(),
   sharp,
   secret: process.env.PAYLOAD_SECRET || 'mgmt-pyme-local-secret-change-in-prod',

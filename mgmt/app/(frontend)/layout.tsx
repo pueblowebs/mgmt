@@ -16,15 +16,9 @@ const inter = Inter({
   variable: '--font-sans'
 });
 
-import { getSiteSettings } from '@/lib/api'
-
-export async function generateMetadata(): Promise<Metadata> {
-  const settings = await getSiteSettings()
-  
-  return {
-    title: settings.title || 'Management PyME - Rentabilidad & Profesionalización para PyMEs.',
-    description: settings.description || 'El liderazgo consciente es el verdadero motor de transformación de una empresa. Impulsa una visión estratégica con impacto real y sostenible en tu PyME.',
-  }
+export const metadata: Metadata = {
+  title: 'Management PyME - Rentabilidad & Profesionalización para PyMEs.',
+  description: 'El liderazgo consciente es el verdadero motor de transformación de una empresa. Impulsa una visión estratégica con impacto real y sostenible en tu PyME.',
 }
 
 import { Toaster } from "@/components/ui/toaster"
