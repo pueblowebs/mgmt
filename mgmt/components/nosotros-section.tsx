@@ -38,6 +38,11 @@ export function NosotrosSection() {
 
   const academyProfessionals = [
     {
+      name: "Silvia Aizenberg",
+      role: "Estructura y Proceso Decisorio",
+      image: "/team/silvia-aizenberg.webp"
+    },
+    {
       name: "Vero Capurro",
       role: "Branding",
       image: "/team/vero-capurro.webp"
@@ -56,6 +61,16 @@ export function NosotrosSection() {
       name: "Hugo Arinovich",
       role: "Administración y Control de Gestión",
       image: "/team/hugo-arinovich.webp"
+    },
+    {
+      name: "Patricia Vargas",
+      role: "Análisis Cualitativo",
+      image: "/team/patricia-vargas.webp"
+    },
+    {
+      name: "Paolo Vozzi",
+      role: "Comercialización",
+      image: "/team/paolo-vozzi.webp"
     },
     {
       name: "Pablo Kanterewicz",
