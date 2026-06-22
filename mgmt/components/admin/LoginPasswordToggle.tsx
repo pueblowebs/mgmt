@@ -24,6 +24,17 @@ export default function LoginPasswordToggle() {
         setPortalTarget(parent)
       }
     }
+
+    // Ocultar temporalmente el enlace de "¿Olvidaste tu contraseña?"
+    const style = document.createElement('style')
+    style.id = 'hide-forgot-password-link'
+    style.innerHTML = 'a[href*="forgot"] { display: none !important; }'
+    document.head.appendChild(style)
+
+    return () => {
+      const el = document.getElementById('hide-forgot-password-link')
+      if (el) el.remove()
+    }
   }, [])
 
   const toggle = () => {
