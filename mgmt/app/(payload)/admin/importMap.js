@@ -25,6 +25,7 @@ import { default as default_311c79a2d9598d68079b027d828b9bfa } from '../../../co
 import { default as default_aee0e759e8f919c2def218119e4b984a } from '../../../components/admin/CustomLogoutButton'
 import { default as default_7be396d0766c6c490887ef074dd0ced4 } from '../../../components/admin/AdminIcon'
 import { default as default_27eed1898e8caadb2fd2266b54bb4509 } from '../../../components/admin/AdminLogo'
+import { default as default_bff66c6c54f55c27a8565356cad9cfec } from '../../../components/admin/LoginPasswordToggle'
 import { CollectionCards as CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1 } from '@payloadcms/next/rsc'
 
 /** @type import('payload').ImportMap */
@@ -56,5 +57,6 @@ export const importMap = {
   "/components/admin/CustomLogoutButton#default": default_aee0e759e8f919c2def218119e4b984a,
   "/components/admin/AdminIcon#default": default_7be396d0766c6c490887ef074dd0ced4,
   "/components/admin/AdminLogo#default": default_27eed1898e8caadb2fd2266b54bb4509,
+  "/components/admin/LoginPasswordToggle#default": default_bff66c6c54f55c27a8565356cad9cfec,
   "@payloadcms/next/rsc#CollectionCards": CollectionCards_f9c02e79a4aed9a3924487c0cd4cafb1
 }

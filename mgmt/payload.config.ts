@@ -25,6 +25,7 @@ export default buildConfig({
       Component: '/components/admin/AdminAvatar#default',
     },
     components: {
+      beforeLogin: ['/components/admin/LoginPasswordToggle#default'],
       graphics: {
         Logo: '/components/admin/AdminLogo#default',
         Icon: '/components/admin/AdminIcon#default',
