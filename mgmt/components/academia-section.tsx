@@ -111,9 +111,8 @@ export function AcademiaSection() {
                 <span className="text-lg font-serif text-foreground font-bold">Detalles de la Cursada</span>
                 <div className="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
                   <a 
-                    href="https://wa.me/5491165442672?text=Hola,%20me%20gustaría%20descargar%20el%20programa%20de%20Academy%20MGMT." 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                    href="/2026 Management Academy I Short.pdf" 
+                    download="2026 Management Academy I Short.pdf"
                     className="w-full sm:w-auto"
                   >
                     <button className="inline-flex items-center justify-center gap-2 px-4 h-8 rounded-full border border-accent/20 text-accent text-[10px] font-bold tracking-[0.15em] uppercase hover:bg-accent hover:text-white hover:border-accent transition-all duration-300 shadow-sm cursor-pointer group/btn w-full sm:w-[130px]">

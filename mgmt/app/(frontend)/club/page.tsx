@@ -11,7 +11,7 @@ export default function ClubPage() {
         title={
           <>
             Comunidad de <br />
-            <span className="font-medium text-slate-300">Dueños y Socios</span> <br />
+            <span className="font-medium text-slate-300">dueños y socios</span> <br />
             de PyMEs
           </>
         }

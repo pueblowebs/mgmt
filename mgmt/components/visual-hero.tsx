@@ -21,9 +21,9 @@ export function VisualHero({
   tag = "",
   title = (
     <>
-      Formación, Dirección y <br />
-      <span className="font-medium">Management</span> <br />
-      para Dueños PyME
+      Formación, dirección y <br />
+      <span className="font-medium">management</span> <br />
+      para dueños PyME
     </>
   ),
   subtitle = "Rentabilizamos y profesionalizamos la Dirección y la Gestión de tu empresa en comunidad",
