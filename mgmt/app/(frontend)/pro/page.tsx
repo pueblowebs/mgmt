@@ -11,8 +11,8 @@ export default function ProPage() {
         title={
           <>
             Dirección y <br />
-            <span className="font-medium text-slate-300">Acompañamiento</span> <br />
-            Estratégico
+            <span className="font-medium text-slate-300">acompañamiento</span> <br />
+            estratégico
           </>
         }
         subtitle="Acompañamos a dueños y líderes a estructurar su empresa para el crecimiento sostenido"
