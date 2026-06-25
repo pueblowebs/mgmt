@@ -2,6 +2,8 @@
 
 Documento para el equipo de Management PyME. Explica cómo funciona el panel de administración del sitio web y sobre qué infraestructura corre.
 
+
+
 ---
 
 ## Panel de Administración (`/admin`)
@@ -9,24 +11,28 @@ Documento para el equipo de Management PyME. Explica cómo funciona el panel de 
 El sitio web incluye un panel de administración accesible desde:
 
 ```
-https://managementpyme.com/admin
+https://www.mgmtpyme.com/admin
 ```
+
 
 ### ¿Para qué sirve?
 
 Desde el panel `/admin` podés gestionar el contenido del sitio sin necesidad de tocar código:
 
-| Sección | ¿Qué se puede hacer? |
-|---|---|
-| **Posts / Blog** | Crear, editar y publicar artículos del blog |
-| **Media / Imágenes** | Subir y gestionar imágenes del sitio |
-| **Usuarios** | Administrar quién tiene acceso al panel |
+| Sección                    | ¿Qué se puede hacer?                       |
+| --------------------------- | -------------------------------------------- |
+| **Posts / Blog**      | Crear, editar y publicar artículos del blog |
+| **Media / Imágenes** | Subir y gestionar imágenes del sitio        |
+| **Usuarios**          | Administrar quién tiene acceso al panel     |
 
 ### Acceso
 
-- **URL:** `https://managementpyme.com/admin`
+- **URL:** `https://www.mgmtpyme.com/admin`
+- **URL de prueba:** `https://mgmt-ochre.vercel.app/admin`
 - **Usuario:** el email con el que fue registrado el administrador
 - **Contraseña:** la definida al crear la cuenta
+
+> ⚠️ **Nota Importante:** Actualmente el dominio oficial (`mgmtpyme.com`) sigue apuntando a la web vieja. Falta realizar la redirección del dominio hacia la nueva web. Hasta que se complete esta migración, se debe utilizar la **URL de prueba** tanto para ver el sitio como para acceder al panel.
 
 > Si necesitás recuperar o cambiar la contraseña, contactá al equipo técnico.
 
@@ -37,18 +43,21 @@ Desde el panel `/admin` podés gestionar el contenido del sitio sin necesidad de
 El sitio funciona sobre tres servicios externos, todos en su **plan gratuito**:
 
 ### 1. Vercel — Hosting del sitio web
+
 - **Qué hace:** aloja el sitio web (Next.js) y el panel `/admin`. Es el servidor desde donde se sirven todas las páginas.
 - **Plan actual:** Hobby (gratuito)
 - **Límite clave:** 100 GB de transferencia/mes y hasta 6.000 horas de build/mes.
 - 🔗 [vercel.com/pricing](https://vercel.com/pricing)
 
 ### 2. Neon — Base de datos
+
 - **Qué hace:** almacena todo el contenido del sitio (posts, usuarios, configuración).
 - **Plan actual:** Free (gratuito)
 - **Límite clave:** 0,5 GB de almacenamiento y 191 horas de compute/mes.
 - 🔗 [neon.tech/pricing](https://neon.tech/pricing)
 
 ### 3. Cloudinary — Imágenes
+
 - **Qué hace:** almacena y sirve las imágenes que se suben desde el panel `/admin`.
 - **Plan actual:** Free (gratuito)
 - **Límite clave:** 25 GB de almacenamiento y 25 GB de transferencia/mes.
@@ -70,5 +79,5 @@ El sitio funciona sobre tres servicios externos, todos en su **plan gratuito**:
 
 Para cualquier duda sobre el funcionamiento del sitio o del panel:
 
-**Pueblo Branding** — equipo de desarrollo  
+**Pueblo Branding** — equipo de desarrollo
 📧 hola@pueblobranding.com
