@@ -88,7 +88,7 @@ export function ClubSection() {
               className="w-full sm:w-auto"
             >
               <Button variant="shiny" size="xl" className="w-full sm:w-[240px] text-base h-12">
-                Ser parte del club
+                Ser parte del CLUB
               </Button>
             </a>
             <ClubModal trigger={
