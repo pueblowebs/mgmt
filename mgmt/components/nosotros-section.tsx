@@ -192,7 +192,7 @@ export function NosotrosSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {directors.map((member, index) => (
               <ScrollReveal key={index} delay={index * 100}>
-                <div className="group flex flex-col items-center p-6 md:p-8 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
+                <div className="group flex flex-col items-center p-6 md:p-8 bg-secondary/5 lg:border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
                   <div className="relative w-48 md:w-56 aspect-2/3 mb-6">
                     {/* Premium offset backgrounds */}
                     <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
@@ -234,11 +234,11 @@ export function NosotrosSection() {
             </div>
           </ScrollReveal>
           
-          <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="lg:col-span-8 grid grid-cols-2 gap-4 sm:gap-6">
             {mentors.map((mentor, index) => (
               <ScrollReveal key={index} delay={index * 100}>
-                <div className="group flex flex-col items-center p-6 bg-secondary/5 border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
-                  <div className="relative w-40 md:w-44 aspect-2/3 mb-5">
+                <div className="group flex flex-col items-center p-4 sm:p-6 bg-secondary/5 lg:border border-foreground/5 rounded-2xl hover:border-accent/30 hover:bg-secondary/10 transition-all duration-500 h-full">
+                  <div className="relative w-32 sm:w-40 md:w-44 aspect-2/3 mb-5">
                     <div className="absolute -inset-1.5 bg-accent/5 rounded-2xl rotate-3 group-hover:rotate-6 transition-all duration-500 -z-10"></div>
                     <div className="relative w-full h-full rounded-2xl overflow-hidden border border-foreground/5 bg-background shadow-sm">
                       <Image
