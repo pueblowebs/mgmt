@@ -10,7 +10,7 @@ export function Footer() {
             <div>
               <span className="font-serif text-2xl tracking-wider uppercase text-background">Management PyME</span>
               <p className="mt-4 text-background/50 text-sm leading-relaxed max-w-sm">
-                Formamos empresarios y rentabilizamos PyMEs mientras las transformamos en ágiles, saludables y competitivas.
+                Formamos empresari@s y dirigimos proyectos de evolución y profesionalización.
               </p>
             </div>
             <div className="flex flex-col gap-1">
@@ -19,8 +19,19 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Instagram</span>
-              <CopyText text="@mpyme" className="text-sm" />
+              <div className="relative inline-flex items-center group/copy w-fit">
+                <a 
+                  href="https://www.instagram.com/mpyme/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-sm cursor-pointer hover:text-accent transition-all duration-300 text-left relative"
+                >
+                  @mpyme
+                </a>
+                <div className="absolute -bottom-1 left-0 w-0 h-px bg-accent group-hover/copy:w-full transition-all duration-500" />
+              </div>
             </div>
+
           </div>
 
           {/* Quick Links */}
@@ -49,10 +60,47 @@ export function Footer() {
           <div className="md:col-span-3 space-y-6">
             <h4 className="text-[10px] font-bold tracking-[0.3em] uppercase text-accent mb-8">Visitanos</h4>
             <div className="space-y-4">
-              <p className="text-xs text-background/60 leading-relaxed tracking-wider font-medium">
-                Paysandú 12, B1406 <br />
-                Cdad. Autónoma de Buenos Aires, Argentina
-              </p>
+              <ul className="space-y-4 text-xs text-background/60 leading-relaxed tracking-wider font-medium">
+                {/* CABA Office */}
+                <li className="flex flex-col gap-1">
+                  <div>
+                    <span className="text-background font-semibold">CABA:</span>{" "}
+                    <span className="text-background/95">Facundo Penna</span>
+                  </div>
+                  <div className="relative inline-flex items-center group/caba w-fit">
+                    <a 
+                      href="https://maps.google.com/?q=MANAGEMENT+PYME+SRL"
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-[10px] text-background/40 hover:text-accent transition-all duration-300 text-left relative"
+                    >
+                      Paysandú 12, B1406, CABA, Argentina
+                    </a>
+                    <div className="absolute -bottom-0.5 left-0 w-0 h-px bg-accent group-hover/caba:w-full transition-all duration-500" />
+                  </div>
+                </li>
+
+                {/* Calera Office */}
+                <li className="flex flex-col gap-1">
+                  <div>
+                    <span className="text-background font-semibold">BETHANIA - CALERA:</span>{" "}
+                    <span className="text-background/95">Charly Bertani</span>
+                  </div>
+                  <div className="relative inline-flex items-center group/calera w-fit">
+                    <a 
+                      href="https://maps.app.goo.gl/pu7UXxJz5nCKQ22c9" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-[10px] text-background/40 hover:text-accent transition-all duration-300 text-left relative"
+                    >
+                      La Calera, Córdoba, Argentina
+                    </a>
+                    <div className="absolute -bottom-0.5 left-0 w-0 h-px bg-accent group-hover/calera:w-full transition-all duration-500" />
+                  </div>
+                </li>
+              </ul>
+
+              {/* Static Map (CABA) */}
               <div className="group relative rounded-xl overflow-hidden border border-background/10 h-40 w-full transition-all duration-500 shadow-2xl shadow-black/20">
                 <div className="hidden lg:block absolute inset-0 bg-accent/10 z-10 pointer-events-none mix-blend-overlay lg:group-hover:bg-transparent transition-colors duration-700" />
                 <iframe 

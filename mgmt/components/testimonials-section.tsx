@@ -65,7 +65,7 @@ export function TestimonialsSection() {
         </div> */}
 
         {/* Video Testimonials Reels - Compact Row */}
-        <div className="flex lg:justify-center gap-6 md:gap-8 mb-24 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide px-4">
+        <div className="flex lg:justify-center gap-6 md:gap-8  overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide px-4">
           {videoTestimonials.map((v, i) => (
             <div 
               key={i} 
@@ -106,7 +106,7 @@ export function TestimonialsSection() {
         </div>
 
         {/* Text Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
            {testimonials.map((t, i) => (
              <div key={i} className="p-8 border border-foreground/5 bg-secondary/5 rounded-sm hover:border-accent/20 transition-colors">
                <div className="text-accent text-3xl mb-4 font-serif leading-none">"</div>
@@ -117,13 +117,13 @@ export function TestimonialsSection() {
                </div>
              </div>
            ))}
-        </div>
+        </div> */}
 
-        <div className="mt-20 text-center">
+        {/* <div className="mt-20 text-center">
            <p className="text-foreground/40 text-sm max-w-2xl mx-auto font-bold text-center">
              Cientos de dueños y líderes ya transformaron su capacidad de gestión con nuestro método.
            </p>
-        </div>
+        </div> */}
       </div>
     </section>
   )
