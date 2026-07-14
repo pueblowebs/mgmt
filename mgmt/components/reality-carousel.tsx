@@ -12,22 +12,25 @@ import { cn } from "@/lib/utils"
 
 const REALITIES = [
   {
-    title: "El Límite del Esfuerzo",
-    description: "La PyME sufre, se estresa y quiebra por exceso de energía, esfuerzo y trabajo operativo y no rentable.",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&q=80",
-    highlight: "Estructura"
-  },
-  {
     title: "La Trampa del Presente",
     description: "Responder al día a día consume toda la energía y los recursos disponibles sin generar riqueza.",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1200&q=80",
-    highlight: "Rentabilidad"
+    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&q=80",
+    highlight: "CEO",
+    link: "https://drive.google.com/file/d/1llsBvMd0Z11Mp7tUHPXOWjzqZvFeCcMG/view?usp=drive_link"
   },
   {
     title: "El Vacío de Gestión",
     description: "La empresa se complejiza sin el conocimiento empresario necesario: por eso existimos",
-    image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&q=80",
-    highlight: "Estrategia"
+    image: "images/esfuerzo.webp",
+    highlight: "Estrategia",
+    link: "https://drive.google.com/file/d/1kYkrSM_e2_4ef-125AXEJK3o96yUCshc/view?usp=drive_link"
+  },
+  {
+    title: "El Límite del Esfuerzo",
+    description: "La PyME sufre, se estresa y quiebra por exceso de energía, esfuerzo y trabajo operativo y no rentable.",
+    image: "/images/proceso.webp",
+    highlight: "Estructura",
+    link: "https://drive.google.com/file/d/10SX50gR1jHt3Sd2IU6MWb_KCe2zhVL-j/view?usp=drive_link"
   }
 ]
 
@@ -59,7 +62,7 @@ export function RealityCarousel() {
       <div className="max-w-3xl mb-12">
         <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-6">La Realidad PyME</h3>
         <h2 className="font-serif text-2xl md:text-4xl mb-8 leading-tight">
-          Profesionalizar la Dirección es el primer paso para rentabilizar la empresa.
+          Profesionalizar la Dirección es el primer paso para la sustentabilidad de la empresa.
         </h2>
       </div>
 
@@ -68,13 +71,18 @@ export function RealityCarousel() {
           <CarouselContent className="ml-0">
             {REALITIES.map((reality, index) => (
               <CarouselItem key={index} className="pl-0">
-                <div className="relative aspect-4/5 md:aspect-21/9 w-full overflow-hidden">
+                <a 
+                  href={reality.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="group relative aspect-4/5 md:aspect-21/9 w-full overflow-hidden block"
+                >
                   {/* Background Image with Overlay */}
                   <Image
                     src={reality.image}
                     alt={reality.title}
                     fill
-                    className="object-cover grayscale transition-transform duration-10000 ease-linear scale-100 hover:scale-110"
+                    className="object-cover grayscale transition-all duration-700 ease-out scale-100 group-hover:scale-105 group-hover:grayscale-0"
                   />
                   <div className="absolute inset-0 bg-linear-to-t md:bg-linear-to-r from-foreground via-foreground/80 md:via-foreground/60 to-transparent" />
                   
@@ -90,7 +98,7 @@ export function RealityCarousel() {
                       {reality.description}
                     </p>
                   </div>
-                </div>
+                </a>
               </CarouselItem>
             ))}
           </CarouselContent>

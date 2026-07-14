@@ -33,14 +33,17 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
               )}
             </h1>
             <p className="text-base md:text-lg text-foreground/70 max-w-lg mb-4 leading-relaxed">
-              {description || "Gestionar no es hacer más. Es decidir y hacer mejor. Acompañamos a dueños y líderes a dinamizar y rentabilizar sus empresas desde su esencia."}
+              {description || 'Crecer no implica “dejar la vida.” Crecer no es hacer más, es hacer distinto y mejor. Te acompañamos y dirigimos junto a vos, la evolución de tu empresa.'}
             </p>
             <div className="flex flex-wrap gap-4 mb-8 text-[10px] font-bold tracking-widest uppercase text-accent">
-              <span>Más claridad</span>
+              {/* + conocimiento experto + impacto + resultados + tiempo */}
+              <span>+ conocimiento experto</span>
               <span className="text-foreground/20">•</span>
-              <span>Más criterio</span>
+              <span>+ impacto</span>
               <span className="text-foreground/20">•</span>
-              <span>Más impacto real</span>
+              <span>+ resultados</span>
+              <span className="text-foreground/20">•</span>
+              <span>+ tiempo</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="xl" variant="shiny" asChild>
@@ -49,7 +52,7 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Rentabilizar mi PyME <ArrowRight className="w-5 h-5" />
+                  Dirección PRO <ArrowRight className="w-5 h-5" />
                 </a>
               </Button>
             </div>
