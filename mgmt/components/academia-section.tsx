@@ -23,14 +23,14 @@ export function AcademiaSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
-                title: "Potencial Humano",
-                desc: "Desarrollo Personal, Personas y Cultura, Estructura, Aprendizaje Organizacional y Análisis Cualitativo.",
-                icon: Users
-              },
-              {
                 title: "Gobierno",
                 desc: "Directorio, Estrategia, CEO, Plan de Negocio y Proyectos Estratégicos.",
                 icon: Compass
+              },
+              {
+                title: "Potencial Humano",
+                desc: "Desarrollo Personal, Personas y Cultura, Estructura, Aprendizaje Organizacional y Análisis Cualitativo.",
+                icon: Users
               },
               {
                 title: "Profesionalización Básica",
@@ -39,7 +39,7 @@ export function AcademiaSection() {
               },
               {
                 title: "Organización Requerida",
-                desc: "Capacidad, Diseño, Alineación, Management y Remuneraciones.",
+                desc: "Capacidad y Potencial Humano, Diseño Organizacional, Alineación Funcional, Management y Remuneraciones Equitativas",
                 icon: Layers
               }
             ].map((item, i) => {
