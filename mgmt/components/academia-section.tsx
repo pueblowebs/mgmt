@@ -181,16 +181,16 @@ export function AcademiaSection() {
         {/* Section 3: MGMT en Números */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 py-16 border-y border-foreground/5 mt-12">
           {[
-            { label: "Años de experiencia", value: "+20", icon: Trophy },
-            { label: "Profesores nivel directivo", value: "15", icon: Users },
-            { label: "Alumnos transformados", value: "+500", icon: BookOpen },
-            { label: "Método orientado a la acción", value: "10", sub: "Años" }
+            { label: "inicio Academy", value: "2018" },
+            { label: "Profesionales y Empresarios Formándote", value: "+12" },
+            { label: "Empresarios Pyme capacitados", value: "+70" },
+            { label: "seminarios de marzo a noviembre", value: "22" }
           ].map((stat, i) => (
             <ScrollReveal key={i} delay={i * 100} className="text-center group">
               <div className="text-3xl md:text-5xl font-serif text-accent mb-2 group-hover:scale-110 transition-transform duration-500">
                 {stat.value}
               </div>
-              <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 leading-relaxed max-w-[120px] mx-auto">
+              <div className="text-xs font-bold uppercase tracking-[0.2em] text-foreground/40 leading-relaxed max-w-[180px] mx-auto">
                 {stat.label}
               </div>
             </ScrollReveal>
