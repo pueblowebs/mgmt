@@ -15,7 +15,7 @@ export default function ClubPage() {
             de PyMEs
           </>
         }
-        subtitle="Un espacio exclusivo de networking, análisis y reflexión para potenciar tus decisiones empresariales"
+        subtitle="Un espacio exclusivo de apertura, reflexión y bienestar para el empresario"
         tagClassName="bg-[#3388cc]/20 text-slate-300 border-[#3388cc]/20"
       />
       <ClubSection />

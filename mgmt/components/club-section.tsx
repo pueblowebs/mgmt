@@ -42,12 +42,12 @@ export function ClubSection() {
       </div>
 
       <div className="relative z-10 container mx-auto px-4">
-        <ScrollReveal className="max-w-4xl mb-6 md:mb-8">
+        <ScrollReveal className=" mb-6 md:mb-8">
           <h3 className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-2 md:mb-4">CLUB</h3>
           <h2 className="font-serif text-3xl md:text-5xl text-foreground leading-none tracking-tighter mb-4">
             Dirección que sostiene y potencia
           </h2>
-          <p className="text-lg md:text-xl text-foreground/60 leading-relaxed max-w-2xl">
+          <p className="text-lg md:text-xl text-foreground/60 leading-relaxed ">
             Comunidad de Empresarios y CEOs egresados de Academy que co-dirigen sus planes de rentabilidad, sustentabilidad y profesionalización.
           </p>
         </ScrollReveal>
