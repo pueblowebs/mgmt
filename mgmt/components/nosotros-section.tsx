@@ -38,6 +38,11 @@ export function NosotrosSection() {
 
   const academyProfessionals = [
     {
+      name: "Facundo Penna",
+      role: "CEO, Management & Aprendizaje",
+      image: "/team/facundo-penna.webp"
+    },
+    {
       name: "Silvia Aizenberg",
       role: "Estructura y Proceso Decisorio",
       image: "/team/silvia-aizenberg.webp"
@@ -79,7 +84,7 @@ export function NosotrosSection() {
     },
     {
       name: "Santiago Alfonso",
-      role: "Excelencia en Operaciones",
+      role: "Excelencia en Operaciones y Proyectos Estratégicos",
       image: "/team/santiago-alfonso.webp"
     },
     {
@@ -119,8 +124,8 @@ export function NosotrosSection() {
             <h1 className="font-serif text-3xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight drop-shadow-lg">
               El equipo detrás de la <span className="font-bold text-accent">transformación</span> de tu PyME
             </h1>
-            <p className="max-w-xl mx-auto text-xs md:text-base text-white/70 leading-relaxed font-light">
-              Acompañamos a dueños, directores y mandos medios a estructurar sistemas de gestión eficientes y rentables.
+            <p className="max-w-2xl mx-auto text-xs md:text-base text-white/70 leading-relaxed font-light">
+              Adoptamos la Organización Requerida (Jacques, Elliot) como sistema y la Teoría de la Transición del Emprendedor (Penna, Atilio) como metodología.
             </p>
           </div>
         </div>
@@ -155,7 +160,7 @@ export function NosotrosSection() {
                 </div>
                 <h4 className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-3">Valores</h4>
                 <p className="text-base md:text-lg font-serif text-foreground/85 leading-relaxed font-bold border-l-2 border-accent pl-4">
-                  "Nuestros valores se descubren en la práctica diaria de gestión."
+                  "Evolución, desempeño y transparencia."
                 </p>
               </div>
             </div>
