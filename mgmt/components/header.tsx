@@ -27,7 +27,7 @@ export function Header() {
     { label: "PRO", href: "/pro" },
     { label: "Nosotros", href: "/nosotros" },
     // { label: "Blog", href: "/blog" },
-    { label: "FAQ", href: "/faq" },
+    // { label: "FAQ", href: "/faq" },
     { label: "Contacto", href: "/contacto" },
   ]
 
