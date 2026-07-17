@@ -30,9 +30,9 @@ export function ProSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
-          <div className="bg-secondary/5 p-8 md:p-12 border border-background/10 rounded-sm self-start h-full">
+          <div className="bg-secondary/5 p-8 md:p-12 border border-background/10 rounded-3xl self-start h-full">
             <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Qué cubrimos</h4>
-            <div className="space-y-12">
+            <div className="space-y-8">
               {[
                 { t: "Fundador", d: "Convivimos con el fundador día a día, ayudándolo a salir de donde sufre y ubicarlo donde disfruta." },
                 { t: "CEO", d: "Co-gerenciamos la empresa, rentabilizándola, profesionalizándola y haciéndola competitiva." },
@@ -48,7 +48,7 @@ export function ProSection() {
             </div>
           </div>
 
-          <div className="bg-secondary/5 p-8 md:p-12 border border-background/10 rounded-sm self-start">
+          <div className="bg-secondary/5 p-8 md:p-12 border border-background/10 rounded-3xl self-start">
             <h4 className="text-sm font-bold uppercase tracking-widest text-accent mb-10">Cómo trabajamos</h4>
             <div className="space-y-10">
               {[
