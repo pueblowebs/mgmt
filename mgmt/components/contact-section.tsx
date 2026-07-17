@@ -104,7 +104,7 @@ export function ContactSection() {
                <div className="absolute top-0 right-0 w-32 h-32 bg-accent opacity-10 rounded-full blur-3xl -mr-16 -mt-16"></div>
                <h4 className="text-2xl font-serif mb-8 text-accent">Management PyME</h4>
                <p className="text-xl text-background font-light leading-relaxed">
-                 Acompañamiento en transformación y dirección de empresas y proyectos.
+                 "Acompañamiento en transformación y dirección de empresas y proyectos."
                </p>
             </div>
             
