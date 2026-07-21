@@ -34,31 +34,34 @@ export function StepsSection() {
 
   useEffect(() => {
     const scroller = scrollerRef.current
-    if (!scroller || window.innerWidth >= 1024) return
+    if (!scroller) return
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = Number(entry.target.getAttribute("data-index"))
-            if (!isNaN(index)) {
-              setActiveIndex(index)
-            }
-          }
-        })
-      },
-      {
-        root: scroller,
-        rootMargin: "0px -40%",
-        threshold: 0.1
-      }
-    )
+    const handleScroll = () => {
+      const items = scroller.querySelectorAll<HTMLElement>(".carousel-item")
+      if (!items.length) return
 
-    const items = scroller.querySelectorAll(".carousel-item")
-    items.forEach((item) => observer.observe(item))
+      const scrollerCenter = scroller.scrollLeft + scroller.clientWidth / 2
+
+      let closestIndex = 0
+      let minDistance = Infinity
+
+      items.forEach((item, index) => {
+        const itemCenter = item.offsetLeft + item.offsetWidth / 2
+        const distance = Math.abs(scrollerCenter - itemCenter)
+        if (distance < minDistance) {
+          minDistance = distance
+          closestIndex = index
+        }
+      })
+
+      setActiveIndex(closestIndex)
+    }
+
+    scroller.addEventListener("scroll", handleScroll, { passive: true })
+    handleScroll()
 
     return () => {
-      items.forEach((item) => observer.unobserve(item))
+      scroller.removeEventListener("scroll", handleScroll)
     }
   }, [])
 
