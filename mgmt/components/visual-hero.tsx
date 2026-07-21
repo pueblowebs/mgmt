@@ -21,12 +21,13 @@ export function VisualHero({
   tag = "",
   title = (
     <>
-      Formación, dirección y <br />
+    EVOLUCIÓN EMPRESARIA
+      {/* Formación, dirección y <br />
       <span className="font-medium">management</span> <br />
-      para dueños PyME
+      para dueños PyME */}
     </>
   ),
-  subtitle = "Rentabilizamos y profesionalizamos la Dirección y la Gestión de tu empresa en comunidad",
+  subtitle = "DIRECCIÓN, MANAGEMENT Y ACADEMIA PARA PYMES",
   tagClassName = "bg-accent/20 text-accent-foreground border-accent/20",
   titleClassName = "text-white",
   subtitleClassName = "text-white/80",
@@ -49,7 +50,7 @@ export function VisualHero({
 
       {/* Content */}
       <div className="container relative z-10 px-4 mx-auto text-center">
-        <div className="max-w-5xl mx-auto space-y-6">
+        <div className="max-w-5xl mx-auto space-y-2">
           {tag &&
             <div className={`inline-block px-4 py-1.5 mb-4 text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase backdrop-blur-md rounded-full border animate-fade-in-up ${tagClassName}`}>
               {tag}

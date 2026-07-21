@@ -24,9 +24,9 @@ const buttonVariants = cva(
         link: 'text-primary underline-offset-4 hover:underline',
         // Variante Shiny actualizada para coincidir con la imagen
         shiny:
-          'rounded-full bg-[linear-gradient(180deg,#014A85_0%,#0278D5_50%,#014A85_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#5EBAFF,0_0_0_2px_#222222,0_0_0_4px_#0278D5,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none active:scale-95 transition-all duration-500',
-        // shiny: 'rounded-full bg-[linear-gradient(180deg,#014A85_0%,#0278D5_50%,#014A85_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#5EBAFF,0_0_0_2px_#222222,0_0_0_4px_#0278D5,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
-                    // 'rounded-full bg-[linear-gradient(180deg,#1a5e95_0%,#3388cc_50%,#1a5e95_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#9bcceb,0_0_0_2px_#222222,0_0_0_4px_#1a5e95,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
+          'rounded-full bg-[linear-gradient(180deg,#006E6B_0%,#00A19B_50%,#006E6B_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#66E6E1,0_0_0_2px_#222222,0_0_0_4px_#00A19B,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none active:scale-95 transition-all duration-500',
+        // shiny: 'rounded-full bg-[linear-gradient(180deg,#006E6B_0%,#00A19B_50%,#006E6B_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#66E6E1,0_0_0_2px_#222222,0_0_0_4px_#00A19B,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
+                    // 'rounded-full bg-[linear-gradient(180deg,#006E6B_0%,#00A19B_50%,#006E6B_100%)] text-white font-bold shadow-[inset_0_0_0_1px_#66E6E1,0_0_0_2px_#222222,0_0_0_4px_#006E6B,0_15px_20px_-5px_rgba(0,0,0,0.6)] border-none hover:brightness-110 active:scale-95 transition-all duration-500',
       },
       size: {
         default: 'h-9 px-4 py-2 has-[>svg]:px-3',

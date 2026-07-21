@@ -2,6 +2,7 @@ import { FaqSection, Faq } from "@/components/faq-section"
 import { getFAQs } from "@/lib/api"
 import { Suspense } from "react"
 import Image from "next/image"
+import { redirect } from "next/navigation"
 
 export const metadata = {
   title: 'FAQ - Management PyME',
@@ -59,6 +60,7 @@ async function PayloadFaqContent() {
 }
 
 export default function FaqPage() {
+  redirect("/inicio")
   return (
     <div className="relative">
       <FaqHeader />

@@ -10,7 +10,7 @@ export default function AcademiaPage() {
         tag="Academy"
         title={<>Formación que transforma</>}
         subtitle="Diseñada para quienes tienen el poder de cambiar el rumbo."
-        tagClassName="bg-[#3388cc]/20 text-[#3388cc] border-[#3388cc]/20"
+        tagClassName="bg-[#00A19B]/20 text-[#00A19B] border-[#00A19B]/20"
       />
       <AcademiaSection />
     </>

@@ -27,7 +27,7 @@ export function ContactSection() {
               Hablemos
             </span>
             <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight drop-shadow-lg">
-              Si queres llevar tu empresa <br/> al <span className="font-bold text-accent">siguiente nivel</span>, conversemos.
+              Si querés llevar tu empresa <br/> al <span className="font-bold text-accent">siguiente nivel</span>, conversemos.
             </h1>
           </div>
         </div>
@@ -79,8 +79,9 @@ export function ContactSection() {
                     <span className="text-[9px] font-bold uppercase tracking-widest text-accent/80 group-hover:text-accent transition-colors">
                       {item.label}
                     </span>
-                    <h4 className="text-lg font-serif text-white group-hover:translate-x-1 transition-transform duration-300">
+                    <h4 className="text-lg font-serif text-white relative w-fit group-hover:text-accent transition-colors duration-300">
                       {item.name}
+                      <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-accent group-hover:w-full transition-all duration-300" />
                     </h4>
                   </div>
                   <div className="w-9 h-9 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-[#25D366] group-hover:border-[#25D366] transition-all duration-300 text-background/80 group-hover:text-background">
@@ -112,10 +113,10 @@ export function ContactSection() {
                {["CABA", "CALERA", "CALIFORNIA", "ITALIA"].map((city) => (
                  <div
                    key={city}
-                   className="text-xs font-bold tracking-widest uppercase text-background/40 hover:text-accent transition-all duration-300 cursor-default select-none relative group/city py-1"
+                   className="text-xs font-bold text-accent tracking-widest uppercase transition-all duration-300 cursor-default select-none relative group/city py-1"
                  >
                    {city}
-                   <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-accent group-hover/city:w-full transition-all duration-300" />
+                   {/* <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-accent group-hover/city:w-full transition-all duration-300" /> */}
                  </div>
                ))}
             </div>

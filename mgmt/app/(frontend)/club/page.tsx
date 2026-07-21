@@ -16,7 +16,7 @@ export default function ClubPage() {
           </>
         }
         subtitle="Un espacio exclusivo de apertura, reflexión y bienestar para el empresario"
-        tagClassName="bg-[#3388cc]/20 text-slate-300 border-[#3388cc]/20"
+        tagClassName="bg-[#00A19B]/20 text-slate-300 border-[#00A19B]/20"
       />
       <ClubSection />
     </>

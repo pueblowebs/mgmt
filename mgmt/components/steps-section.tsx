@@ -117,7 +117,7 @@ export function StepsSection() {
                     <div className="mb-6 flex items-center justify-between">
                       <span
                         className="inline-block text-[10px] font-bold tracking-[0.3em] uppercase px-4 py-1.5 rounded-full text-white"
-                        style={{ background: 'linear-gradient(135deg, #576d7d, #0278D5, #576d7d)' }}
+                        style={{ background: 'linear-gradient(135deg, #00A19B, #66E6E1, #00A19B)' }}
                       >
                         Paso {step.number}
                       </span>
