@@ -93,7 +93,7 @@ export function Header() {
                 <span className="sr-only">Abrir menú</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[240px] bg-header-bg text-header-foreground border-l border-white/10 p-0">
+            <SheetContent side="right" className="w-60 bg-header-bg text-header-foreground border-l border-white/10 p-0">
               <div className="flex flex-col h-full">
                 <SheetHeader className="p-6 border-b border-white/10 text-left space-y-0">
                   <SheetTitle className="font-serif text-lg tracking-wider uppercase text-header-foreground">Management PyME</SheetTitle>

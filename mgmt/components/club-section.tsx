@@ -87,12 +87,12 @@ export function ClubSection() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto"
             >
-              <Button variant="shiny" size="xl" className="w-full sm:w-[240px] text-base h-12">
+              <Button variant="shiny" size="xl" className="w-full sm:w-60 text-base h-12">
                 Ser parte del CLUB
               </Button>
             </a>
             <ClubModal trigger={
-              <button className="w-full sm:w-[240px] h-12 inline-flex items-center justify-center gap-2 px-6 rounded-full border border-accent/30 text-accent text-[12px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-sm cursor-pointer group/btn">
+              <button className="w-full sm:w-60 h-12 inline-flex items-center justify-center gap-2 px-6 rounded-full border border-accent/30 text-accent text-[12px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-sm cursor-pointer group/btn">
                 <Calendar className="w-4 h-4 opacity-60 group-hover/btn:opacity-100" />
                 <span>[+ info] Club 2026</span>
               </button>

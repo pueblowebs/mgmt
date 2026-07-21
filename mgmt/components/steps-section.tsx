@@ -97,7 +97,7 @@ export function StepsSection() {
         {/* Steps Grid / Carousel Container */}
         <div className="relative">
           {/* Connecting Line (Desktop) */}
-          <div className="absolute top-1/2 left-0 w-full h-px border-t border-dashed border-foreground/10 -z-10 hidden lg:block translate-y-[20px]" />
+          <div className="absolute top-1/2 left-0 w-full h-px border-t border-dashed border-foreground/10 -z-10 hidden lg:block translate-y-5" />
 
           <div 
             ref={scrollerRef}

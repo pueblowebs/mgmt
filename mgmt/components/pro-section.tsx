@@ -17,7 +17,7 @@ export function ProSection() {
             </p>
           </div>
           
-          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto overflow-hidden rounded-4xl">
+          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-125 mx-auto lg:ml-auto overflow-hidden rounded-4xl">
             <div className="absolute inset-0 bg-accent/5 rounded-4xl rotate-3"></div>
             <div className="absolute inset-0 border border-background/10 rounded-4xl"></div>
             <Image

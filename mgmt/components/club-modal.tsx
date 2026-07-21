@@ -56,8 +56,8 @@ export function ClubModal({ trigger }: ClubModalProps) {
 
             {/* Months and Line Row */}
             <div className="text-2xl md:text-4xl font-serif leading-none">Marzo</div>
-            <div className="flex items-center min-w-[40px]">
-              <div className="w-full h-[2px] bg-foreground/80 rounded-full relative">
+            <div className="flex items-center min-w-10">
+              <div className="w-full h-0.5 bg-foreground/80 rounded-full relative">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 border-t-2 border-r-2 border-foreground/80 rotate-45" />
               </div>
             </div>
