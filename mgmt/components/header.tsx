@@ -55,7 +55,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-8 xl:gap-10">
           {navItems.map((item) => {
             const isActive = pathname === item.href || (item.href !== "/inicio" && pathname?.startsWith(item.href + "/"));
             return (
