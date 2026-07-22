@@ -13,6 +13,7 @@ interface VisualHeroProps {
   titleClassName?: string
   subtitleClassName?: string
   overlayOpacity?: string
+  imagePositionClassName?: string
 }
 
 export function VisualHero({
@@ -31,7 +32,8 @@ export function VisualHero({
   tagClassName = "bg-accent/20 text-accent-foreground border-accent/20",
   titleClassName = "text-white",
   subtitleClassName = "text-white/80",
-  overlayOpacity = "opacity-60 md:opacity-70"
+  overlayOpacity = "opacity-60 md:opacity-70",
+  imagePositionClassName = "object-center"
 }: VisualHeroProps) {
   return (
     <section className="relative w-full h-[85vh] md:h-[90vh] flex items-center justify-center overflow-hidden bg-black">
@@ -42,7 +44,7 @@ export function VisualHero({
           alt={altText}
           fill
           priority
-          className={`object-cover scale-105 animate-subtle-zoom ${overlayOpacity}`}
+          className={`object-cover ${imagePositionClassName} scale-105 animate-subtle-zoom ${overlayOpacity}`}
         />
         <div className="absolute inset-0 bg-black/25" />
         <div className="absolute inset-0 bg-linear-to-b from-black/50 via-transparent to-black/80" />

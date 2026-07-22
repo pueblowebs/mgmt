@@ -5,18 +5,19 @@ export default function ProPage() {
   return (
     <>
       <VisualHero 
-        bgImage="/images/pro-hero-2.webp"
+        bgImage="/images/pro-hero-3.webp"
         altText="Pro MGMT - Acompañamiento Estratégico"
         tag="Pro"
         title={
           <>
-            Dirección & <br />
-            <span className="font-medium text-slate-300">management</span> <br />
-            profesional
+            Dirección & 
+            <span className="font-medium text-slate-300"> Management </span>
+            Profesional
           </>
         }
         subtitle="Llevamos la empresa al siguiente nivel de autonomía junto con vos"
         tagClassName="bg-[#00A19B]/20 text-slate-300 border-[#00A19B]/20"
+        imagePositionClassName="object-[center_25%]"
       />
       <ProSection />
     </>

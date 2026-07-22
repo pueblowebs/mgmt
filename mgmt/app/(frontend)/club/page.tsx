@@ -10,9 +10,10 @@ export default function ClubPage() {
         tag="Club"
         title={
           <>
-            Comunidad de <br />
+          Comunidad de <span className="font-medium text-slate-300">Empresas Pymes</span>
+            {/* Comunidad de <br />
             <span className="font-medium text-slate-300">dueños y socios</span> <br />
-            de PyMEs
+            de PyMEs */}
           </>
         }
         subtitle="Un espacio exclusivo de apertura, reflexión y bienestar para el empresario"

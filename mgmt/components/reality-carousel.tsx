@@ -14,21 +14,21 @@ const REALITIES = [
   {
     title: "La Trampa del Presente",
     description: "Responder al día a día consume toda la energía y los recursos disponibles sin generar riqueza.",
-    image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200&q=80",
+    image: "/images/proceso.webp",
     highlight: "CEO",
     link: "https://drive.google.com/file/d/1llsBvMd0Z11Mp7tUHPXOWjzqZvFeCcMG/view?usp=drive_link"
   },
   {
     title: "El Vacío de Gestión",
     description: "La empresa se complejiza sin el conocimiento empresario necesario: por eso existimos",
-    image: "images/esfuerzo.webp",
+    image: "/images/vacio.webp",
     highlight: "Estrategia",
     link: "https://drive.google.com/file/d/1kYkrSM_e2_4ef-125AXEJK3o96yUCshc/view?usp=drive_link"
   },
   {
     title: "El Límite del Esfuerzo",
     description: "La PyME sufre, se estresa y quiebra por exceso de energía, esfuerzo y trabajo operativo y no rentable.",
-    image: "/images/proceso.webp",
+    image: "images/esfuerzo.webp",
     highlight: "Estructura",
     link: "https://drive.google.com/file/d/10SX50gR1jHt3Sd2IU6MWb_KCe2zhVL-j/view?usp=drive_link"
   }

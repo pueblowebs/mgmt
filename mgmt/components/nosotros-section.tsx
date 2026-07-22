@@ -38,11 +38,6 @@ export function NosotrosSection() {
 
   const academyProfessionals = [
     {
-      name: "Facundo Penna",
-      role: "CEO, Management & Aprendizaje",
-      image: "/team/facundo-penna.webp"
-    },
-    {
       name: "Silvia Aizenberg",
       role: "Estructura y Proceso Decisorio",
       image: "/team/silvia-aizenberg.webp"
@@ -96,9 +91,14 @@ export function NosotrosSection() {
       name: "Viviana Coustarot",
       role: "Riesgos Legales",
       image: "/team/viviana-coustarot.webp"
+    },
+    {
+      name: "Facundo Penna",
+      role: "CEO, Management & Aprendizaje",
+      image: "/team/facundo-penna.webp"
     }
   ]
-
+  
   return (
     <section id="nosotros" className="bg-background text-foreground min-h-screen pb-24">
       {/* Visual Hero Header - Designed to safely overlap cards without collisions */}
