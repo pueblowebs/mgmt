@@ -84,7 +84,7 @@ export function NosotrosSection() {
     },
     {
       name: "Santiago Alfonso",
-      role: "Excelencia en Operaciones y Proyectos Estratégicos",
+      role: "Excelencia en Operaciones y \n Proyectos Estratégicos",
       image: "/team/santiago-alfonso.webp"
     },
     {
@@ -212,7 +212,7 @@ export function NosotrosSection() {
                   </div>
                   <div className="text-center">
                     <h4 className="text-lg md:text-xl font-serif font-bold text-foreground mb-1">{member.name}</h4>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-accent">{member.role}</span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-accent whitespace-pre-line">{member.role}</span>
                   </div>
                 </div>
               </ScrollReveal>
@@ -256,7 +256,7 @@ export function NosotrosSection() {
                   </div>
                   <div className="text-center">
                     <h4 className="text-base md:text-lg font-serif font-bold text-foreground mb-0.5">{mentor.name}</h4>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-accent">{mentor.role}</span>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-accent whitespace-pre-line">{mentor.role}</span>
                   </div>
                 </div>
               </ScrollReveal>
@@ -296,7 +296,7 @@ export function NosotrosSection() {
                   </div>
                   <div className="text-center">
                     <h4 className="text-sm md:text-base font-serif font-bold text-foreground mb-0.5">{prof.name}</h4>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-foreground/50">{prof.role}</span>
+                    <span className="text-[9px] font-bold uppercase tracking-widest text-foreground/50 whitespace-pre-line">{prof.role}</span>
                   </div>
                 </div>
               </ScrollReveal>
