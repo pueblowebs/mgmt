@@ -138,7 +138,7 @@ export function NosotrosSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {/* Propósito Card */}
           <ScrollReveal>
-            <div className="group bg-secondary/5 backdrop-blur-3xl p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
+            <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Target className="w-5 h-5 text-accent" />
@@ -153,7 +153,7 @@ export function NosotrosSection() {
 
           {/* Valores Card */}
           <ScrollReveal delay={100}>
-            <div className="group bg-secondary/5 backdrop-blur-3xl p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
+            <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <ShieldCheck className="w-5 h-5 text-accent" />
