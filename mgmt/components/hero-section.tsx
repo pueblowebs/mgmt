@@ -57,7 +57,7 @@ export function HeroSection({ title, subtitle, description }: HeroSectionProps) 
               </Button>
             </div>
           </div>
-          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-[500px] mx-auto lg:ml-auto">
+          <div className="relative aspect-square md:aspect-video lg:aspect-square w-full max-w-125 mx-auto lg:ml-auto">
             <div className="absolute -inset-4 bg-accent/5 rounded-4xl rotate-3 -z-10"></div>
             <div className="absolute inset-0 border border-foreground/10 rounded-4xl -z-10 translate-x-4 translate-y-4"></div>
             <Image

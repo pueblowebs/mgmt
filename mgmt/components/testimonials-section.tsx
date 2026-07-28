@@ -73,7 +73,7 @@ export function TestimonialsSection() {
                 const video = e.currentTarget.querySelector('video')
                 if (video) handleVideoClick(i, video)
               }}
-              className="group relative w-[260px] md:w-[220px] lg:w-[200px] aspect-9/16 rounded-xl overflow-hidden bg-secondary/10 shrink-0 border border-foreground/5 hover:border-accent/40 transition-all shadow-lg cursor-pointer snap-center"
+              className="group relative w-65 md:w-55 lg:w-50 aspect-9/16 rounded-xl overflow-hidden bg-secondary/10 shrink-0 border border-foreground/5 hover:border-accent/40 transition-all shadow-lg cursor-pointer snap-center"
             >
                <video 
                  src={v.src} 

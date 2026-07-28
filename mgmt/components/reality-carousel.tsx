@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image"
+import { FileText, ExternalLink } from "lucide-react"
 import { 
   Carousel, 
   CarouselContent, 
@@ -91,12 +92,19 @@ export function RealityCarousel() {
                     <span className="text-xs font-bold tracking-[0.4em] uppercase text-accent mb-4 animate-in fade-in slide-in-from-left-4 duration-700">
                       {reality.highlight}
                     </span>
-                    <h3 className="font-serif text-3xl md:text-6xl text-background leading-none tracking-tighter mb-6 animate-in fade-in slide-in-from-left-8 duration-1000">
+                    <h3 className="font-serif text-3xl md:text-6xl text-background leading-none tracking-tighter mb-4 animate-in fade-in slide-in-from-left-8 duration-1000">
                       {reality.title}
                     </h3>
-                    <p className="text-lg md:text-xl text-background/70 font-light leading-relaxed max-w-xl animate-in fade-in slide-in-from-left-12 duration-1000 delay-200">
+                    <p className="text-lg md:text-xl text-background/70 font-light leading-relaxed max-w-xl mb-6 animate-in fade-in slide-in-from-left-12 duration-1000 delay-200">
                       {reality.description}
                     </p>
+
+                    {/* Action badge (Clear call to action for both desktop & mobile) */}
+                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-background/10 backdrop-blur-md border border-background/20 text-background text-xs font-medium tracking-wide w-fit group-hover:bg-accent group-hover:border-accent group-hover:text-white transition-all duration-300 shadow-md">
+                      <FileText className="w-3.5 h-3.5 opacity-80 group-hover:opacity-100" />
+                      <span>Leer documento</span>
+                      <ExternalLink className="w-3.5 h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
+                    </div>
                   </div>
                 </a>
               </CarouselItem>
