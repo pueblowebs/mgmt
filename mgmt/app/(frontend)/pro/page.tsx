@@ -16,8 +16,7 @@ export default function ProPage() {
           </>
         }
         subtitle="Llevamos la empresa al siguiente nivel de autonomía junto con vos"
-        tagClassName="bg-[#00A19B]/20 text-slate-300 border-[#00A19B]/20"
-        imagePositionClassName="object-[center_25%]"
+        tagClassName="bg-[#00A19B]/20 text-[#00A19B] border-[#00A19B]/20"
       />
       <ProSection />
     </>

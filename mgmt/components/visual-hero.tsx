@@ -61,7 +61,7 @@ export function VisualHero({
           <h1 className={`font-serif font-light text-3xl md:text-5xl lg:text-6xl leading-[1.15] tracking-tighter drop-shadow-2xl animate-fade-in-up [animation-delay:200ms] ${titleClassName}`}>
             {title}
           </h1>
-          <p className={`sm:max-w-3xl mx-auto text-lg md:text-2xl font-light tracking-tight animate-fade-in-up [animation-delay:400ms] ${subtitleClassName}`}>
+          <p className={` mx-auto text-lg md:text-2xl font-light tracking-tight animate-fade-in-up [animation-delay:400ms] ${subtitleClassName}`}>
             {subtitle}
           </p>
         </div>
