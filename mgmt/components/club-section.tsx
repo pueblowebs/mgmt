@@ -1,6 +1,5 @@
 import Image from "next/image"
-import { Users2, MessageSquare, Sparkles, GraduationCap, Calendar } from "lucide-react"
-import { ClubModal } from "./club-modal"
+import { Users2, MessageSquare, Sparkles, GraduationCap, ArrowDownToLine } from "lucide-react"
 import { Button } from "./ui/button"
 import { ScrollReveal } from "./scroll-reveal"
 
@@ -91,12 +90,16 @@ export function ClubSection() {
                 Ser parte del CLUB
               </Button>
             </a>
-            <ClubModal trigger={
+            <a 
+              href="/mgmt-club-26-presentacion.pdf" 
+              download="mgmt-club-26-presentacion.pdf"
+              className="w-full sm:w-auto"
+            >
               <button className="w-full sm:w-60 h-12 inline-flex items-center justify-center gap-2 px-6 rounded-full border border-accent/30 text-accent text-[12px] font-bold tracking-[0.2em] uppercase hover:bg-accent hover:text-white transition-all duration-300 shadow-sm cursor-pointer group/btn">
-                <Calendar className="w-4 h-4 opacity-60 group-hover/btn:opacity-100" />
-                <span>[+ info] Club 2026</span>
+                <ArrowDownToLine className="w-4 h-4 opacity-70 group-hover/btn:opacity-100" />
+                <span>Programa</span>
               </button>
-            } />
+            </a>
           </div>
         </ScrollReveal>
       </div>
