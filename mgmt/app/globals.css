@@ -147,6 +147,8 @@ body[data-scroll-locked] {
   .steps-carousel {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
+    touch-action: pan-x;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;

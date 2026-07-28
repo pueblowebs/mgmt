@@ -71,8 +71,10 @@ export function StepsSection() {
     const items = scroller.querySelectorAll<HTMLElement>(".carousel-item")
     const targetItem = items[index]
     if (targetItem) {
+      const left = targetItem.offsetLeft - (scroller.clientWidth - targetItem.clientWidth) / 2
       scroller.scrollTo({
-        left: targetItem.offsetLeft - (scroller.clientWidth - targetItem.clientWidth) / 2,
+        left,
+        top: 0,
         behavior: "smooth"
       })
       setActiveIndex(index)
@@ -163,7 +165,11 @@ export function StepsSection() {
             {steps.map((_, i) => (
               <button
                 key={i}
-                onClick={() => scrollToSlide(i)}
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSlide(i)
+                }}
                 className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
                   activeIndex === i 
                     ? 'bg-accent w-6' 
