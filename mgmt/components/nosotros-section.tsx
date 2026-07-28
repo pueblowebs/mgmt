@@ -98,7 +98,7 @@ export function NosotrosSection() {
       image: "/team/facundo-penna.webp"
     }
   ]
-  
+
   return (
     <section id="nosotros" className="bg-background text-foreground min-h-screen pb-24">
       {/* Visual Hero Header - Designed to safely overlap cards without collisions */}
@@ -112,7 +112,7 @@ export function NosotrosSection() {
             priority
             className="object-cover opacity-25 scale-105"
           />
-          <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-background" />
+          <div className="absolute inset-0 bg-linear-to-b from-black via-black/40 to-background" />
         </div>
 
         {/* Content */}
@@ -138,7 +138,7 @@ export function NosotrosSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
           {/* Propósito Card */}
           <ScrollReveal>
-            <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
+            <div className="group bg-secondary/5 backdrop-blur-3xl p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Target className="w-5 h-5 text-accent" />
@@ -153,7 +153,7 @@ export function NosotrosSection() {
 
           {/* Valores Card */}
           <ScrollReveal delay={100}>
-            <div className="group bg-secondary/5 backdrop-blur-md p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
+            <div className="group bg-secondary/5 backdrop-blur-3xl p-6 md:p-8 border border-foreground/10 hover:border-accent/40 rounded-2xl shadow-xl flex flex-col justify-between transition-all duration-500 h-full">
               <div>
                 <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   <ShieldCheck className="w-5 h-5 text-accent" />
@@ -238,7 +238,7 @@ export function NosotrosSection() {
               Acompañamiento Estratégico
             </div>
           </ScrollReveal>
-          
+
           <div className="lg:col-span-8 grid grid-cols-2 gap-4 sm:gap-6">
             {mentors.map((mentor, index) => (
               <ScrollReveal key={index} delay={index * 100}>
