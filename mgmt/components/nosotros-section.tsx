@@ -59,7 +59,7 @@ export function NosotrosSection() {
     },
     {
       name: "Hugo Arinovich",
-      role: "Administración y Control de Gestión",
+      role: "Administración, Control de Gestión y Valuación de Empresas",
       image: "/team/hugo-arinovich.webp"
     },
     {
@@ -79,7 +79,7 @@ export function NosotrosSection() {
     },
     {
       name: "Santiago Alfonso",
-      role: "Excelencia en Operaciones y \n Proyectos Estratégicos",
+      role: "Excelencia en Operaciones y Proyectos Estratégicos",
       image: "/team/santiago-alfonso.webp"
     },
     {
@@ -296,7 +296,7 @@ export function NosotrosSection() {
                   </div>
                   <div className="text-center">
                     <h4 className="text-sm md:text-base font-serif font-bold text-foreground mb-0.5">{prof.name}</h4>
-                    <span className="text-[9px] font-bold uppercase tracking-widest text-foreground/50 whitespace-pre-line">{prof.role}</span>
+                    <span className="block max-w-50 mx-auto text-[9px] font-bold uppercase tracking-widest text-foreground/50 whitespace-pre-line">{prof.role}</span>
                   </div>
                 </div>
               </ScrollReveal>
