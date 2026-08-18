@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Email</span>
-              <CopyText text="hola@managementpyme.com" className="text-sm" />
+              <CopyText text="facundo.penna@gmail.com" className="text-sm" />
             </div>
             <div className="flex flex-col gap-1">
               <span className="text-[10px] uppercase tracking-widest text-background/30 font-bold">Instagram</span>

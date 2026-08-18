@@ -45,7 +45,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-2">Escribinos</h4>
-                    <CopyText text="hola@managementpyme.com" className="text-lg md:text-2xl font-serif" />
+                    <CopyText text="facundo.penna@gmail.com" className="text-lg md:text-2xl font-serif" />
                   </div>
                </div>
                */}
